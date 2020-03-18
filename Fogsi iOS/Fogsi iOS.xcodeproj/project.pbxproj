@@ -13,6 +13,9 @@
 		3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A4622422396200492AEA /* Fogsi_iOS.xcdatamodeld */; };
 		3F08A4662422397100492AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F08A4652422397100492AEA /* Assets.xcassets */; };
 		3F08A4692422397100492AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F08A4672422397100492AEA /* LaunchScreen.storyboard */; };
+		3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9024227430001CFE16 /* CollectionViewCell.swift */; };
+		3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */; };
+		3F35BD9524227B66001CFE16 /* CollectionReusableView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9424227B66001CFE16 /* CollectionReusableView1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3F08A4652422397100492AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F08A4682422397100492AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F08A46A2422397100492AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F35BD9024227430001CFE16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		3F35BD9424227B66001CFE16 /* CollectionReusableView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 			children = (
 				3F08A45B2422396200492AEA /* AppDelegate.swift */,
 				3F08A45D2422396200492AEA /* ViewController.swift */,
+				3F35BD9424227B66001CFE16 /* CollectionReusableView1.swift */,
 				3F08A45F2422396200492AEA /* Main.storyboard */,
+				3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */,
+				3F35BD9024227430001CFE16 /* CollectionViewCell.swift */,
 				3F08A4652422397100492AEA /* Assets.xcassets */,
 				3F08A4672422397100492AEA /* LaunchScreen.storyboard */,
 				3F08A46A2422397100492AEA /* Info.plist */,
@@ -140,6 +149,9 @@
 			files = (
 				3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */,
 				3F08A45E2422396200492AEA /* ViewController.swift in Sources */,
+				3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */,
+				3F35BD9524227B66001CFE16 /* CollectionReusableView1.swift in Sources */,
+				3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */,
 				3F08A45C2422396200492AEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
