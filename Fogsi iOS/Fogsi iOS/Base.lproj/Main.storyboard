@@ -183,61 +183,189 @@
             <objects>
                 <viewController id="RZ2-HT-nSJ" customClass="FogsiProfile" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uik-cy-8OU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1580"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-Sy-QVb">
-                                <rect key="frame" x="0.0" y="79" width="375" height="146"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLP-40-VgW">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1536"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-p5-Ugd">
-                                        <rect key="frame" x="166.5" y="98" width="42" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-bI-EfA">
-                                        <rect key="frame" x="147" y="18" width="80" height="80"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-Sy-QVb">
+                                        <rect key="frame" x="0.0" y="27" width="375" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOGSI Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-p5-Ugd">
+                                                <rect key="frame" x="136.5" y="104.5" width="102.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fogsi_2020" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-bI-EfA">
+                                                <rect key="frame" x="130.5" y="18" width="114" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="114" id="jGV-65-YLu"/>
+                                                    <constraint firstAttribute="height" constant="80" id="o8k-8M-230"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="lIY-bI-EfA" secondAttribute="height" multiplier="1:1" id="SVB-bP-WTO"/>
+                                            <constraint firstAttribute="bottom" secondItem="lIY-bI-EfA" secondAttribute="bottom" constant="47" id="422-tc-WOC"/>
+                                            <constraint firstItem="Hte-p5-Ugd" firstAttribute="centerX" secondItem="wsz-Sy-QVb" secondAttribute="centerX" id="5sm-eb-rq2"/>
+                                            <constraint firstItem="lIY-bI-EfA" firstAttribute="centerX" secondItem="wsz-Sy-QVb" secondAttribute="centerX" id="68G-Op-9av"/>
+                                            <constraint firstAttribute="width" secondItem="wsz-Sy-QVb" secondAttribute="height" multiplier="75:29" id="BiG-GC-bca"/>
+                                            <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="104.5" id="ROO-Fz-BlW"/>
+                                            <constraint firstItem="lIY-bI-EfA" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="18" id="a9z-hL-18A"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hte-p5-Ugd" secondAttribute="bottom" constant="20" id="gqi-cj-clb"/>
+                                            <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="lIY-bI-EfA" secondAttribute="bottom" constant="6.5" id="kdN-6x-eNN"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
+                                        <rect key="frame" x="0.0" y="172" width="375" height="1367"/>
+                                        <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1367" id="pMs-5z-VYj"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">The Federation of Obstetric and Gynaecological Societies of India (FOGSI) is the professional organization representing practitioners of obstetrics and gynecology in India. With 258 member societies and over 37,000 individual members spread over the length and breadth of the country, FOGSI is probably one of the largest membership based organizations of specialized professionals.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="10">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <mutableString key="content">FOGSI came into formal existence in Madras on January 6, 1950 at the sixth All India Congress of Obstetrics and Gynaecology, when the obstetric and gynecological societies of Ahmedabad, Bengal, Bombay, Madras and Punjab resolved to form themselves into the Federation of Obstetric and Gynaecological Societies of India. It was further resolved that the Federation be registered and headquartered in Bombay. The launch of FOGSI as the national organization of obstetricians and gynecologists followed five earlier All India Congresses, the first of these held in Madras in 1936 and organized by the then existing three obstetric and gynecological societies at Bombay, Kolkata and Madras.
+</mutableString>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">FOGSI exists to encourage and disseminate knowledge, education and research in the field of obstetrics and gynecology, to pilot and promote preventive and therapeutic services related to the practice of obstetrics and gynecology for betterment of the health of women and children in particular and the wellbeing of the community in general, to advocate the cause of reproductive health and rights and to support and protect the interest of practitioners of obstetrics and gynecology in India.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="charWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Journal of Obstetrics and Gynecology of India is the official publication of FOGSI and is published bimonthly and circulated to every individual member. It contains articles and contributions on fundamentla research and clinical practice as also case reports of clinical interest. With  </string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="www.fogsi.org">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <url key="NSLink" string="https://www.fogsi.org/"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.25882352941176473" green="0.54509803921568623" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <mutableString key="content"> the official website, FOGSI has an important presence in cyberspace which works to promote and fulfill the aims and objectives of the Federation.
+The Indian College of Obstetrics and Gynecology is the academic wing of FOGSI with over 1640 fellows. It was established by FOGSI on December 21, 1984 to further promote the education, training, research and knowledge in obstetrics, gynecology and reproductive health.
+The Federation continues to hold the All India Congress of Obstetrics and Gynaecology, its annual conference every year in January for four days. FOGSI also organizes Yuva FOGSI, four regional youth conferences to promote and showcase young talent each year. Besides these annual conferences many academic activities go on round the year through out the country with twenty seven subspecialty committees simultaneously working in their designated areas.
+The Federation also collaborates with and partners the Government of India and is an invited reprehensive on all relevant policy making bodies of the government  on issues related to women’s health.
+FOGSI has close links and affiliation with international and regional organizations like FIGO, AOFOG and SAFOG, with many of its members having occupied prestigious positions in these organizations from time to time.
+Each year FOGSI  under the guidance the President selects a theme to highlight the importance of a particular issue related to women’s health.This permits focus with the involvement of the large membership, FOGSI’s greatest asset in addressing the challenge involving the particular issue. In recent years the unidimensional theme has now evolved into a philosophical directive.
+</mutableString>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Federation is always conscious of the responsibility it shoulders and the important role it has accepted to work not just for it’s members societies and professionals, but in working to advocate and improving the health of women in our country thereby contributing to the wellbeing of India.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="lIY-bI-EfA" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="18" id="1IZ-vX-LYA"/>
-                                    <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="98" id="5Yo-6s-LQL"/>
-                                    <constraint firstAttribute="bottom" secondItem="Hte-p5-Ugd" secondAttribute="bottom" constant="21" id="Cac-Hx-v60"/>
-                                    <constraint firstItem="Hte-p5-Ugd" firstAttribute="centerX" secondItem="wsz-Sy-QVb" secondAttribute="centerX" id="Eu9-AC-UFZ"/>
-                                    <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="lIY-bI-EfA" secondAttribute="bottom" id="MBz-ip-jdB"/>
-                                    <constraint firstAttribute="width" secondItem="wsz-Sy-QVb" secondAttribute="height" multiplier="375:146" id="NvV-pd-yLI"/>
-                                    <constraint firstAttribute="trailing" secondItem="lIY-bI-EfA" secondAttribute="trailing" constant="148" id="z0N-PF-nL3"/>
-                                    <constraint firstItem="lIY-bI-EfA" firstAttribute="leading" secondItem="wsz-Sy-QVb" secondAttribute="leading" constant="147" id="zN7-Uz-qqz"/>
+                                    <constraint firstItem="GLZ-iB-Ohw" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="bottom" id="5cX-E5-Ptb"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLZ-iB-Ohw" secondAttribute="bottom" id="Lon-E3-VlN"/>
+                                    <constraint firstItem="wsz-Sy-QVb" firstAttribute="top" secondItem="VLP-40-VgW" secondAttribute="top" constant="27" id="NkF-nY-Q9f"/>
+                                    <constraint firstItem="wsz-Sy-QVb" firstAttribute="leading" secondItem="VLP-40-VgW" secondAttribute="leading" id="VFd-JD-UqO"/>
+                                    <constraint firstItem="wsz-Sy-QVb" firstAttribute="centerX" secondItem="VLP-40-VgW" secondAttribute="centerX" id="fjZ-EV-B9Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLZ-iB-Ohw" secondAttribute="trailing" id="hiw-P5-Jt9"/>
+                                    <constraint firstAttribute="trailing" secondItem="wsz-Sy-QVb" secondAttribute="trailing" id="wGK-lu-ykC"/>
+                                    <constraint firstItem="GLZ-iB-Ohw" firstAttribute="leading" secondItem="VLP-40-VgW" secondAttribute="leading" id="zqn-8R-Bje"/>
                                 </constraints>
-                            </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
-                                <rect key="frame" x="0.0" y="225" width="375" height="442"/>
-                                <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GLZ-iB-Ohw" firstAttribute="leading" secondItem="fmd-sO-e4X" secondAttribute="leading" id="HIj-gv-2Hl"/>
-                            <constraint firstItem="fmd-sO-e4X" firstAttribute="trailing" secondItem="GLZ-iB-Ohw" secondAttribute="trailing" id="Iw9-nK-gBx"/>
-                            <constraint firstItem="GLZ-iB-Ohw" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="bottom" id="MlG-Rm-ZCL"/>
-                            <constraint firstItem="wsz-Sy-QVb" firstAttribute="leading" secondItem="fmd-sO-e4X" secondAttribute="leading" id="Qi1-L4-DC0"/>
-                            <constraint firstItem="fmd-sO-e4X" firstAttribute="trailing" secondItem="wsz-Sy-QVb" secondAttribute="trailing" id="Ve4-rV-VlV"/>
-                            <constraint firstItem="wsz-Sy-QVb" firstAttribute="top" secondItem="fmd-sO-e4X" secondAttribute="top" constant="35" id="f63-jd-5Cf"/>
-                            <constraint firstItem="fmd-sO-e4X" firstAttribute="bottom" secondItem="GLZ-iB-Ohw" secondAttribute="bottom" id="gpe-HJ-Ljr"/>
+                            <constraint firstItem="VLP-40-VgW" firstAttribute="leading" secondItem="fmd-sO-e4X" secondAttribute="leading" id="L9j-Qh-tOn"/>
+                            <constraint firstItem="fmd-sO-e4X" firstAttribute="trailing" secondItem="VLP-40-VgW" secondAttribute="trailing" id="S0N-j0-qs1"/>
+                            <constraint firstItem="VLP-40-VgW" firstAttribute="top" secondItem="fmd-sO-e4X" secondAttribute="top" id="ovV-cR-N1C"/>
+                            <constraint firstItem="fmd-sO-e4X" firstAttribute="bottom" secondItem="VLP-40-VgW" secondAttribute="bottom" id="vhO-PD-j8M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fmd-sO-e4X"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1580"/>
+                    <connections>
+                        <outlet property="textview" destination="GLZ-iB-Ohw" id="cgh-mz-Vof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxy-8g-J6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="-2263.7181409295354"/>
+            <point key="canvasLocation" x="2956" y="-2264.167916041979"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6P-My-7dh">
@@ -259,6 +387,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fogsi_2020" width="250" height="250"/>
         <image name="splash icon 1" width="200" height="200"/>
     </resources>
 </document>
