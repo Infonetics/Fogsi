@@ -13,6 +13,9 @@
 		3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F08A4622422396200492AEA /* Fogsi_iOS.xcdatamodeld */; };
 		3F08A4662422397100492AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F08A4652422397100492AEA /* Assets.xcassets */; };
 		3F08A4692422397100492AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F08A4672422397100492AEA /* LaunchScreen.storyboard */; };
+		3F22E300242DCD4700AAE924 /* CollectionViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */; };
+		3F22E302242DD3D900AAE924 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */; };
+		3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E303242E3D4200AAE924 /* FogsiProfile.swift */; };
 		3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9024227430001CFE16 /* CollectionViewCell.swift */; };
 		3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 		3F08A4652422397100492AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F08A4682422397100492AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F08A46A2422397100492AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController1.swift; sourceTree = "<group>"; };
+		3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
+		3F22E303242E3D4200AAE924 /* FogsiProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogsiProfile.swift; sourceTree = "<group>"; };
 		3F35BD9024227430001CFE16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +68,9 @@
 			children = (
 				3F08A45B2422396200492AEA /* AppDelegate.swift */,
 				3F08A45D2422396200492AEA /* ViewController.swift */,
+				3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */,
+				3F22E303242E3D4200AAE924 /* FogsiProfile.swift */,
+				3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */,
 				3F35BD9024227430001CFE16 /* CollectionViewCell.swift */,
 				3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */,
 				3F08A45F2422396200492AEA /* Main.storyboard */,
@@ -105,6 +114,7 @@
 				TargetAttributes = {
 					3F08A4572422396200492AEA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -144,10 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F22E300242DCD4700AAE924 /* CollectionViewController1.swift in Sources */,
+				3F22E302242DD3D900AAE924 /* CollectionViewCell1.swift in Sources */,
 				3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */,
 				3F08A45E2422396200492AEA /* ViewController.swift in Sources */,
 				3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */,
 				3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */,
+				3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */,
 				3F08A45C2422396200492AEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dayal.Fogsi-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -319,7 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dayal.Fogsi-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
