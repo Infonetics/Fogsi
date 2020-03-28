@@ -79,9 +79,6 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
         if indexPath.row == 0 {
             performSegue(withIdentifier: "first11", sender: self)
         }
-        if indexPath.row == 1 {
-            performSegue(withIdentifier: "first12", sender: self)
-        }
     }
     
     // MARK: UICollectionViewDelegate

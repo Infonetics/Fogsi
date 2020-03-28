@@ -19,6 +19,7 @@
 		3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9024227430001CFE16 /* CollectionViewCell.swift */; };
 		3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */; };
 		3F5408BA242F97080039089B /* missionAndVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5408B9242F97080039089B /* missionAndVision.swift */; };
+		3F5408BF242FC9CA0039089B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5408BE242FC9CA0039089B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F35BD9024227430001CFE16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		3F5408B9242F97080039089B /* missionAndVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionAndVision.swift; sourceTree = "<group>"; };
+		3F5408BE242FC9CA0039089B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3F08A45A2422396200492AEA /* Fogsi iOS */,
-				3F08A4592422396200492AEA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,26 +64,53 @@
 				3F08A4582422396200492AEA /* Fogsi iOS.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3F08A45A2422396200492AEA /* Fogsi iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3F08A45B2422396200492AEA /* AppDelegate.swift */,
-				3F08A45D2422396200492AEA /* ViewController.swift */,
-				3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */,
-				3F5408B9242F97080039089B /* missionAndVision.swift */,
-				3F22E303242E3D4200AAE924 /* FogsiProfile.swift */,
-				3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */,
-				3F35BD9024227430001CFE16 /* CollectionViewCell.swift */,
-				3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */,
+				3F08A46A2422397100492AEA /* Info.plist */,
+				3F08A4592422396200492AEA /* Products */,
+				3F5408BB242FC6B50039089B /* Main Menu */,
+				3F5408BC242FC75F0039089B /* About Fogsi */,
+				3F5408BD242FC8E30039089B /* Extras */,
 				3F08A45F2422396200492AEA /* Main.storyboard */,
 				3F08A4652422397100492AEA /* Assets.xcassets */,
 				3F08A4672422397100492AEA /* LaunchScreen.storyboard */,
-				3F08A46A2422397100492AEA /* Info.plist */,
-				3F08A4622422396200492AEA /* Fogsi_iOS.xcdatamodeld */,
 			);
 			path = "Fogsi iOS";
+			sourceTree = "<group>";
+		};
+		3F5408BB242FC6B50039089B /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3F08A45D2422396200492AEA /* ViewController.swift */,
+				3F35BD9024227430001CFE16 /* CollectionViewCell.swift */,
+				3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		3F5408BC242FC75F0039089B /* About Fogsi */ = {
+			isa = PBXGroup;
+			children = (
+				3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */,
+				3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */,
+				3F22E303242E3D4200AAE924 /* FogsiProfile.swift */,
+				3F5408B9242F97080039089B /* missionAndVision.swift */,
+			);
+			path = "About Fogsi";
+			sourceTree = "<group>";
+		};
+		3F5408BD242FC8E30039089B /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				3F08A4622422396200492AEA /* Fogsi_iOS.xcdatamodeld */,
+				3F08A45B2422396200492AEA /* AppDelegate.swift */,
+				3F5408BE242FC9CA0039089B /* Default-568h@2x.png */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F08A4692422397100492AEA /* LaunchScreen.storyboard in Resources */,
+				3F5408BF242FC9CA0039089B /* Default-568h@2x.png in Resources */,
 				3F08A4662422397100492AEA /* Assets.xcassets in Resources */,
 				3F08A4612422396200492AEA /* Main.storyboard in Resources */,
 			);
