@@ -18,6 +18,7 @@
 		3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E303242E3D4200AAE924 /* FogsiProfile.swift */; };
 		3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9024227430001CFE16 /* CollectionViewCell.swift */; };
 		3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */; };
+		3F5408BA242F97080039089B /* missionAndVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5408B9242F97080039089B /* missionAndVision.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3F22E303242E3D4200AAE924 /* FogsiProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogsiProfile.swift; sourceTree = "<group>"; };
 		3F35BD9024227430001CFE16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		3F5408B9242F97080039089B /* missionAndVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionAndVision.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3F08A45B2422396200492AEA /* AppDelegate.swift */,
 				3F08A45D2422396200492AEA /* ViewController.swift */,
 				3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */,
+				3F5408B9242F97080039089B /* missionAndVision.swift */,
 				3F22E303242E3D4200AAE924 /* FogsiProfile.swift */,
 				3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */,
 				3F35BD9024227430001CFE16 /* CollectionViewCell.swift */,
@@ -161,6 +164,7 @@
 				3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */,
 				3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */,
 				3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */,
+				3F5408BA242F97080039089B /* missionAndVision.swift in Sources */,
 				3F08A45C2422396200492AEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dXK-nf-byU">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <color key="backgroundColor" red="1" green="0.58503364353383147" blue="0.81280386216277867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.63921568627450975" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="26" id="5gH-3R-sl4">
                                     <size key="itemSize" width="110" height="110"/>
                                     <size key="headerReferenceSize" width="50" height="294"/>
@@ -34,14 +34,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Zb-ak6">
-                                                    <rect key="frame" x="10" y="79" width="90" height="16"/>
+                                                    <rect key="frame" x="10" y="77" width="90" height="18"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQU-ga-Xye">
-                                                    <rect key="frame" x="15" y="15" width="80" height="64"/>
+                                                    <rect key="frame" x="15" y="15" width="80" height="62"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="HGR-vT-Tku"/>
@@ -113,7 +113,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Usb-wQ-0OA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.63921568627450975" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="hQc-5q-bRm">
                             <size key="itemSize" width="110" height="110"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -134,8 +134,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="xfa-fp-C2s"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DED-rq-hov">
@@ -172,6 +172,7 @@
                     <connections>
                         <outlet property="collectionview1" destination="Usb-wQ-0OA" id="JpO-F1-J5d"/>
                         <segue destination="RZ2-HT-nSJ" kind="show" identifier="first11" id="rqI-d6-EgU"/>
+                        <segue destination="Qrt-7e-rVb" kind="show" identifier="first12" id="kYu-KP-Dpb"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eii-2f-XHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,19 +184,19 @@
             <objects>
                 <viewController id="RZ2-HT-nSJ" customClass="FogsiProfile" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uik-cy-8OU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1580"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1570"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLP-40-VgW">
-                                <rect key="frame" x="0.0" y="44" width="375" height="1536"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="1526"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsz-Sy-QVb">
-                                        <rect key="frame" x="0.0" y="27" width="375" height="145"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOGSI Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-p5-Ugd">
-                                                <rect key="frame" x="136.5" y="104.5" width="102.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="142" y="104.5" width="91.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fogsi_2020" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-bI-EfA">
@@ -212,27 +213,26 @@
                                             <constraint firstAttribute="bottom" secondItem="lIY-bI-EfA" secondAttribute="bottom" constant="47" id="422-tc-WOC"/>
                                             <constraint firstItem="Hte-p5-Ugd" firstAttribute="centerX" secondItem="wsz-Sy-QVb" secondAttribute="centerX" id="5sm-eb-rq2"/>
                                             <constraint firstItem="lIY-bI-EfA" firstAttribute="centerX" secondItem="wsz-Sy-QVb" secondAttribute="centerX" id="68G-Op-9av"/>
-                                            <constraint firstAttribute="width" secondItem="wsz-Sy-QVb" secondAttribute="height" multiplier="75:29" id="BiG-GC-bca"/>
                                             <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="104.5" id="ROO-Fz-BlW"/>
                                             <constraint firstItem="lIY-bI-EfA" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="top" constant="18" id="a9z-hL-18A"/>
                                             <constraint firstAttribute="bottom" secondItem="Hte-p5-Ugd" secondAttribute="bottom" constant="20" id="gqi-cj-clb"/>
                                             <constraint firstItem="Hte-p5-Ugd" firstAttribute="top" secondItem="lIY-bI-EfA" secondAttribute="bottom" constant="6.5" id="kdN-6x-eNN"/>
+                                            <constraint firstAttribute="height" constant="145" id="xCr-QJ-33L"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
-                                        <rect key="frame" x="0.0" y="172" width="375" height="1367"/>
-                                        <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1367" id="pMs-5z-VYj"/>
-                                        </constraints>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
+                                        <rect key="frame" x="5" y="145" width="365" height="1357"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="uTu-WO-djP"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="JXc-Sk-yRF"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">The Federation of Obstetric and Gynaecological Societies of India (FOGSI) is the professional organization representing practitioners of obstetrics and gynecology in India. With 258 member societies and over 37,000 individual members spread over the length and breadth of the country, FOGSI is probably one of the largest membership based organizations of specialized professionals.
 </string>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="10">
                                                         <tabStops/>
@@ -245,9 +245,9 @@
                                                 <mutableString key="content">FOGSI came into formal existence in Madras on January 6, 1950 at the sixth All India Congress of Obstetrics and Gynaecology, when the obstetric and gynecological societies of Ahmedabad, Bengal, Bombay, Madras and Punjab resolved to form themselves into the Federation of Obstetric and Gynaecological Societies of India. It was further resolved that the Federation be registered and headquartered in Bombay. The launch of FOGSI as the national organization of obstetricians and gynecologists followed five earlier All India Congresses, the first of these held in Madras in 1936 and organized by the then existing three obstetric and gynecological societies at Bombay, Kolkata and Madras.
 </mutableString>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -260,9 +260,9 @@
                                                 <string key="content">FOGSI exists to encourage and disseminate knowledge, education and research in the field of obstetrics and gynecology, to pilot and promote preventive and therapeutic services related to the practice of obstetrics and gynecology for betterment of the health of women and children in particular and the wellbeing of the community in general, to advocate the cause of reproductive health and rights and to support and protect the interest of practitioners of obstetrics and gynecology in India.
 </string>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="charWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -274,9 +274,9 @@
                                             <fragment>
                                                 <string key="content">The Journal of Obstetrics and Gynecology of India is the official publication of FOGSI and is published bimonthly and circulated to every individual member. It contains articles and contributions on fundamentla research and clinical practice as also case reports of clinical interest. With  </string>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -287,9 +287,9 @@
                                             </fragment>
                                             <fragment content="www.fogsi.org">
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <url key="NSLink" string="https://www.fogsi.org/"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
@@ -308,9 +308,9 @@ FOGSI has close links and affiliation with international and regional organiza
 Each year FOGSI  under the guidance the President selects a theme to highlight the importance of a particular issue related to women’s health.This permits focus with the involvement of the large membership, FOGSI’s greatest asset in addressing the challenge involving the particular issue. In recent years the unidimensional theme has now evolved into a philosophical directive.
 </mutableString>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -322,9 +322,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                             <fragment>
                                                 <string key="content">The Federation is always conscious of the responsibility it shoulders and the important role it has accepted to work not just for it’s members societies and professionals, but in working to advocate and improving the health of women in our country thereby contributing to the wellbeing of India.</string>
                                                 <attributes>
-                                                    <color key="NSBackgroundColor" red="0.99463969470000002" green="0.64054822919999999" blue="0.83317708970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14.199999999999999" name="ArialMT"/>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -339,17 +339,17 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="GLZ-iB-Ohw" firstAttribute="top" secondItem="wsz-Sy-QVb" secondAttribute="bottom" id="5cX-E5-Ptb"/>
-                                    <constraint firstAttribute="bottom" secondItem="GLZ-iB-Ohw" secondAttribute="bottom" id="Lon-E3-VlN"/>
-                                    <constraint firstItem="wsz-Sy-QVb" firstAttribute="top" secondItem="VLP-40-VgW" secondAttribute="top" constant="27" id="NkF-nY-Q9f"/>
+                                    <constraint firstItem="wsz-Sy-QVb" firstAttribute="top" secondItem="VLP-40-VgW" secondAttribute="top" id="NkF-nY-Q9f"/>
                                     <constraint firstItem="wsz-Sy-QVb" firstAttribute="leading" secondItem="VLP-40-VgW" secondAttribute="leading" id="VFd-JD-UqO"/>
                                     <constraint firstItem="wsz-Sy-QVb" firstAttribute="centerX" secondItem="VLP-40-VgW" secondAttribute="centerX" id="fjZ-EV-B9Q"/>
-                                    <constraint firstAttribute="trailing" secondItem="GLZ-iB-Ohw" secondAttribute="trailing" id="hiw-P5-Jt9"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLZ-iB-Ohw" secondAttribute="trailing" constant="5" id="hiw-P5-Jt9"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLZ-iB-Ohw" secondAttribute="bottom" constant="40" id="sY7-7Z-vyQ"/>
                                     <constraint firstAttribute="trailing" secondItem="wsz-Sy-QVb" secondAttribute="trailing" id="wGK-lu-ykC"/>
-                                    <constraint firstItem="GLZ-iB-Ohw" firstAttribute="leading" secondItem="VLP-40-VgW" secondAttribute="leading" id="zqn-8R-Bje"/>
+                                    <constraint firstItem="GLZ-iB-Ohw" firstAttribute="leading" secondItem="VLP-40-VgW" secondAttribute="leading" constant="5" id="zqn-8R-Bje"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.58503364349999998" blue="0.8128038622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VLP-40-VgW" firstAttribute="leading" secondItem="fmd-sO-e4X" secondAttribute="leading" id="L9j-Qh-tOn"/>
                             <constraint firstItem="fmd-sO-e4X" firstAttribute="trailing" secondItem="VLP-40-VgW" secondAttribute="trailing" id="S0N-j0-qs1"/>
@@ -358,14 +358,467 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fmd-sO-e4X"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1580"/>
+                    <size key="freeformSize" width="375" height="1570"/>
                     <connections>
                         <outlet property="textview" destination="GLZ-iB-Ohw" id="cgh-mz-Vof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxy-8g-J6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="-2264.167916041979"/>
+            <point key="canvasLocation" x="2956" y="-2265.0674662668666"/>
+        </scene>
+        <!--Mission And Vision-->
+        <scene sceneID="6A5-N9-v0Z">
+            <objects>
+                <viewController id="Qrt-7e-rVb" customClass="missionAndVision" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqV-du-U21">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdL-tM-8hR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="707"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pQ-tO-t1Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOGSI Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18Q-xn-e8L">
+                                                <rect key="frame" x="137.5" y="104.5" width="100" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fogsi_2020" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-Tz-B5h">
+                                                <rect key="frame" x="130.5" y="18" width="114" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="V0V-GD-vtS"/>
+                                                    <constraint firstAttribute="width" constant="114" id="hYl-40-twO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="18Q-xn-e8L" firstAttribute="top" secondItem="9pQ-tO-t1Y" secondAttribute="top" constant="104.5" id="GAR-gl-bwa"/>
+                                            <constraint firstItem="WpD-Tz-B5h" firstAttribute="centerX" secondItem="9pQ-tO-t1Y" secondAttribute="centerX" id="IYX-qA-42c"/>
+                                            <constraint firstItem="18Q-xn-e8L" firstAttribute="top" secondItem="WpD-Tz-B5h" secondAttribute="bottom" constant="6.5" id="Ki0-8P-Orj"/>
+                                            <constraint firstAttribute="width" secondItem="9pQ-tO-t1Y" secondAttribute="height" multiplier="75:29" id="N7R-TU-m2Z"/>
+                                            <constraint firstItem="WpD-Tz-B5h" firstAttribute="top" secondItem="9pQ-tO-t1Y" secondAttribute="top" constant="18" id="cQT-ot-bL1"/>
+                                            <constraint firstItem="18Q-xn-e8L" firstAttribute="centerX" secondItem="9pQ-tO-t1Y" secondAttribute="centerX" id="sIa-AJ-QhE"/>
+                                            <constraint firstAttribute="bottom" secondItem="18Q-xn-e8L" secondAttribute="bottom" constant="20" id="t3Y-Vz-B5Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="WpD-Tz-B5h" secondAttribute="bottom" constant="47" id="wAc-so-1hJ"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbn-jK-O4x">
+                                        <rect key="frame" x="0.0" y="145" width="375" height="251"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="251" id="zHS-og-K7G"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="edm-xc-NaH"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="aBC-1G-jFc"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ✹ ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="T">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="he Federation of Obstetric and Gynecological Societies of India">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="      ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">(FOGSI)supports and protects the interests of practitioners of Obstetrics and Gynecology in India.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ✹ ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">FOGSI encourages dissemination of knowledge and education as well as research in the field of Obstetrics and Gynecology in India.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ✹ ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">FOGSI works to pilot and promote preventive and therapeutic services related to health care of women and children.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ✹ ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">FOGSI also serves to advocate the cause of reproductive and sexual health and rights.
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ✹ ">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ZapfDingbatsITC"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="FOGSI considers the reduction of maternal mortality in India as its primary mission.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14.199999999999999" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="11">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="natural" location="36">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyQ-5w-HHG">
+                                        <rect key="frame" x="0.0" y="396" width="375" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOGSI Vision Statement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-DP-qGy">
+                                                <rect key="frame" x="105.5" y="104.5" width="164.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fogsi_2020" translatesAutoresizingMaskIntoConstraints="NO" id="mjp-3B-Iqr">
+                                                <rect key="frame" x="130.5" y="18" width="114" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="114" id="L4a-bZ-qbF"/>
+                                                    <constraint firstAttribute="height" constant="80" id="PQY-g4-YNL"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="aY0-DP-qGy" firstAttribute="top" secondItem="mjp-3B-Iqr" secondAttribute="bottom" constant="6.5" id="A8b-Zr-bIB"/>
+                                            <constraint firstItem="mjp-3B-Iqr" firstAttribute="top" secondItem="lyQ-5w-HHG" secondAttribute="top" constant="18" id="F4A-38-NNE"/>
+                                            <constraint firstItem="mjp-3B-Iqr" firstAttribute="centerX" secondItem="lyQ-5w-HHG" secondAttribute="centerX" id="Qh4-s5-Yhy"/>
+                                            <constraint firstAttribute="bottom" secondItem="aY0-DP-qGy" secondAttribute="bottom" constant="20" id="hkO-ln-TZW"/>
+                                            <constraint firstAttribute="bottom" secondItem="mjp-3B-Iqr" secondAttribute="bottom" constant="47" id="lh7-zw-EAX"/>
+                                            <constraint firstItem="aY0-DP-qGy" firstAttribute="centerX" secondItem="lyQ-5w-HHG" secondAttribute="centerX" id="qCC-TU-KN7"/>
+                                            <constraint firstItem="aY0-DP-qGy" firstAttribute="top" secondItem="lyQ-5w-HHG" secondAttribute="top" constant="104.5" id="vHp-2y-sNS"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="liD-s5-Foj">
+                                        <rect key="frame" x="5" y="541" width="365" height="139"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="139" id="30l-ib-iKS"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">"FOGSI to be the lead organisation working towards advocating and promoting women's health and reproductive rights using scientific evidence and following the highest ethical standards through it's membership of committed professionals."</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wbn-jK-O4x" secondAttribute="trailing" id="9IF-Ik-wyO"/>
+                                    <constraint firstItem="lyQ-5w-HHG" firstAttribute="leading" secondItem="OdL-tM-8hR" secondAttribute="leading" id="BOX-gh-wg2"/>
+                                    <constraint firstItem="liD-s5-Foj" firstAttribute="top" secondItem="lyQ-5w-HHG" secondAttribute="bottom" id="OOJ-Sz-1rK"/>
+                                    <constraint firstItem="wbn-jK-O4x" firstAttribute="top" secondItem="9pQ-tO-t1Y" secondAttribute="bottom" id="UGd-N1-Dlt"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyQ-5w-HHG" secondAttribute="trailing" id="WHf-Q5-k0C"/>
+                                    <constraint firstItem="wbn-jK-O4x" firstAttribute="leading" secondItem="OdL-tM-8hR" secondAttribute="leading" id="XWQ-NM-xKU"/>
+                                    <constraint firstAttribute="bottom" secondItem="liD-s5-Foj" secondAttribute="bottom" id="Y4Q-u7-DSC"/>
+                                    <constraint firstItem="lyQ-5w-HHG" firstAttribute="top" secondItem="wbn-jK-O4x" secondAttribute="bottom" id="Zuk-BP-59q"/>
+                                    <constraint firstAttribute="trailing" secondItem="9pQ-tO-t1Y" secondAttribute="trailing" id="c9k-sm-7Eh"/>
+                                    <constraint firstAttribute="trailing" secondItem="liD-s5-Foj" secondAttribute="trailing" constant="5" id="gIR-Wd-Gfm"/>
+                                    <constraint firstItem="liD-s5-Foj" firstAttribute="leading" secondItem="OdL-tM-8hR" secondAttribute="leading" constant="5" id="jIi-6b-O2P"/>
+                                    <constraint firstItem="9pQ-tO-t1Y" firstAttribute="top" secondItem="OdL-tM-8hR" secondAttribute="top" id="lBz-tf-DrA"/>
+                                    <constraint firstItem="wbn-jK-O4x" firstAttribute="centerX" secondItem="OdL-tM-8hR" secondAttribute="centerX" id="xrT-BK-PkN"/>
+                                    <constraint firstItem="9pQ-tO-t1Y" firstAttribute="leading" secondItem="OdL-tM-8hR" secondAttribute="leading" id="xvA-gZ-6sL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OdL-tM-8hR" firstAttribute="top" secondItem="CYK-O4-zHp" secondAttribute="top" id="RRd-jU-eOU"/>
+                            <constraint firstItem="CYK-O4-zHp" firstAttribute="trailing" secondItem="OdL-tM-8hR" secondAttribute="trailing" id="cmG-cD-yo5"/>
+                            <constraint firstItem="OdL-tM-8hR" firstAttribute="leading" secondItem="CYK-O4-zHp" secondAttribute="leading" id="loV-Mf-5wz"/>
+                            <constraint firstItem="OdL-tM-8hR" firstAttribute="bottom" secondItem="CYK-O4-zHp" secondAttribute="bottom" constant="1" id="ns6-UB-bGn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CYK-O4-zHp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DCB-Pd-Uod"/>
+                    <size key="freeformSize" width="375" height="750"/>
+                    <connections>
+                        <outlet property="scrollview" destination="OdL-tM-8hR" id="9Pf-sf-wAV"/>
+                        <outlet property="textView" destination="wbn-jK-O4x" id="ciD-Rd-fjP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Q3-4F-SVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3928.8000000000002" y="-2344.2278860569718"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6P-My-7dh">

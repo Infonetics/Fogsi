@@ -1,21 +1,24 @@
 //
-//  FogsiProfile.swift
+//  missionAndVision.swift
 //  Fogsi iOS
 //
-//  Created by Dayal ND on 27/03/20.
+//  Created by Dayal ND on 28/03/20.
 //  Copyright © 2020 Dayal ND. All rights reserved.
 //
 
 import UIKit
 
-class FogsiProfile: UIViewController {
+class missionAndVision: UIViewController {
 
-    @IBOutlet var textview: UITextView!
+    @IBOutlet var scrollview: UIScrollView!
+    @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // textview.backgroundColor = UIColor.init(red: 254/256, green: 163/256, blue: 212/256, alpha: 1)
-       textview.isScrollEnabled = false
+     self.scrollview.contentLayoutGuide.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+     textView.isScrollEnabled = false
+    
+        // Do any additional setup after loading the view.
     }
     
 
