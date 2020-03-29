@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -173,6 +174,9 @@
                         <outlet property="collectionview1" destination="Usb-wQ-0OA" id="JpO-F1-J5d"/>
                         <segue destination="RZ2-HT-nSJ" kind="show" identifier="first11" id="rqI-d6-EgU"/>
                         <segue destination="Qrt-7e-rVb" kind="show" identifier="first12" id="kYu-KP-Dpb"/>
+                        <segue destination="HOr-yy-Pku" kind="show" identifier="first13" id="b0R-f1-0N9"/>
+                        <segue destination="xfx-Hl-4y7" kind="show" identifier="first14" id="t0G-a8-fP6"/>
+                        <segue destination="um8-pJ-llr" kind="show" identifier="admingud" id="rM9-Sw-bKD"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eii-2f-XHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,8 +246,8 @@
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">FOGSI came into formal existence in Madras on January 6, 1950 at the sixth All India Congress of Obstetrics and Gynaecology, when the obstetric and gynecological societies of Ahmedabad, Bengal, Bombay, Madras and Punjab resolved to form themselves into the Federation of Obstetric and Gynaecological Societies of India. It was further resolved that the Federation be registered and headquartered in Bombay. The launch of FOGSI as the national organization of obstetricians and gynecologists followed five earlier All India Congresses, the first of these held in Madras in 1936 and organized by the then existing three obstetric and gynecological societies at Bombay, Kolkata and Madras.
-</mutableString>
+                                                <string key="content">FOGSI came into formal existence in Madras on January 6, 1950 at the sixth All India Congress of Obstetrics and Gynaecology, when the obstetric and gynecological societies of Ahmedabad, Bengal, Bombay, Madras and Punjab resolved to form themselves into the Federation of Obstetric and Gynaecological Societies of India. It was further resolved that the Federation be registered and headquartered in Bombay. The launch of FOGSI as the national organization of obstetricians and gynecologists followed five earlier All India Congresses, the first of these held in Madras in 1936 and organized by the then existing three obstetric and gynecological societies at Bombay, Kolkata and Madras.
+</string>
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -300,13 +304,13 @@
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content"> the official website, FOGSI has an important presence in cyberspace which works to promote and fulfill the aims and objectives of the Federation.
+                                                <string key="content"> the official website, FOGSI has an important presence in cyberspace which works to promote and fulfill the aims and objectives of the Federation.
 The Indian College of Obstetrics and Gynecology is the academic wing of FOGSI with over 1640 fellows. It was established by FOGSI on December 21, 1984 to further promote the education, training, research and knowledge in obstetrics, gynecology and reproductive health.
 The Federation continues to hold the All India Congress of Obstetrics and Gynaecology, its annual conference every year in January for four days. FOGSI also organizes Yuva FOGSI, four regional youth conferences to promote and showcase young talent each year. Besides these annual conferences many academic activities go on round the year through out the country with twenty seven subspecialty committees simultaneously working in their designated areas.
 The Federation also collaborates with and partners the Government of India and is an invited reprehensive on all relevant policy making bodies of the government  on issues related to women’s health.
 FOGSI has close links and affiliation with international and regional organizations like FIGO, AOFOG and SAFOG, with many of its members having occupied prestigious positions in these organizations from time to time.
 Each year FOGSI  under the guidance the President selects a theme to highlight the importance of a particular issue related to women’s health.This permits focus with the involvement of the large membership, FOGSI’s greatest asset in addressing the challenge involving the particular issue. In recent years the unidimensional theme has now evolved into a philosophical directive.
-</mutableString>
+</string>
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -464,9 +468,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -508,9 +512,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -552,9 +556,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -596,9 +600,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -640,9 +644,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -682,9 +686,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -706,7 +710,7 @@ Cg
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <font key="NSOriginalFont" size="14.199999999999999" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
@@ -819,6 +823,207 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Q3-4F-SVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3854" y="-1896"/>
+        </scene>
+        <!--Code Of Conduct-->
+        <scene sceneID="Lx4-Sg-qY2">
+            <objects>
+                <viewController id="HOr-yy-Pku" customClass="codeOfConduct" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C6a-Tb-t0D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmM-Hg-7xM">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PKz-Ww-xPt">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PKz-Ww-xPt" firstAttribute="leading" secondItem="KcF-A4-C3U" secondAttribute="leading" constant="169" id="BCH-Rv-1VB"/>
+                            <constraint firstItem="KcF-A4-C3U" firstAttribute="trailing" secondItem="mmM-Hg-7xM" secondAttribute="trailing" id="Dsv-5D-MwG"/>
+                            <constraint firstItem="PKz-Ww-xPt" firstAttribute="centerX" secondItem="KcF-A4-C3U" secondAttribute="centerX" id="IWo-4Q-GYw"/>
+                            <constraint firstItem="PKz-Ww-xPt" firstAttribute="top" secondItem="KcF-A4-C3U" secondAttribute="top" constant="293" id="LYl-6U-4pA"/>
+                            <constraint firstItem="mmM-Hg-7xM" firstAttribute="leading" secondItem="KcF-A4-C3U" secondAttribute="leading" id="SBq-CX-y3B"/>
+                            <constraint firstItem="KcF-A4-C3U" firstAttribute="bottom" secondItem="mmM-Hg-7xM" secondAttribute="bottom" id="bJa-3e-laR"/>
+                            <constraint firstItem="KcF-A4-C3U" firstAttribute="bottom" secondItem="PKz-Ww-xPt" secondAttribute="bottom" constant="293" id="fvg-uA-whq"/>
+                            <constraint firstItem="PKz-Ww-xPt" firstAttribute="centerY" secondItem="KcF-A4-C3U" secondAttribute="centerY" id="go9-UC-fgE"/>
+                            <constraint firstItem="mmM-Hg-7xM" firstAttribute="top" secondItem="KcF-A4-C3U" secondAttribute="top" id="mMt-sF-akR"/>
+                            <constraint firstItem="KcF-A4-C3U" firstAttribute="trailing" secondItem="PKz-Ww-xPt" secondAttribute="trailing" constant="169" id="qyE-bR-ZPi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KcF-A4-C3U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IVe-MT-566"/>
+                    <connections>
+                        <outlet property="activityindicator" destination="PKz-Ww-xPt" id="You-ep-Ywp"/>
+                        <outlet property="webView" destination="mmM-Hg-7xM" id="sOt-wS-xjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jD5-GD-6vx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4636" y="-1860.7196401799101"/>
+        </scene>
+        <!--Annual Report Collection View-->
+        <scene sceneID="Kob-tC-6lc">
+            <objects>
+                <collectionViewController id="xfx-Hl-4y7" customClass="annualReportCollectionView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vgv-y8-dzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="8j9-RI-nJw">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="anualReportCollectionViewCell" id="xkO-BH-Wo0" customClass="anualReportCollectionViewCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PNU-mY-Ti0">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNU-NZ-ZkV">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="Bjg-M9-OnL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-Hq-L3N">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="GeL-mG-vIv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nNU-NZ-ZkV" firstAttribute="top" secondItem="PNU-mY-Ti0" secondAttribute="top" constant="15" id="27c-1D-GdO"/>
+                                        <constraint firstItem="nNU-NZ-ZkV" firstAttribute="leading" secondItem="PNU-mY-Ti0" secondAttribute="leading" constant="15" id="2Tv-MF-Yzn"/>
+                                        <constraint firstAttribute="bottom" secondItem="wjY-Hq-L3N" secondAttribute="bottom" constant="6" id="3qH-PH-V9a"/>
+                                        <constraint firstAttribute="trailing" secondItem="nNU-NZ-ZkV" secondAttribute="trailing" constant="15" id="coW-Ks-hGS"/>
+                                        <constraint firstAttribute="trailing" secondItem="wjY-Hq-L3N" secondAttribute="trailing" constant="5" id="kq1-Jm-Jf5"/>
+                                        <constraint firstItem="wjY-Hq-L3N" firstAttribute="top" secondItem="nNU-NZ-ZkV" secondAttribute="bottom" id="mq7-cx-zWu"/>
+                                        <constraint firstItem="nNU-NZ-ZkV" firstAttribute="centerX" secondItem="PNU-mY-Ti0" secondAttribute="centerX" id="prt-Ia-BhH"/>
+                                        <constraint firstItem="wjY-Hq-L3N" firstAttribute="leading" secondItem="PNU-mY-Ti0" secondAttribute="leading" constant="5" id="zvq-yd-T8O"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="image14" destination="nNU-NZ-ZkV" id="lii-uF-biB"/>
+                                    <outlet property="label14" destination="wjY-Hq-L3N" id="Z1K-rb-VfJ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="xfx-Hl-4y7" id="qeh-ku-jLc"/>
+                            <outlet property="delegate" destination="xfx-Hl-4y7" id="DHW-V3-TXG"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="RsT-Sw-zIK"/>
+                    <connections>
+                        <outlet property="collectionVew" destination="vgv-y8-dzl" id="54l-zx-HhF"/>
+                        <segue destination="t8t-pU-JCp" kind="show" identifier="annualr" id="h3s-Lr-e0t"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PwB-Jd-62T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4636" y="-1164"/>
+        </scene>
+        <!--AdministarieveVC-->
+        <scene sceneID="sRd-vW-r21">
+            <objects>
+                <viewController id="um8-pJ-llr" customClass="administarieveVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hc3-7H-i20">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-Tf-crJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GUW-Br-Ln2">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GUW-Br-Ln2" firstAttribute="centerX" secondItem="DXT-y5-fgT" secondAttribute="centerX" id="7GL-5N-rcH"/>
+                            <constraint firstItem="6NB-Tf-crJ" firstAttribute="top" secondItem="DXT-y5-fgT" secondAttribute="top" id="Cpi-Rb-lI5"/>
+                            <constraint firstItem="GUW-Br-Ln2" firstAttribute="centerY" secondItem="DXT-y5-fgT" secondAttribute="centerY" id="Fhv-AG-Aiq"/>
+                            <constraint firstItem="DXT-y5-fgT" firstAttribute="bottom" secondItem="6NB-Tf-crJ" secondAttribute="bottom" id="Mmw-6b-exS"/>
+                            <constraint firstItem="6NB-Tf-crJ" firstAttribute="leading" secondItem="DXT-y5-fgT" secondAttribute="leading" id="fnd-an-A4h"/>
+                            <constraint firstItem="DXT-y5-fgT" firstAttribute="trailing" secondItem="6NB-Tf-crJ" secondAttribute="trailing" id="nWy-XD-av2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DXT-y5-fgT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uqO-0i-uAn"/>
+                    <connections>
+                        <outlet property="activityAdmin" destination="GUW-Br-Ln2" id="t0c-B4-GfG"/>
+                        <outlet property="adminWebView" destination="6NB-Tf-crJ" id="kzV-OT-Tiz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8h-yp-4t5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4636" y="-389.05547226386807"/>
+        </scene>
+        <!--Annual Web View-->
+        <scene sceneID="dvj-iI-2au">
+            <objects>
+                <viewController id="t8t-pU-JCp" customClass="annualWebView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tqJ-fc-fbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUH-SW-ArL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nLh-8m-iGC">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nLh-8m-iGC" firstAttribute="centerX" secondItem="xCR-yh-Zed" secondAttribute="centerX" id="7t1-J0-G3S"/>
+                            <constraint firstItem="nLh-8m-iGC" firstAttribute="centerY" secondItem="xCR-yh-Zed" secondAttribute="centerY" id="JG4-TO-GaA"/>
+                            <constraint firstItem="XUH-SW-ArL" firstAttribute="leading" secondItem="xCR-yh-Zed" secondAttribute="leading" id="Sfa-IW-wbE"/>
+                            <constraint firstItem="xCR-yh-Zed" firstAttribute="trailing" secondItem="XUH-SW-ArL" secondAttribute="trailing" id="dDz-ue-0fC"/>
+                            <constraint firstItem="xCR-yh-Zed" firstAttribute="bottom" secondItem="XUH-SW-ArL" secondAttribute="bottom" id="rXx-ki-CEX"/>
+                            <constraint firstItem="XUH-SW-ArL" firstAttribute="top" secondItem="xCR-yh-Zed" secondAttribute="top" id="sJK-Qs-rIq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xCR-yh-Zed"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hqO-Qh-uKH"/>
+                    <connections>
+                        <outlet property="activityAnn" destination="nLh-8m-iGC" id="FHb-x6-0jY"/>
+                        <outlet property="webViewannual" destination="XUH-SW-ArL" id="sP7-RD-mr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiA-mT-ewP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5526" y="-1164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6P-My-7dh">

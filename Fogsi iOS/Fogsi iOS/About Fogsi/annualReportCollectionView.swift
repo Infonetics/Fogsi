@@ -1,8 +1,8 @@
 //
-//  CollectionViewController1.swift
+//  annualReportCollectionView.swift
 //  Fogsi iOS
 //
-//  Created by Dayal ND on 27/03/20.
+//  Created by Dayal ND on 29/03/20.
 //  Copyright © 2020 Dayal ND. All rights reserved.
 //
 
@@ -10,18 +10,24 @@ import UIKit
 
 
 
-class CollectionViewController1: UICollectionViewController,UICollectionViewDelegateFlowLayout {
-    @IBOutlet var collectionview1: UICollectionView!
+class annualReportCollectionView: UICollectionViewController, UICollectionViewDelegateFlowLayout  {
+    
+    @IBOutlet var collectionVew: UICollectionView!
     private let spacing:CGFloat = 18.0
-    var namearray = [["name":"FOGSI Profile","image":"fogsi_2020"],["name":"FOGSI Mission Vision","image":"fogsi_2020"],["name":"Code of Conduct Ethics","image":"fogsi_2020"],["name":"Annual Report","image":"fogsi_2020"],["name":"Administrative Guidelines","image":"fogsi_2020"],["name":"Constitution 2014","image":"fogsi_2020"],["name":"FOGSI Organogram","image":"fogsi_2020"]
+    var selecteddictionary:[String:String]?
+
+    var namearray = [["name":"58th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/fogsi-annual-report-2017-2018-2/"],["name":"57th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/fogsi-annual-report-2016-2017-2/"],["name":"56th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/fogsi-annual-report-2015-2016/"],["name":"55th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/annual-report/annual-report-2014-2015.pdf"],["name":"54th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/annual-report/annual-report-2013-2014.pdf"],["name":"53th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/2015/05/pdf/FOGSI_Annual_Report_2012_13.pdf"],["name":"52th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/2015/05/pdf/Fogsi_Annual_Report_2011_2012.pdf"],["name":"51th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/51st-annual-report-2010-2011/"],["name":"50th Annual Report 2017 – 2018","image":"fogsi_2020","desc":"https://www.fogsi.org/50th-golden-jubilee-annual-report-2009-2010/"]
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionview1.dataSource = self
-        collectionview1.delegate = self
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
 
+        // Register cell classes
+ 
+        // Do any additional setup after loading the view.
     }
 
     /*
@@ -43,18 +49,17 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return namearray.count
-        
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell1", for: indexPath) as! CollectionViewCell1
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "anualReportCollectionViewCell", for: indexPath) as! anualReportCollectionViewCell
+    
         cell.layer.cornerRadius = 10
         let dict = namearray[indexPath.row]
         let img = dict["image"]!
-        cell.label01.text = dict["name"]
-        cell.image01.image = UIImage.init(named: img )
+        cell.label14.text = dict["name"]
+        cell.image14.image = UIImage.init(named: img )
     
         return cell
     }
@@ -65,7 +70,7 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
         
         let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
         
-        if let collection = self.collectionview1{
+        if let collection = self.collectionVew{
             let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
         return CGSize(width: width - 20, height: width - 20)
         }else{
@@ -76,22 +81,16 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if indexPath.row == 0 {
-            performSegue(withIdentifier: "first11", sender: self)
-        }
-        if indexPath.row == 1 {
-            performSegue(withIdentifier: "first12", sender: self)
-        }
-        if indexPath.row == 2 {
-            performSegue(withIdentifier: "first13", sender: self)
-        }
-        if indexPath.row == 3 {
-            performSegue(withIdentifier: "first14", sender: self)
-        }
-        if indexPath.row == 4 {
-            performSegue(withIdentifier: "admingud", sender: self)
-        }
+      selecteddictionary = namearray[indexPath.row]
+      performSegue(withIdentifier: "annualr", sender: self)
     }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let link = segue.destination as! annualWebView
+        link.dict1 = selecteddictionary
+    }
+
     
     // MARK: UICollectionViewDelegate
 
