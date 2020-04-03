@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class administarieveVC: UIViewController{
+class administarieveVC: UIViewController,WKNavigationDelegate{
 
     @IBOutlet var adminWebView: WKWebView!
     @IBOutlet var activityAdmin: UIActivityIndicatorView!
@@ -22,17 +22,20 @@ class administarieveVC: UIViewController{
         let myRequest = URLRequest(url: myURL!)
         adminWebView.load(myRequest)
         
-        
+        self.adminWebView.addSubview(self.activityAdmin)
+        self.activityAdmin.startAnimating()
+        self.adminWebView.navigationDelegate = self
+        self.activityAdmin.hidesWhenStopped = true
     }
     
 
 
     
-    func  webViewDidStartLoad(_ webView: WKWebView) {
-        activityAdmin.startAnimating()
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        activityAdmin.stopAnimating()
     }
-    
-    func webViewDidFinishLoad(_ webView: WKWebView) {
+
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         activityAdmin.stopAnimating()
     }
     /*

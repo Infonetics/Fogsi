@@ -101,11 +101,1299 @@
                     <connections>
                         <outlet property="collectionviewmain" destination="dXK-nf-byU" id="TUH-Hx-uze"/>
                         <segue destination="Wnr-80-moK" kind="show" identifier="first" id="F7V-No-N72"/>
+                        <segue destination="h5C-uM-tFw" kind="show" identifier="offbear" id="H2L-x6-h23"/>
+                        <segue destination="Gd7-wL-GRJ" kind="show" identifier="commi" id="mVk-RO-ag5"/>
+                        <segue destination="II9-OB-gTz" kind="show" identifier="contactus" id="ihM-wr-E99"/>
+                        <segue destination="47D-M1-uir" kind="show" identifier="newsletter" id="4h9-m3-EbL"/>
+                        <segue destination="waB-GA-bCD" kind="show" identifier="fogsi2020" id="3Qr-TI-3AY"/>
+                        <segue destination="oja-5M-Pal" kind="show" identifier="memberso" id="hc9-LR-MG0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744.79999999999995" y="792.95352323838085"/>
+        </scene>
+        <!--Contact UsVC-->
+        <scene sceneID="rEa-iR-hVy">
+            <objects>
+                <viewController id="II9-OB-gTz" customClass="contactUsVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3SF-VD-V5q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKU-A3-wA3">
+                                <rect key="frame" x="0.0" y="44" width="375" height="856"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofd-NL-d5V">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="g9O-p7-OlU"/>
+                                        </constraints>
+                                    </mapView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3i-Sz-YLP">
+                                        <rect key="frame" x="19" y="429" width="338" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ahA-dJ-ss8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTr-4E-WCx">
+                                        <rect key="frame" x="19" y="618" width="338" height="146"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-Yl-p1V">
+                                        <rect key="frame" x="19" y="492" width="338" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vw-PQ-al4">
+                                        <rect key="frame" x="19" y="555" width="338" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-lr-DYv">
+                                        <rect key="frame" x="19" y="793" width="338" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="sendEmail:" destination="II9-OB-gTz" eventType="touchUpInside" id="Qps-4q-Fzq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EFC-lr-DYv" secondAttribute="bottom" constant="29" id="06l-Fk-4ub"/>
+                                    <constraint firstItem="ofd-NL-d5V" firstAttribute="leading" secondItem="kKU-A3-wA3" secondAttribute="leading" id="0wG-SM-dIT"/>
+                                    <constraint firstItem="Gfh-Yl-p1V" firstAttribute="leading" secondItem="v3i-Sz-YLP" secondAttribute="leading" id="3iK-M5-wn6"/>
+                                    <constraint firstItem="v3i-Sz-YLP" firstAttribute="top" secondItem="ofd-NL-d5V" secondAttribute="bottom" constant="29" id="4nn-LX-gU9"/>
+                                    <constraint firstItem="EFC-lr-DYv" firstAttribute="trailing" secondItem="v3i-Sz-YLP" secondAttribute="trailing" id="51M-ef-5UU"/>
+                                    <constraint firstItem="pTr-4E-WCx" firstAttribute="top" secondItem="4vw-PQ-al4" secondAttribute="bottom" constant="29" id="5Dx-HW-RX0"/>
+                                    <constraint firstItem="ofd-NL-d5V" firstAttribute="top" secondItem="kKU-A3-wA3" secondAttribute="top" id="8bp-SN-FfS"/>
+                                    <constraint firstItem="pTr-4E-WCx" firstAttribute="trailing" secondItem="v3i-Sz-YLP" secondAttribute="trailing" id="ABV-PA-Kty"/>
+                                    <constraint firstItem="pTr-4E-WCx" firstAttribute="leading" secondItem="v3i-Sz-YLP" secondAttribute="leading" id="Ac8-iK-ERE"/>
+                                    <constraint firstItem="4vw-PQ-al4" firstAttribute="trailing" secondItem="v3i-Sz-YLP" secondAttribute="trailing" id="GL5-JY-fqC"/>
+                                    <constraint firstItem="v3i-Sz-YLP" firstAttribute="leading" secondItem="kKU-A3-wA3" secondAttribute="leading" constant="19" id="KKF-eZ-Jsc"/>
+                                    <constraint firstItem="EFC-lr-DYv" firstAttribute="leading" secondItem="v3i-Sz-YLP" secondAttribute="leading" id="LCj-uc-8Q9"/>
+                                    <constraint firstItem="Gfh-Yl-p1V" firstAttribute="trailing" secondItem="v3i-Sz-YLP" secondAttribute="trailing" id="LUh-L6-OX1"/>
+                                    <constraint firstItem="EFC-lr-DYv" firstAttribute="top" secondItem="pTr-4E-WCx" secondAttribute="bottom" constant="29" id="Nbd-f7-Nxm"/>
+                                    <constraint firstItem="EFC-lr-DYv" firstAttribute="height" secondItem="v3i-Sz-YLP" secondAttribute="height" id="SiO-Z0-87S"/>
+                                    <constraint firstItem="4vw-PQ-al4" firstAttribute="leading" secondItem="v3i-Sz-YLP" secondAttribute="leading" id="UEE-Kh-dag"/>
+                                    <constraint firstAttribute="trailing" secondItem="ofd-NL-d5V" secondAttribute="trailing" id="WcP-hI-EPx"/>
+                                    <constraint firstAttribute="bottom" secondItem="ofd-NL-d5V" secondAttribute="bottom" constant="456" id="axa-Qj-2gx"/>
+                                    <constraint firstItem="4vw-PQ-al4" firstAttribute="top" secondItem="Gfh-Yl-p1V" secondAttribute="bottom" constant="29" id="dbp-pf-66M"/>
+                                    <constraint firstItem="Gfh-Yl-p1V" firstAttribute="top" secondItem="v3i-Sz-YLP" secondAttribute="bottom" constant="29" id="iyE-kU-3sN"/>
+                                    <constraint firstAttribute="trailing" secondItem="v3i-Sz-YLP" secondAttribute="trailing" constant="18" id="mgb-TG-ZaB"/>
+                                    <constraint firstItem="Gfh-Yl-p1V" firstAttribute="height" secondItem="v3i-Sz-YLP" secondAttribute="height" id="rmT-MC-PdU"/>
+                                    <constraint firstItem="ofd-NL-d5V" firstAttribute="centerX" secondItem="kKU-A3-wA3" secondAttribute="centerX" id="vFE-lz-tQQ"/>
+                                    <constraint firstItem="4vw-PQ-al4" firstAttribute="height" secondItem="v3i-Sz-YLP" secondAttribute="height" id="ztH-7Q-i0C"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="alM-gv-1S6" appends="YES" id="DTC-M6-hW4"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kKU-A3-wA3" firstAttribute="leading" secondItem="hd5-QP-Ibl" secondAttribute="leading" id="5mo-VK-GeS"/>
+                            <constraint firstItem="hd5-QP-Ibl" firstAttribute="trailing" secondItem="kKU-A3-wA3" secondAttribute="trailing" id="99U-d6-ReR"/>
+                            <constraint firstItem="kKU-A3-wA3" firstAttribute="top" secondItem="hd5-QP-Ibl" secondAttribute="top" id="Hp9-zN-uDc"/>
+                            <constraint firstItem="hd5-QP-Ibl" firstAttribute="bottom" secondItem="kKU-A3-wA3" secondAttribute="bottom" id="psy-yS-0qF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hd5-QP-Ibl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JJt-dW-ovz"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                    <connections>
+                        <outlet property="contactnumberText" destination="Gfh-Yl-p1V" id="who-En-NCq"/>
+                        <outlet property="mapKitView" destination="ofd-NL-d5V" id="xaa-oE-vnP"/>
+                        <outlet property="nameText" destination="v3i-Sz-YLP" id="8Ln-ZX-fC1"/>
+                        <outlet property="yourEmailText" destination="4vw-PQ-al4" id="eBd-gP-zWS"/>
+                        <outlet property="yourMessageText" destination="pTr-4E-WCx" id="51B-jo-nvr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4c1-lH-3F3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="alM-gv-1S6">
+                    <connections>
+                        <action selector="tap:" destination="II9-OB-gTz" id="rGt-hh-ECI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1846" y="2621"/>
+        </scene>
+        <!--News LetterVC-->
+        <scene sceneID="IO5-df-FIU">
+            <objects>
+                <viewController id="47D-M1-uir" customClass="newsLetterVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Egd-to-6kP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Lj4-53-iej"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BNs-j1-c36"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQL-ZP-pWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="1774"/>
+        </scene>
+        <!--MembersocietCVC-->
+        <scene sceneID="eon-BR-3kZ">
+            <objects>
+                <collectionViewController id="oja-5M-Pal" customClass="membersocietCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="L16-Ty-EIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="Wzd-8U-uYA">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memberCVCell" id="JF7-fh-NL3" customClass="memberCVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-FI-nxt">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="2DR-ob-KM0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-nK-h6t">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="1IK-Ay-64I"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="r8z-FI-nxt" secondAttribute="bottom" constant="6" id="1S3-TR-fuF"/>
+                                    <constraint firstItem="ybK-nK-h6t" firstAttribute="top" secondItem="JF7-fh-NL3" secondAttribute="top" constant="15" id="AAj-tx-N0b"/>
+                                    <constraint firstAttribute="trailing" secondItem="r8z-FI-nxt" secondAttribute="trailing" constant="5" id="YOf-fJ-R2e"/>
+                                    <constraint firstItem="ybK-nK-h6t" firstAttribute="centerX" secondItem="JF7-fh-NL3" secondAttribute="centerX" id="ZUU-II-PAo"/>
+                                    <constraint firstItem="r8z-FI-nxt" firstAttribute="top" secondItem="ybK-nK-h6t" secondAttribute="bottom" id="czA-Zl-PeH"/>
+                                    <constraint firstItem="r8z-FI-nxt" firstAttribute="leading" secondItem="JF7-fh-NL3" secondAttribute="leading" constant="5" id="hpj-ua-KKe"/>
+                                    <constraint firstItem="ybK-nK-h6t" firstAttribute="leading" secondItem="JF7-fh-NL3" secondAttribute="leading" constant="15" id="oqp-ES-uDx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ybK-nK-h6t" secondAttribute="trailing" constant="15" id="sOk-xk-Rwi"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image1" destination="ybK-nK-h6t" id="A89-lZ-j6n"/>
+                                    <outlet property="label1" destination="r8z-FI-nxt" id="9uK-YX-cMf"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="oja-5M-Pal" id="uHF-un-Y4H"/>
+                            <outlet property="delegate" destination="oja-5M-Pal" id="4OC-8v-3RU"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="9wX-dJ-Bq4"/>
+                    <connections>
+                        <outlet property="memberCVC" destination="L16-Ty-EIv" id="efP-zb-zDd"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJM-8G-oeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873" y="392"/>
+        </scene>
+        <!--Fogsi2020TVC-->
+        <scene sceneID="ehl-9d-flB">
+            <objects>
+                <tableViewController id="waB-GA-bCD" customClass="fogsi2020TVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Occ-Kp-ssh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fogsi2020TVCell" rowHeight="169" id="bMG-rN-4gA" customClass="fogsi2020TVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="169"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bMG-rN-4gA" id="Gho-ds-FFK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8av-4u-JVW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="169" id="rf0-T6-W6p"/>
+                                            </constraints>
+                                            <wkWebViewConfiguration key="configuration">
+                                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                <wkPreferences key="preferences"/>
+                                            </wkWebViewConfiguration>
+                                        </wkWebView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-qG-chD">
+                                            <rect key="frame" x="169" y="66" width="37" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8av-4u-JVW" secondAttribute="trailing" id="7Ux-k0-5n3"/>
+                                        <constraint firstItem="8av-4u-JVW" firstAttribute="top" secondItem="Gho-ds-FFK" secondAttribute="top" id="8cB-dK-IlM"/>
+                                        <constraint firstItem="8av-4u-JVW" firstAttribute="leading" secondItem="Gho-ds-FFK" secondAttribute="leading" id="aV9-mf-Kde"/>
+                                        <constraint firstAttribute="bottom" secondItem="8av-4u-JVW" secondAttribute="bottom" id="mul-dr-mBE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="activity" destination="EPo-qG-chD" id="wZK-ld-drF"/>
+                                    <outlet property="webView" destination="8av-4u-JVW" id="FZM-yX-ryq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="waB-GA-bCD" id="lef-e4-LbQ"/>
+                            <outlet property="delegate" destination="waB-GA-bCD" id="4dw-Wu-NGz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yrM-4s-KLb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BA2-QF-hRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="62.518740629685162"/>
+        </scene>
+        <!--OfficeB Collection View Controller-->
+        <scene sceneID="gfQ-Qe-aJN">
+            <objects>
+                <collectionViewController id="h5C-uM-tFw" customClass="officeBCollectionViewController" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2zy-6E-zet">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="23j-3y-kJy">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="officeBCollectionViewCell" id="SjF-Po-6y6" customClass="officeBCollectionViewCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve5-AH-Uyo">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="bcm-rb-ZKq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNk-bN-hby">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="fzI-sX-ytL"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ve5-AH-Uyo" firstAttribute="top" secondItem="rNk-bN-hby" secondAttribute="bottom" id="5i1-iz-Sqa"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ve5-AH-Uyo" secondAttribute="bottom" constant="6" id="Ai0-56-qfc"/>
+                                    <constraint firstItem="Ve5-AH-Uyo" firstAttribute="leading" secondItem="SjF-Po-6y6" secondAttribute="leading" constant="5" id="ClE-2I-SAL"/>
+                                    <constraint firstAttribute="trailing" secondItem="rNk-bN-hby" secondAttribute="trailing" constant="15" id="GEV-0d-Ucw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ve5-AH-Uyo" secondAttribute="trailing" constant="5" id="Vp0-uu-rPM"/>
+                                    <constraint firstItem="rNk-bN-hby" firstAttribute="top" secondItem="SjF-Po-6y6" secondAttribute="top" constant="15" id="WAd-dX-RiJ"/>
+                                    <constraint firstItem="rNk-bN-hby" firstAttribute="leading" secondItem="SjF-Po-6y6" secondAttribute="leading" constant="15" id="fc0-J0-73t"/>
+                                    <constraint firstItem="rNk-bN-hby" firstAttribute="centerX" secondItem="SjF-Po-6y6" secondAttribute="centerX" id="tU1-Vd-iTr"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image1" destination="rNk-bN-hby" id="pFv-2W-was"/>
+                                    <outlet property="label1" destination="Ve5-AH-Uyo" id="vko-u5-n5y"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="h5C-uM-tFw" id="9pX-Ug-jDK"/>
+                            <outlet property="delegate" destination="h5C-uM-tFw" id="8in-hX-uLu"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="B55-W0-7zY"/>
+                    <connections>
+                        <outlet property="collectionviewOfficeB" destination="2zy-6E-zet" id="tlq-d9-fZE"/>
+                        <segue destination="FmQ-HO-7J3" kind="show" identifier="obearers2020" id="kJi-aS-8eb"/>
+                        <segue destination="cN9-BF-QBl" kind="show" identifier="respon" id="YNE-d4-3PX"/>
+                        <segue destination="BbJ-XO-yJJ" kind="show" identifier="past" id="Nmh-P5-ypq"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNr-t8-HGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="-329"/>
+        </scene>
+        <!--BearersCVC-->
+        <scene sceneID="1EM-GR-XQu">
+            <objects>
+                <collectionViewController id="FmQ-HO-7J3" customClass="bearersCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="a7p-Tr-tiL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12.5" minimumInteritemSpacing="12" id="Uxw-fp-SCk">
+                            <size key="itemSize" width="168.5" height="450"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bearersCVCell" id="GFl-nl-DOC" customClass="bearersCVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="12.5" width="168.5" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6tZ-SS-ZZH">
+                                    <rect key="frame" x="0.0" y="0.0" width="168.5" height="450"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-r5-gVD">
+                                            <rect key="frame" x="8" y="8" width="152.5" height="152"/>
+                                            <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-sf-k6Z">
+                                            <rect key="frame" x="7.5" y="160" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Y-VU-i2F">
+                                            <rect key="frame" x="8" y="195.5" width="152.5" height="34.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cwQ-Ls-DGd">
+                                            <rect key="frame" x="8" y="230" width="152.5" height="212"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="0qd-NQ-F2A"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="gwD-wW-hly"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="q7H-r5-gVD" secondAttribute="trailing" constant="8" id="983-y2-pqr"/>
+                                        <constraint firstItem="q7H-r5-gVD" firstAttribute="top" secondItem="6tZ-SS-ZZH" secondAttribute="top" constant="8" id="LHN-Yk-x2g"/>
+                                        <constraint firstItem="Q3Y-VU-i2F" firstAttribute="top" secondItem="0ca-sf-k6Z" secondAttribute="bottom" constant="0.5" id="Me1-wB-B2i"/>
+                                        <constraint firstAttribute="trailing" secondItem="cwQ-Ls-DGd" secondAttribute="trailing" constant="8" id="VFJ-PW-L9K"/>
+                                        <constraint firstItem="q7H-r5-gVD" firstAttribute="leading" secondItem="6tZ-SS-ZZH" secondAttribute="leading" constant="8" id="VPG-UH-oW3"/>
+                                        <constraint firstItem="0ca-sf-k6Z" firstAttribute="top" secondItem="q7H-r5-gVD" secondAttribute="bottom" id="W2E-W7-QPq"/>
+                                        <constraint firstAttribute="bottom" secondItem="cwQ-Ls-DGd" secondAttribute="bottom" constant="8" id="ZS4-7I-4AK"/>
+                                        <constraint firstAttribute="trailing" secondItem="0ca-sf-k6Z" secondAttribute="trailing" constant="8.5" id="ajt-rg-72x"/>
+                                        <constraint firstItem="cwQ-Ls-DGd" firstAttribute="top" secondItem="Q3Y-VU-i2F" secondAttribute="bottom" id="cry-pl-pOA"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q3Y-VU-i2F" secondAttribute="bottom" constant="220" id="dHx-I3-o1V"/>
+                                        <constraint firstItem="cwQ-Ls-DGd" firstAttribute="leading" secondItem="6tZ-SS-ZZH" secondAttribute="leading" constant="8" id="hxx-jH-yLn"/>
+                                        <constraint firstItem="0ca-sf-k6Z" firstAttribute="leading" secondItem="6tZ-SS-ZZH" secondAttribute="leading" constant="7.5" id="jhJ-65-BqM"/>
+                                        <constraint firstItem="0ca-sf-k6Z" firstAttribute="height" secondItem="Q3Y-VU-i2F" secondAttribute="height" id="jwt-bO-RgN"/>
+                                        <constraint firstItem="Q3Y-VU-i2F" firstAttribute="leading" secondItem="6tZ-SS-ZZH" secondAttribute="leading" constant="8" id="kZl-co-oRv"/>
+                                        <constraint firstAttribute="bottom" secondItem="q7H-r5-gVD" secondAttribute="bottom" constant="290" id="nOU-b6-8zl"/>
+                                        <constraint firstAttribute="trailing" secondItem="Q3Y-VU-i2F" secondAttribute="trailing" constant="8" id="yJW-c9-WoD"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="image76" destination="q7H-r5-gVD" id="D4a-n1-vlT"/>
+                                    <outlet property="label67" destination="0ca-sf-k6Z" id="yYE-co-7kd"/>
+                                    <outlet property="labelsecond" destination="Q3Y-VU-i2F" id="wMC-Xi-dSl"/>
+                                    <outlet property="textView67" destination="cwQ-Ls-DGd" id="BCe-Fi-mym"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FmQ-HO-7J3" id="XS9-o0-1Sa"/>
+                            <outlet property="delegate" destination="FmQ-HO-7J3" id="Tow-wD-w18"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="wim-oh-XzI"/>
+                    <connections>
+                        <outlet property="bearerCVController" destination="a7p-Tr-tiL" id="3t0-WF-6Rc"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxf-hz-wKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3952.8000000000002" y="-186.65667166416793"/>
+        </scene>
+        <!--CommitteeCVC-->
+        <scene sceneID="OJl-o6-zli">
+            <objects>
+                <collectionViewController id="Gd7-wL-GRJ" customClass="committeeCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5ay-Wp-v9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12.5" minimumInteritemSpacing="12" id="Y5B-Ta-lZs">
+                            <size key="itemSize" width="168.5" height="450"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="committeeCCell" id="Wfk-Zc-8eD" customClass="committeeCCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="12.5" width="168.5" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mMZ-Xo-ida">
+                                    <rect key="frame" x="0.0" y="0.0" width="168.5" height="450"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wbH-tC-Dpf">
+                                            <rect key="frame" x="8" y="8" width="152.5" height="152"/>
+                                            <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvn-y8-5SE">
+                                            <rect key="frame" x="7.5" y="160" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-0a-jld">
+                                            <rect key="frame" x="8" y="195.5" width="152.5" height="34.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-IW-UWm">
+                                            <rect key="frame" x="8" y="230" width="152.5" height="212"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="contentLayoutGuide" id="5Z8-y2-BGQ"/>
+                                            <viewLayoutGuide key="frameLayoutGuide" id="e3n-kh-vmi"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="wbH-tC-Dpf" secondAttribute="trailing" constant="8" id="6Gm-Uq-jXH"/>
+                                        <constraint firstAttribute="trailing" secondItem="aMO-0a-jld" secondAttribute="trailing" constant="8" id="DpO-ii-x7r"/>
+                                        <constraint firstItem="eUc-IW-UWm" firstAttribute="leading" secondItem="mMZ-Xo-ida" secondAttribute="leading" constant="8" id="FLk-XS-JeB"/>
+                                        <constraint firstAttribute="trailing" secondItem="eUc-IW-UWm" secondAttribute="trailing" constant="8" id="FTa-q3-6r1"/>
+                                        <constraint firstItem="Vvn-y8-5SE" firstAttribute="top" secondItem="wbH-tC-Dpf" secondAttribute="bottom" id="LdC-pm-cqk"/>
+                                        <constraint firstAttribute="bottom" secondItem="eUc-IW-UWm" secondAttribute="bottom" constant="8" id="QMc-wP-Utb"/>
+                                        <constraint firstItem="aMO-0a-jld" firstAttribute="leading" secondItem="mMZ-Xo-ida" secondAttribute="leading" constant="8" id="WeM-Tc-N3l"/>
+                                        <constraint firstItem="Vvn-y8-5SE" firstAttribute="leading" secondItem="mMZ-Xo-ida" secondAttribute="leading" constant="7.5" id="aB8-BH-ZG0"/>
+                                        <constraint firstAttribute="bottom" secondItem="wbH-tC-Dpf" secondAttribute="bottom" constant="290" id="fe7-3b-qMK"/>
+                                        <constraint firstItem="eUc-IW-UWm" firstAttribute="top" secondItem="aMO-0a-jld" secondAttribute="bottom" id="gbg-yy-qVm"/>
+                                        <constraint firstItem="Vvn-y8-5SE" firstAttribute="height" secondItem="aMO-0a-jld" secondAttribute="height" id="hx6-U6-o6C"/>
+                                        <constraint firstItem="wbH-tC-Dpf" firstAttribute="leading" secondItem="mMZ-Xo-ida" secondAttribute="leading" constant="8" id="iEg-FB-tcC"/>
+                                        <constraint firstAttribute="bottom" secondItem="aMO-0a-jld" secondAttribute="bottom" constant="220" id="j1E-p4-FSt"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vvn-y8-5SE" secondAttribute="trailing" constant="8.5" id="kqo-ab-5Qu"/>
+                                        <constraint firstItem="aMO-0a-jld" firstAttribute="top" secondItem="Vvn-y8-5SE" secondAttribute="bottom" constant="0.5" id="rNP-xh-zh0"/>
+                                        <constraint firstItem="wbH-tC-Dpf" firstAttribute="top" secondItem="mMZ-Xo-ida" secondAttribute="top" constant="8" id="yfv-7I-EdX"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="image76" destination="wbH-tC-Dpf" id="qxY-Kh-0jV"/>
+                                    <outlet property="label67" destination="Vvn-y8-5SE" id="m1G-sQ-Wik"/>
+                                    <outlet property="labelsecond" destination="aMO-0a-jld" id="E3Y-5r-f58"/>
+                                    <outlet property="textView67" destination="eUc-IW-UWm" id="zQN-Hq-Edq"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Gd7-wL-GRJ" id="H3S-TI-CJn"/>
+                            <outlet property="delegate" destination="Gd7-wL-GRJ" id="ZQR-Vn-qAW"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="IrL-JB-Pj8"/>
+                    <connections>
+                        <outlet property="committeeCVController" destination="5ay-Wp-v9t" id="fZe-lW-tQq"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFC-T1-aMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953" y="517"/>
+        </scene>
+        <!--ResponsibilityVC-->
+        <scene sceneID="QR4-5Y-FZe">
+            <objects>
+                <viewController id="cN9-BF-QBl" customClass="responsibilityVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="32T-kR-TZj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B9-Fh-gYl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1766"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAp-kh-NZa">
+                                        <rect key="frame" x="0.0" y="145" width="375" height="1621"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1621" id="mMG-X6-ghi"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="X3E-yi-r4R"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="rYf-ve-MD9"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Office Bearers Responsibilities">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.930000305175781" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="1">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.930000305175781" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="1">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="President">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The President serves as the executive head of the Federation and presides at all General Body and Managing Committee meetings of FOGSI and the All India Congress of Obstetrics and Gynecology. Besides this the President, FOGSI serves as the President of the Indian College of Obstetricians and Gynecologists and will preside over the meetings of the College.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="The President is elected a year ahead, serves a year as President Elect and is in office as President for one year.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The President is responsible for setting direction, planning activities and selecting a theme during the year in office. The President along with the Secretary General is responsible for administrative issues and strategic planning.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Vice Presidents">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Five Vice Presidents work with the President to serve FOGSI. In the event of his absence or justifiable unwillingness to preside any one of the Vice Presidents shall be selected to preside by drawing lots.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="The Vice Presidents are elected a year ahead and are in office as Vice President for one year.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Vice Presidents support and assist the activities and theme selected by the President. They are also responsible for supporting and guiding the member societies and committees that have been alloted for engagement by them.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Secretary General">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Secretary General is the administrative head of the federation and is responsible for the day to day administration of the Federation and the management of the FOGSI office. The Secretary General shall work with the President to assist in the conduct of all General Body and Managing Committee meetings of FOGSI.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Secretary General is elected from the place of the Registered Office of FOGSI and serves in this post for a maximum of three one year terms.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Deputy Secretary General">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Deputy Secretary General will work with the Secretary General to serve FOGSI. In the event of the Secretary General being unable to carry out formal responsibilities the Deputy Secretary General shall step in to discharge these responsibilities.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Deputy Secretary General is elected from the place of the Registered Office of FOGSI and serves in this post for a maximum of three one year terms. The Deputy Secretary General serves as the FOGSI Website Coordinator and will be responsible for the management of the Federation’s website.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Joint Secretary">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="The Joint Secretary is a nominated appointee of the President, FOGSI.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Joint Secretary serves FOGSI under the supervision of the President and the Secretary General and is responsible for assisting the implementation of the Federation’s  activities undertaken by the President during the year.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Joint Secretary is nominated by the President Elect and serves a year in the post. In the absence of the Secretary General and the Deputy Secretary General, the Joint Secretary shall look after the work of the Secretary General.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Treasurer">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.23529411764705882" green="0.25098039215686274" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="15" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="18.66200065612793" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.993000030517578" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Treasurer serves FOGSI under the supervision of the President and the Secretary General to shall manage the financial affairs of the federation. The Treasurer is responsible for receiving funds, making payments, maintaining bank accounts and presenting the audited balance sheet and accounts to the General Body and Managing Committee meetings of FOGSI.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Treasurer is also responsible for the implementation of the Federation’s Administrative Guidelines as approved by the Managing Committee and the General Body, from time to time.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">The Treasurer is elected from the place of the Registered Office of FOGSI and serves in this post for a maximum of three one year terms.</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="16" name="Arial-BoldMT"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" minimumLineHeight="27.930000305175781" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="1">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.12156862745098039" green="0.5490196078431373" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndP-bK-wTH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office Bearers Responsibilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-Ut-nEG">
+                                                <rect key="frame" x="83" y="104.5" width="209" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fogsi_2020" translatesAutoresizingMaskIntoConstraints="NO" id="Ula-Yu-5bt">
+                                                <rect key="frame" x="130.5" y="18" width="114" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="7l0-6A-kgc"/>
+                                                    <constraint firstAttribute="width" constant="114" id="kP7-Cp-bc9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Ula-Yu-5bt" firstAttribute="top" secondItem="ndP-bK-wTH" secondAttribute="top" constant="18" id="4gV-Gb-wnw"/>
+                                            <constraint firstAttribute="bottom" secondItem="jxt-Ut-nEG" secondAttribute="bottom" constant="20" id="MHK-uL-quF"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ula-Yu-5bt" secondAttribute="bottom" constant="47" id="Ra8-QA-F9v"/>
+                                            <constraint firstItem="jxt-Ut-nEG" firstAttribute="top" secondItem="Ula-Yu-5bt" secondAttribute="bottom" constant="6.5" id="Ulm-kr-Sin"/>
+                                            <constraint firstItem="Ula-Yu-5bt" firstAttribute="centerX" secondItem="ndP-bK-wTH" secondAttribute="centerX" id="mQJ-b6-Kat"/>
+                                            <constraint firstAttribute="height" constant="145" id="rtq-Al-PJr"/>
+                                            <constraint firstItem="jxt-Ut-nEG" firstAttribute="centerX" secondItem="ndP-bK-wTH" secondAttribute="centerX" id="t5j-AN-TF8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vAp-kh-NZa" firstAttribute="leading" secondItem="6B9-Fh-gYl" secondAttribute="leading" id="5vA-0M-BB9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vAp-kh-NZa" secondAttribute="trailing" id="9zN-JI-ett"/>
+                                    <constraint firstItem="ndP-bK-wTH" firstAttribute="centerX" secondItem="6B9-Fh-gYl" secondAttribute="centerX" id="CF6-sf-55V"/>
+                                    <constraint firstItem="ndP-bK-wTH" firstAttribute="leading" secondItem="6B9-Fh-gYl" secondAttribute="leading" id="D19-Je-y2V"/>
+                                    <constraint firstItem="ndP-bK-wTH" firstAttribute="top" secondItem="6B9-Fh-gYl" secondAttribute="top" id="NFP-Sp-Ild"/>
+                                    <constraint firstItem="vAp-kh-NZa" firstAttribute="top" secondItem="ndP-bK-wTH" secondAttribute="bottom" id="Pj2-uK-c9X"/>
+                                    <constraint firstAttribute="bottom" secondItem="vAp-kh-NZa" secondAttribute="bottom" id="ZaU-P8-dur"/>
+                                    <constraint firstAttribute="trailing" secondItem="ndP-bK-wTH" secondAttribute="trailing" id="sTi-ti-6nT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6B9-Fh-gYl" firstAttribute="leading" secondItem="ZqQ-xL-bsb" secondAttribute="leading" id="Z9c-PE-nV5"/>
+                            <constraint firstItem="ZqQ-xL-bsb" firstAttribute="bottom" secondItem="6B9-Fh-gYl" secondAttribute="bottom" id="aUY-tc-z9m"/>
+                            <constraint firstItem="6B9-Fh-gYl" firstAttribute="top" secondItem="ZqQ-xL-bsb" secondAttribute="top" id="na3-W8-cUQ"/>
+                            <constraint firstItem="ZqQ-xL-bsb" firstAttribute="trailing" secondItem="6B9-Fh-gYl" secondAttribute="trailing" id="qMv-yp-6dy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZqQ-xL-bsb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8yB-cz-hA1"/>
+                    <size key="freeformSize" width="375" height="1810"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEQ-y3-tsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4877.6000000000004" y="336.43178410794604"/>
         </scene>
         <!--Collection View Controller1-->
         <scene sceneID="OCm-F5-sJm">
@@ -177,6 +1465,8 @@
                         <segue destination="HOr-yy-Pku" kind="show" identifier="first13" id="b0R-f1-0N9"/>
                         <segue destination="xfx-Hl-4y7" kind="show" identifier="first14" id="t0G-a8-fP6"/>
                         <segue destination="um8-pJ-llr" kind="show" identifier="admingud" id="rM9-Sw-bKD"/>
+                        <segue destination="Kg5-cr-f51" kind="show" identifier="const" id="Ayg-x3-lk0"/>
+                        <segue destination="vhO-KS-Xub" kind="show" identifier="organo" id="6gG-0v-xAk"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eii-2f-XHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +1514,7 @@
                                             <constraint firstAttribute="height" constant="145" id="xCr-QJ-33L"/>
                                         </constraints>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLZ-iB-Ohw">
                                         <rect key="frame" x="5" y="145" width="365" height="1357"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="uTu-WO-djP"/>
@@ -868,7 +2158,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jD5-GD-6vx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="-1860.7196401799101"/>
+            <point key="canvasLocation" x="4879" y="-2300"/>
         </scene>
         <!--Annual Report Collection View-->
         <scene sceneID="Kob-tC-6lc">
@@ -939,7 +2229,7 @@ Cg
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwB-Jd-62T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="-1164"/>
+            <point key="canvasLocation" x="4879" y="-1603"/>
         </scene>
         <!--AdministarieveVC-->
         <scene sceneID="sRd-vW-r21">
@@ -957,31 +2247,206 @@ Cg
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GUW-Br-Ln2">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-DA-dfe">
                                 <rect key="frame" x="169" y="337" width="37" height="37"/>
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GUW-Br-Ln2" firstAttribute="centerX" secondItem="DXT-y5-fgT" secondAttribute="centerX" id="7GL-5N-rcH"/>
                             <constraint firstItem="6NB-Tf-crJ" firstAttribute="top" secondItem="DXT-y5-fgT" secondAttribute="top" id="Cpi-Rb-lI5"/>
-                            <constraint firstItem="GUW-Br-Ln2" firstAttribute="centerY" secondItem="DXT-y5-fgT" secondAttribute="centerY" id="Fhv-AG-Aiq"/>
                             <constraint firstItem="DXT-y5-fgT" firstAttribute="bottom" secondItem="6NB-Tf-crJ" secondAttribute="bottom" id="Mmw-6b-exS"/>
                             <constraint firstItem="6NB-Tf-crJ" firstAttribute="leading" secondItem="DXT-y5-fgT" secondAttribute="leading" id="fnd-an-A4h"/>
+                            <constraint firstItem="9FF-DA-dfe" firstAttribute="centerX" secondItem="DXT-y5-fgT" secondAttribute="centerX" id="kiI-GH-lhV"/>
                             <constraint firstItem="DXT-y5-fgT" firstAttribute="trailing" secondItem="6NB-Tf-crJ" secondAttribute="trailing" id="nWy-XD-av2"/>
+                            <constraint firstItem="9FF-DA-dfe" firstAttribute="centerY" secondItem="DXT-y5-fgT" secondAttribute="centerY" id="o1A-t3-1dk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DXT-y5-fgT"/>
                     </view>
                     <navigationItem key="navigationItem" id="uqO-0i-uAn"/>
                     <connections>
-                        <outlet property="activityAdmin" destination="GUW-Br-Ln2" id="t0c-B4-GfG"/>
+                        <outlet property="activityAdmin" destination="9FF-DA-dfe" id="xIg-jj-taM"/>
                         <outlet property="adminWebView" destination="6NB-Tf-crJ" id="kzV-OT-Tiz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8h-yp-4t5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4636" y="-389.05547226386807"/>
+            <point key="canvasLocation" x="3953" y="-888"/>
+        </scene>
+        <!--Constitution Web View-->
+        <scene sceneID="2s3-LD-Jxi">
+            <objects>
+                <viewController id="Kg5-cr-f51" customClass="constitutionWebView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHA-bg-AXS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgJ-sb-daE">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-fX-qRN">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bgJ-sb-daE" firstAttribute="leading" secondItem="Yg7-5m-cvC" secondAttribute="leading" id="IXg-w3-uCB"/>
+                            <constraint firstItem="Yg7-5m-cvC" firstAttribute="trailing" secondItem="bgJ-sb-daE" secondAttribute="trailing" id="Kyp-nF-ePX"/>
+                            <constraint firstItem="Yg7-5m-cvC" firstAttribute="bottom" secondItem="bgJ-sb-daE" secondAttribute="bottom" id="LtM-C3-agR"/>
+                            <constraint firstItem="G5a-fX-qRN" firstAttribute="centerY" secondItem="Yg7-5m-cvC" secondAttribute="centerY" id="N95-qg-r3b"/>
+                            <constraint firstItem="bgJ-sb-daE" firstAttribute="top" secondItem="Yg7-5m-cvC" secondAttribute="top" id="Vaf-Nn-9YY"/>
+                            <constraint firstItem="G5a-fX-qRN" firstAttribute="centerX" secondItem="Yg7-5m-cvC" secondAttribute="centerX" id="Ysc-Iu-rAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yg7-5m-cvC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uch-2w-4nH"/>
+                    <connections>
+                        <outlet property="activity" destination="G5a-fX-qRN" id="ixt-FJ-XCd"/>
+                        <outlet property="webView" destination="bgJ-sb-daE" id="laD-KT-SnJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jX1-nj-oBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4879" y="-888"/>
+        </scene>
+        <!--Organo Collection View-->
+        <scene sceneID="iUh-b1-RkT">
+            <objects>
+                <collectionViewController id="vhO-KS-Xub" customClass="organoCollectionView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="r0l-Fv-ZrP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="ENA-UM-dyH">
+                            <size key="itemSize" width="168.5" height="290"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="organoCell" id="Wif-gS-5Uf" customClass="organoCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="12.5" width="168.5" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hx5-o7-2lA">
+                                    <rect key="frame" x="0.0" y="0.0" width="168.5" height="290"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qAV-qR-hJV">
+                                            <rect key="frame" x="8" y="8" width="152.5" height="204"/>
+                                            <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="152.5" id="YIs-eH-kyk"/>
+                                                <constraint firstAttribute="height" constant="204" id="YM3-NR-7CG"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT8-sK-Kcd">
+                                            <rect key="frame" x="8" y="212" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="8RS-Uu-LWZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-OD-5yP">
+                                            <rect key="frame" x="8" y="247" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="top" secondItem="qAV-qR-hJV" secondAttribute="bottom" id="09V-oP-fsB"/>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="width" secondItem="Naz-OD-5yP" secondAttribute="width" id="6Pz-Th-wiW"/>
+                                        <constraint firstItem="qAV-qR-hJV" firstAttribute="top" secondItem="hx5-o7-2lA" secondAttribute="top" constant="8" id="9ZD-Md-kDC"/>
+                                        <constraint firstAttribute="bottom" secondItem="Naz-OD-5yP" secondAttribute="bottom" constant="8" id="AEc-p0-DPt"/>
+                                        <constraint firstAttribute="trailing" secondItem="qAV-qR-hJV" secondAttribute="trailing" constant="8" id="Dch-73-db0"/>
+                                        <constraint firstItem="Naz-OD-5yP" firstAttribute="trailing" secondItem="RT8-sK-Kcd" secondAttribute="trailing" id="IUT-nR-ETY"/>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="leading" secondItem="hx5-o7-2lA" secondAttribute="leading" constant="8" id="OO5-sF-WIW"/>
+                                        <constraint firstAttribute="bottom" secondItem="qAV-qR-hJV" secondAttribute="bottom" constant="78" id="VlD-U6-l3E"/>
+                                        <constraint firstItem="qAV-qR-hJV" firstAttribute="centerX" secondItem="hx5-o7-2lA" secondAttribute="centerX" id="Y7Y-iB-hFk"/>
+                                        <constraint firstAttribute="trailing" secondItem="Naz-OD-5yP" secondAttribute="trailing" constant="8" id="YrF-jt-K8u"/>
+                                        <constraint firstItem="Naz-OD-5yP" firstAttribute="top" secondItem="RT8-sK-Kcd" secondAttribute="bottom" id="ZtG-nm-GAG"/>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="leading" secondItem="qAV-qR-hJV" secondAttribute="leading" id="aKd-qZ-ex7"/>
+                                        <constraint firstItem="Naz-OD-5yP" firstAttribute="leading" secondItem="hx5-o7-2lA" secondAttribute="leading" constant="8" id="o1t-1f-UXO"/>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="trailing" secondItem="qAV-qR-hJV" secondAttribute="trailing" id="oV5-OA-Izh"/>
+                                        <constraint firstItem="RT8-sK-Kcd" firstAttribute="height" secondItem="Naz-OD-5yP" secondAttribute="height" id="rWh-S5-aNS"/>
+                                        <constraint firstItem="qAV-qR-hJV" firstAttribute="leading" secondItem="hx5-o7-2lA" secondAttribute="leading" constant="8" id="twW-mJ-GxW"/>
+                                        <constraint firstItem="Naz-OD-5yP" firstAttribute="leading" secondItem="RT8-sK-Kcd" secondAttribute="leading" id="wDP-Bm-ir5"/>
+                                        <constraint firstAttribute="trailing" secondItem="RT8-sK-Kcd" secondAttribute="trailing" constant="8" id="wa7-fk-Ddj"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="designLabel" destination="Naz-OD-5yP" id="28W-nR-w9V"/>
+                                    <outlet property="imageView" destination="qAV-qR-hJV" id="nnN-yj-x7G"/>
+                                    <outlet property="nameLabel" destination="RT8-sK-Kcd" id="EtY-iX-hdG"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vhO-KS-Xub" id="He9-6W-pPh"/>
+                            <outlet property="delegate" destination="vhO-KS-Xub" id="UWb-5P-uvH"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="iKH-0O-yhM"/>
+                    <connections>
+                        <outlet property="organocollectionView" destination="r0l-Fv-ZrP" id="jSS-kP-qn4"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1M-0h-VyI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5768.8000000000002" y="-888.30584707646187"/>
+        </scene>
+        <!--PastVC-->
+        <scene sceneID="Ief-tu-SWE">
+            <objects>
+                <viewController id="BbJ-XO-yJJ" customClass="pastVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iT-Me-eQC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTp-T7-tty">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="D6S-Uv-vCm">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D6S-Uv-vCm" firstAttribute="centerX" secondItem="PTp-T7-tty" secondAttribute="centerX" id="AAB-Z9-iof"/>
+                            <constraint firstItem="PTp-T7-tty" firstAttribute="top" secondItem="wSM-jC-ZqI" secondAttribute="top" id="Dqu-AB-AkR"/>
+                            <constraint firstItem="wSM-jC-ZqI" firstAttribute="bottom" secondItem="PTp-T7-tty" secondAttribute="bottom" id="UwG-qh-6FO"/>
+                            <constraint firstItem="D6S-Uv-vCm" firstAttribute="centerY" secondItem="PTp-T7-tty" secondAttribute="centerY" id="dpV-Fc-gDZ"/>
+                            <constraint firstItem="PTp-T7-tty" firstAttribute="leading" secondItem="wSM-jC-ZqI" secondAttribute="leading" id="ild-Cd-Kew"/>
+                            <constraint firstItem="wSM-jC-ZqI" firstAttribute="trailing" secondItem="PTp-T7-tty" secondAttribute="trailing" id="xdZ-7f-X4X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wSM-jC-ZqI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GEP-CI-SKW"/>
+                    <connections>
+                        <outlet property="activity" destination="D6S-Uv-vCm" id="eb3-RD-nhU"/>
+                        <outlet property="webView" destination="PTp-T7-tty" id="rig-DK-1gH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0P-iq-Yad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5768.8000000000002" y="-187.55622188905548"/>
         </scene>
         <!--Annual Web View-->
         <scene sceneID="dvj-iI-2au">
@@ -1023,7 +2488,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiA-mT-ewP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5526" y="-1164"/>
+            <point key="canvasLocation" x="5769" y="-1603"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6P-My-7dh">

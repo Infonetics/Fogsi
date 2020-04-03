@@ -80,6 +80,54 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         if indexPath.row == 0 {
         performSegue(withIdentifier: "first", sender: self)
         }
+        if indexPath.row == 1 {
+        performSegue(withIdentifier: "fogsi2020", sender: self)
+        }
+        if indexPath.row == 2 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 3 {
+        performSegue(withIdentifier: "commi", sender: self)
+        }
+        if indexPath.row == 4 {
+        performSegue(withIdentifier: "memberso", sender: self)
+        }
+        if indexPath.row == 5 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 6 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 7 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 8 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 9 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 10 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 11 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 12 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 13 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 14 {
+        performSegue(withIdentifier: "offbear", sender: self)
+        }
+        if indexPath.row == 15 {
+        performSegue(withIdentifier: "newsletter", sender: self)
+        }
+        if indexPath.row == 16 {
+        performSegue(withIdentifier: "contactus", sender: self)
+        }
     }
    
     

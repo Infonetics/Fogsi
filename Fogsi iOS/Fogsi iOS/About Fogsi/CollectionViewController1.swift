@@ -91,6 +91,12 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
         if indexPath.row == 4 {
             performSegue(withIdentifier: "admingud", sender: self)
         }
+        if indexPath.row == 5 {
+            performSegue(withIdentifier: "const", sender: self)
+        }
+        if indexPath.row == 6 {
+            performSegue(withIdentifier: "organo", sender: self)
+        }
     }
     
     // MARK: UICollectionViewDelegate

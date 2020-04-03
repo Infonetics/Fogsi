@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 
-class codeOfConduct: UIViewController {
+class codeOfConduct: UIViewController,WKNavigationDelegate {
     
 @IBOutlet var webView: WKWebView!
 @IBOutlet var activityindicator: UIActivityIndicatorView!
@@ -19,23 +19,26 @@ class codeOfConduct: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    
-     
+ 
     let myURL = URL(string:"https://www.fogsi.org/wp-content/uploads/2015/05/pdf/code_conduct_Ethics.pdf")
     let myRequest = URLRequest(url: myURL!)
     webView.load(myRequest)
         
-    }
-    
-    
+    self.webView.addSubview(self.activityindicator)
+    self.activityindicator.startAnimating()
+    self.webView.navigationDelegate = self
+    self.activityindicator.hidesWhenStopped = true
 
-    func  webViewDidStartLoad(_ webView: WKWebView) {
-        activityindicator.startAnimating()
     }
     
-    func webViewDidFinishLoad(_ webView: WKWebView) {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityindicator.stopAnimating()
     }
 
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        activityindicator.stopAnimating()
+    }
+   
     /*
     // MARK: - Navigation
 

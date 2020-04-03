@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class annualWebView: UIViewController {
+class annualWebView: UIViewController,WKNavigationDelegate {
 
     @IBOutlet var webViewannual: WKWebView!
     @IBOutlet var activityAnn: UIActivityIndicatorView!
@@ -24,17 +24,20 @@ class annualWebView: UIViewController {
         let myRequest = URLRequest(url: myURL!)
         webViewannual.load(myRequest)
             
-        // Do any additional setup after loading the view.
+       self.webViewannual.addSubview(self.activityAnn)
+       self.activityAnn.startAnimating()
+       self.webViewannual.navigationDelegate = self
+       self.activityAnn.hidesWhenStopped = true
     }
     
-    func  webViewDidStartLoad(_ webView: WKWebView) {
-        activityAnn.startAnimating()
-    }
     
-    func webViewDidFinishLoad(_ webView: WKWebView) {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activityAnn.stopAnimating()
     }
 
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        activityAnn.stopAnimating()
+    }
     /*
     // MARK: - Navigation
 
