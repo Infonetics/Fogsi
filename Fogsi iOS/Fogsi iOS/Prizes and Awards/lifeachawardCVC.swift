@@ -1,8 +1,8 @@
 //
-//  prizesandawardsCVC.swift
+//  lifeachawardCVC.swift
 //  Fogsi iOS
 //
-//  Created by Dayal ND on 03/04/20.
+//  Created by Dayal ND on 04/04/20.
 //  Copyright © 2020 Dayal ND. All rights reserved.
 //
 
@@ -10,20 +10,18 @@ import UIKit
 
 
 
-class prizesandawardsCVC: UICollectionViewController,UICollectionViewDelegateFlowLayout{
+class lifeachawardCVC: UICollectionViewController,UICollectionViewDelegateFlowLayout  {
 
-    @IBOutlet var prizesandawardCVC: UICollectionView!
+    @IBOutlet var lifeachawardCVC: UICollectionView!
     private let spacing:CGFloat = 18.0
-    var selecteddictionary:[String:String]?
-    var namearray = [["name":"Result Individual Awards 2019","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/awards/result/result-individual-awards-2019.pdf"],["name":"Result Society Awards 2019","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/awards/result/result-society-awards-updated-2019.pdf"],["name":"Eligibility Society Awards","image":"fogsi_2020","desc":""],["name":"Eligibility Individual Awards","image":"fogsi_2020","desc":""],["name":"FOGSI Lifetime Awardees","image":"fogsi_2020","desc":""],["name":"Scientific Papers Prizes 2020","image":"fogsi_2020","desc":"https://www.fogsi.org/wp-content/uploads/awards/fogsi-awardees-2020.pdf"]
-         ]
+    var namearray = [["name":"Dr. Usha B. Saraiya","image":"dr-usha-saraiya","desc":"2020\n63rd AICOG, Lucknow"],["name":"Dr. Sadhana Desai","image":"dr-sadhana-desai","desc":"2020\n63rd AICOG, Lucknow"],["name":"Dr. Alokendu Chatterjee","image":"dr-alokendu-chatterjee","desc":"2019\n62nd AICOG, Bengaluru"],["name":"Dr. Kamini Rao","image":"dr-kamini-rao","desc":"2019\n62nd AICOG, Bengaluru"],["name":"Dr. R. P. Soonawala","image":"dr-rp-sonawala","desc":"2018\n61st AICOG, Odisha"],["name":"Dr. R. Rajan","image":"dr-r-rajan","desc":"2018\n61st AICOG, Odisha"],["name":"Dr. Kamal Buckshee","image":"dr-kamal-buckshee","desc":"2017\n60th AICOG, Ahmedabad"],["name":"Dr. C. N. Purandare","image":"dr-c-n-purandare","desc":"2017\n60th AICOG, Ahmedabad"],["name":"Dr. Usha Krishna","image":"dr-usha-krishna","desc":"2016\n59th AICOG, Agra"],["name":"Dr. Shirish Sheth","image":"dr-shirish-sheth","desc":"2015\n58th AICOG, Chennai"],["name":"Dr. Shirish N. Daftary","image":"dr-shirish-n-daftary","desc":"2014\n57th AICOG, Patna"],["name":"Dr. Rohit Bhatt","image":"dr-rohit-bhatt","desc":"2013\n56th AICOG, Mumbai"],["name":"Dr. Mahendra Parikh","image":"dr-mn-parikh","desc":"2012\n55th AICOG, Varanasi"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    prizesandawardCVC.dataSource = self
-    prizesandawardCVC.delegate = self
         
+    lifeachawardCVC.dataSource = self
+    lifeachawardCVC.delegate = self
+
     }
 
     /*
@@ -50,66 +48,31 @@ class prizesandawardsCVC: UICollectionViewController,UICollectionViewDelegateFlo
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "prizesandawardsCell", for: indexPath) as! prizesandawardsCell
-        
-    cell.layer.cornerRadius = 10
-    let dict = namearray[indexPath.row]
-    let img = dict["image"]!
-    cell.label1.text = dict["name"]
-    cell.image1.image = UIImage.init(named: img )
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "lifeachawardCell", for: indexPath) as! lifeachawardCell
+    
+        let dict = namearray[indexPath.row]
+        let img = dict["image"]!
+        cell.nameLabel.text = dict["name"]
+        cell.imageView.image = UIImage.init(named: img )
+        cell.designLabel.text = dict["desc"]
     
         return cell
     }
 
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow:CGFloat = 2
         let spacingBetweenCells:CGFloat = 2
         
         let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
         
-        if let collection = self.prizesandawardCVC{
+        if let collection = self.lifeachawardCVC{
             let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
-        return CGSize(width: width - 20, height: width - 20)
+        print(width)
+            return CGSize(width: width , height: width + 121.5)
         }else{
             return CGSize(width: 0, height: 0)
         }
         
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
-        selecteddictionary = namearray[indexPath.row]
-       
-        if indexPath.row == 0 {
-            performSegue(withIdentifier: "webv999", sender: self)
-        }
-        if indexPath.row == 1 {
-            performSegue(withIdentifier: "webv999", sender: self)
-        }
-        if indexPath.row == 2 {
-            performSegue(withIdentifier: "elsoaw", sender: self)
-        }
-        if indexPath.row == 3 {
-            performSegue(withIdentifier: "indiaaward", sender: self)
-        }
-        if indexPath.row == 4 {
-            performSegue(withIdentifier: "life999", sender: self)
-        }
-        if indexPath.row == 5 {
-            performSegue(withIdentifier: "webv999", sender: self)
-        }
-  
-    }
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "webv999" {
-            let link = segue.destination as! awwardWebViewVC
-            link.dict1 = selecteddictionary
-            }
-     
     }
     // MARK: UICollectionViewDelegate
 

@@ -14,7 +14,7 @@ class textview768VC: UIViewController {
     @IBOutlet var textview3: UITextView!
     @IBOutlet var label: UILabel!
     var dict1:[String:String]?
-    var strings:[String] = []
+
 
     
     override func viewDidLoad() {
@@ -22,8 +22,10 @@ class textview768VC: UIViewController {
         
     let texthead = dict1?["name"]
     let text = dict1?["text"]
+    let labeltext = dict1?["labeltext"]
     textview3.text = text
     textviewheading.text = texthead
+    label.text = labeltext
 
  
     }

@@ -9,11 +9,17 @@
 import UIKit
 
 class responsibilityVC: UIViewController {
+    
+  
+
+
+    var dict1:[String:String]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
+        
     }
     
 

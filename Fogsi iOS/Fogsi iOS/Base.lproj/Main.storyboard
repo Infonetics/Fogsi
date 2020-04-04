@@ -108,6 +108,8 @@
                         <segue destination="waB-GA-bCD" kind="show" identifier="fogsi2020" id="3Qr-TI-3AY"/>
                         <segue destination="oja-5M-Pal" kind="show" identifier="memberso" id="hc9-LR-MG0"/>
                         <segue destination="clH-Wo-O3A" kind="show" identifier="prizandawa" id="EAb-ee-oT2"/>
+                        <segue destination="7F3-bd-3h6" kind="show" identifier="trainingbase" id="Ovu-fd-W60"/>
+                        <segue destination="bTj-vo-qfY" kind="show" identifier="whatsnew" id="eGj-5b-phK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -241,6 +243,268 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQL-ZP-pWH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846" y="1774"/>
+        </scene>
+        <!--SyallabCVC-->
+        <scene sceneID="Mwc-z9-nYd">
+            <objects>
+                <collectionViewController id="Bhu-vx-Q9a" customClass="syallabCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jbR-Ga-3Ko">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="bgK-c0-Vcz">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="syallabaCell" id="FJN-Do-Gd4" customClass="syallabaCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve5-PS-N1s">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="olG-0y-AJ8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KpK-1x-2Tn">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="3KK-OH-ODr"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KpK-1x-2Tn" secondAttribute="trailing" constant="15" id="5JE-gH-SWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="ve5-PS-N1s" secondAttribute="trailing" constant="5" id="8TA-LL-fHF"/>
+                                    <constraint firstItem="KpK-1x-2Tn" firstAttribute="leading" secondItem="FJN-Do-Gd4" secondAttribute="leading" constant="15" id="Hp6-gs-git"/>
+                                    <constraint firstItem="ve5-PS-N1s" firstAttribute="top" secondItem="KpK-1x-2Tn" secondAttribute="bottom" id="VlD-v5-mLO"/>
+                                    <constraint firstItem="ve5-PS-N1s" firstAttribute="leading" secondItem="FJN-Do-Gd4" secondAttribute="leading" constant="5" id="gXs-NN-Ne6"/>
+                                    <constraint firstAttribute="bottom" secondItem="ve5-PS-N1s" secondAttribute="bottom" constant="6" id="qWm-Lg-aKB"/>
+                                    <constraint firstItem="KpK-1x-2Tn" firstAttribute="top" secondItem="FJN-Do-Gd4" secondAttribute="top" constant="15" id="wEp-Fg-Eq2"/>
+                                    <constraint firstItem="KpK-1x-2Tn" firstAttribute="centerX" secondItem="FJN-Do-Gd4" secondAttribute="centerX" id="z7B-mU-1hg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image1" destination="KpK-1x-2Tn" id="eBE-Ud-w4F"/>
+                                    <outlet property="label1" destination="ve5-PS-N1s" id="t5w-sy-7Xh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Bhu-vx-Q9a" id="GwP-0q-5KF"/>
+                            <outlet property="delegate" destination="Bhu-vx-Q9a" id="Cfp-BG-93c"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="nGk-x6-4ms"/>
+                    <connections>
+                        <outlet property="syallabaus" destination="jbR-Ga-3Ko" id="zYD-co-CDY"/>
+                        <segue destination="sdg-us-A3S" kind="show" identifier="syallrrtt" id="OCs-bg-XHV"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmM-Hm-QtI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953" y="1245"/>
+        </scene>
+        <!--Training BaseCVC-->
+        <scene sceneID="Ufr-0J-22U">
+            <objects>
+                <collectionViewController id="7F3-bd-3h6" customClass="trainingBaseCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eeq-Va-sqd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="3A9-G1-Tgx">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingbaseCell" id="qw8-af-rf5" customClass="trainingbaseCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-ne-mQT">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="4hY-Cj-jwq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4AU-r3-bX0">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="v7r-Nc-EBV"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4fw-ne-mQT" firstAttribute="leading" secondItem="qw8-af-rf5" secondAttribute="leading" constant="5" id="Box-aR-BPz"/>
+                                    <constraint firstAttribute="trailing" secondItem="4AU-r3-bX0" secondAttribute="trailing" constant="15" id="QlA-T4-Eo7"/>
+                                    <constraint firstAttribute="bottom" secondItem="4fw-ne-mQT" secondAttribute="bottom" constant="6" id="Tg8-ca-Smj"/>
+                                    <constraint firstAttribute="trailing" secondItem="4fw-ne-mQT" secondAttribute="trailing" constant="5" id="ZS3-dG-NlG"/>
+                                    <constraint firstItem="4AU-r3-bX0" firstAttribute="centerX" secondItem="qw8-af-rf5" secondAttribute="centerX" id="cBj-HF-9EG"/>
+                                    <constraint firstItem="4AU-r3-bX0" firstAttribute="leading" secondItem="qw8-af-rf5" secondAttribute="leading" constant="15" id="cu0-Xm-BGv"/>
+                                    <constraint firstItem="4AU-r3-bX0" firstAttribute="top" secondItem="qw8-af-rf5" secondAttribute="top" constant="15" id="s9r-ax-wOY"/>
+                                    <constraint firstItem="4fw-ne-mQT" firstAttribute="top" secondItem="4AU-r3-bX0" secondAttribute="bottom" id="spU-ec-4G3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image1" destination="4AU-r3-bX0" id="Jdt-Hk-tXB"/>
+                                    <outlet property="label1" destination="4fw-ne-mQT" id="XaW-Go-9cC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="7F3-bd-3h6" id="jqq-xk-9UI"/>
+                            <outlet property="delegate" destination="7F3-bd-3h6" id="hZ1-bb-dP6"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="XDi-5w-yU3"/>
+                    <connections>
+                        <outlet property="basecollection" destination="eeq-Va-sqd" id="7Wz-53-BLi"/>
+                        <segue destination="L96-yp-hxq" kind="show" identifier="secondtraining" id="c6y-0f-N0f"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXd-8e-o5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="793"/>
+        </scene>
+        <!--Webview TrainingVC-->
+        <scene sceneID="5te-lP-wWh">
+            <objects>
+                <viewController id="bTj-vo-qfY" customClass="webviewTrainingVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0VI-IW-UhD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IZ-cZ-XS4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-SP-7cw">
+                                <rect key="frame" x="169" y="337" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qy7-SP-7cw" firstAttribute="centerY" secondItem="9Sd-dP-nyc" secondAttribute="centerY" id="ATK-P5-Vm4"/>
+                            <constraint firstItem="9Sd-dP-nyc" firstAttribute="trailing" secondItem="8IZ-cZ-XS4" secondAttribute="trailing" id="BKt-Kc-uzd"/>
+                            <constraint firstItem="8IZ-cZ-XS4" firstAttribute="top" secondItem="9Sd-dP-nyc" secondAttribute="top" id="OD4-Hi-HQ3"/>
+                            <constraint firstItem="Qy7-SP-7cw" firstAttribute="centerX" secondItem="9Sd-dP-nyc" secondAttribute="centerX" id="PEF-by-g90"/>
+                            <constraint firstItem="9Sd-dP-nyc" firstAttribute="bottom" secondItem="8IZ-cZ-XS4" secondAttribute="bottom" id="Qe2-y4-8z8"/>
+                            <constraint firstItem="8IZ-cZ-XS4" firstAttribute="leading" secondItem="9Sd-dP-nyc" secondAttribute="leading" id="kjp-3w-bEd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Sd-dP-nyc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Xp-7g-E5W"/>
+                    <connections>
+                        <outlet property="activity" destination="Qy7-SP-7cw" id="IKr-wf-4cc"/>
+                        <outlet property="webVie" destination="8IZ-cZ-XS4" id="L8D-cw-xRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESg-U8-Gsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2884" y="1080"/>
+        </scene>
+        <!--Training SecondCVC-->
+        <scene sceneID="TOc-PV-CUg">
+            <objects>
+                <collectionViewController id="L96-yp-hxq" customClass="trainingSecondCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="A1r-ue-38s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="25" id="pP4-bu-cuw">
+                            <size key="itemSize" width="110" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingSecondCell" id="KWq-Nr-WSp" customClass="trainingSecondCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="25" y="25" width="110" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tW-xq-i6t">
+                                            <rect key="frame" x="5" y="68" width="100" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="Fru-7X-RAv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.23529411759999999" green="0.25098039220000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5b-fR-sdQ">
+                                            <rect key="frame" x="15" y="15" width="80" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="jGz-uQ-7IZ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0tW-xq-i6t" firstAttribute="top" secondItem="X5b-fR-sdQ" secondAttribute="bottom" id="HXw-0j-vDe"/>
+                                    <constraint firstItem="X5b-fR-sdQ" firstAttribute="leading" secondItem="KWq-Nr-WSp" secondAttribute="leading" constant="15" id="TVR-0b-M08"/>
+                                    <constraint firstItem="X5b-fR-sdQ" firstAttribute="top" secondItem="KWq-Nr-WSp" secondAttribute="top" constant="15" id="WU0-Ub-fyJ"/>
+                                    <constraint firstItem="0tW-xq-i6t" firstAttribute="leading" secondItem="KWq-Nr-WSp" secondAttribute="leading" constant="5" id="Zl8-84-Tvb"/>
+                                    <constraint firstAttribute="trailing" secondItem="0tW-xq-i6t" secondAttribute="trailing" constant="5" id="bna-KQ-ZMl"/>
+                                    <constraint firstItem="X5b-fR-sdQ" firstAttribute="centerX" secondItem="KWq-Nr-WSp" secondAttribute="centerX" id="d4h-0f-rVV"/>
+                                    <constraint firstAttribute="bottom" secondItem="0tW-xq-i6t" secondAttribute="bottom" constant="6" id="gW7-1Q-lW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="X5b-fR-sdQ" secondAttribute="trailing" constant="15" id="wze-6d-j83"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image1" destination="X5b-fR-sdQ" id="DAK-h0-tM0"/>
+                                    <outlet property="label1" destination="0tW-xq-i6t" id="pU3-cy-KsS"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="L96-yp-hxq" id="LaI-s1-FTQ"/>
+                            <outlet property="delegate" destination="L96-yp-hxq" id="ySR-bl-HTH"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="peS-ba-zZA"/>
+                    <connections>
+                        <outlet property="secondcollection" destination="A1r-ue-38s" id="JJr-7K-ZdL"/>
+                        <segue destination="bTj-vo-qfY" kind="show" identifier="thirwebjj" id="E0p-oe-s82"/>
+                        <segue destination="Bhu-vx-Q9a" kind="show" identifier="syalle" id="9Qi-Fv-Rtv"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UmR-e5-28e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873" y="370"/>
         </scene>
         <!--MembersocietCVC-->
         <scene sceneID="eon-BR-3kZ">
@@ -386,6 +650,7 @@
                         <segue destination="2W6-f2-2Bf" kind="show" identifier="webv999" id="91n-M6-67e"/>
                         <segue destination="FqI-vn-2tB" kind="show" identifier="elsoaw" id="PT5-sF-lr9"/>
                         <segue destination="jbt-DC-cIA" kind="show" identifier="indiaaward" id="Phd-0E-YSz"/>
+                        <segue destination="Pip-QA-PGs" kind="show" identifier="life999" id="F1M-Dl-rgb"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Kf-3L-mrk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -451,7 +716,7 @@
         <scene sceneID="84Z-m6-bBs">
             <objects>
                 <tableViewController id="jbt-DC-cIA" customClass="indiawardTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LzL-oX-vdu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LzL-oX-vdu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2162,9 +2427,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2206,9 +2471,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2250,9 +2515,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2294,9 +2559,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2338,9 +2603,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2380,9 +2645,9 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="system" size="14"/>
+                                                    <font key="NSOriginalFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops>
                                                             <textTab alignment="left" location="11">
@@ -2404,7 +2669,7 @@ Cg
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <font key="NSOriginalFont" size="14.199999999999999" name="Arial-BoldMT"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="2" headIndent="19" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
@@ -2923,28 +3188,81 @@ Cg
             </objects>
             <point key="canvasLocation" x="6617" y="-888"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--LifeachawardCVC-->
         <scene sceneID="krP-KN-jRN">
             <objects>
-                <collectionViewController id="Pip-QA-PGs" sceneMemberID="viewController">
+                <collectionViewController id="Pip-QA-PGs" customClass="lifeachawardCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xFf-9H-0L4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eM2-ob-XXX">
-                            <size key="itemSize" width="128" height="128"/>
+                        <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="eM2-ob-XXX">
+                            <size key="itemSize" width="168.5" height="290"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="R42-P1-8PP">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lifeachawardCell" id="554-u8-s7f" customClass="lifeachawardCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="12.5" y="12.5" width="168.5" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7tR-mH-pCH">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AYG-Jg-B0P">
+                                    <rect key="frame" x="0.0" y="0.0" width="168.5" height="290"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUT-vR-CiZ">
+                                            <rect key="frame" x="8" y="8" width="152.5" height="204"/>
+                                            <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="204" id="Mtl-ZK-eKP"/>
+                                                <constraint firstAttribute="width" constant="152.5" id="wyF-vD-Zwy"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-A2-0L9">
+                                            <rect key="frame" x="8" y="212" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="Ud2-Ah-pxH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-Nb-szk">
+                                            <rect key="frame" x="8" y="247" width="152.5" height="35"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="leading" secondItem="AYG-Jg-B0P" secondAttribute="leading" constant="8" id="03C-cz-gH1"/>
+                                        <constraint firstAttribute="trailing" secondItem="mHn-Nb-szk" secondAttribute="trailing" constant="8" id="0u1-O8-02F"/>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="leading" secondItem="tUT-vR-CiZ" secondAttribute="leading" id="7Hl-Xc-p7o"/>
+                                        <constraint firstItem="mHn-Nb-szk" firstAttribute="top" secondItem="ICd-A2-0L9" secondAttribute="bottom" id="BLR-Kg-C1M"/>
+                                        <constraint firstItem="tUT-vR-CiZ" firstAttribute="top" secondItem="AYG-Jg-B0P" secondAttribute="top" constant="8" id="DA1-wb-9uA"/>
+                                        <constraint firstAttribute="trailing" secondItem="ICd-A2-0L9" secondAttribute="trailing" constant="8" id="Fn9-XE-q5x"/>
+                                        <constraint firstAttribute="bottom" secondItem="mHn-Nb-szk" secondAttribute="bottom" constant="8" id="FnJ-XV-pOD"/>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="height" secondItem="mHn-Nb-szk" secondAttribute="height" id="G61-wM-OBF"/>
+                                        <constraint firstItem="mHn-Nb-szk" firstAttribute="leading" secondItem="AYG-Jg-B0P" secondAttribute="leading" constant="8" id="U2i-cn-e62"/>
+                                        <constraint firstItem="mHn-Nb-szk" firstAttribute="leading" secondItem="ICd-A2-0L9" secondAttribute="leading" id="U8O-r6-cHz"/>
+                                        <constraint firstItem="tUT-vR-CiZ" firstAttribute="leading" secondItem="AYG-Jg-B0P" secondAttribute="leading" constant="8" id="Us5-2e-SYf"/>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="top" secondItem="tUT-vR-CiZ" secondAttribute="bottom" id="gZc-7a-1Ye"/>
+                                        <constraint firstAttribute="trailing" secondItem="tUT-vR-CiZ" secondAttribute="trailing" constant="8" id="jxF-S0-ymg"/>
+                                        <constraint firstItem="tUT-vR-CiZ" firstAttribute="centerX" secondItem="AYG-Jg-B0P" secondAttribute="centerX" id="l4Y-Mk-tYn"/>
+                                        <constraint firstAttribute="bottom" secondItem="tUT-vR-CiZ" secondAttribute="bottom" constant="78" id="reZ-HN-4vZ"/>
+                                        <constraint firstItem="mHn-Nb-szk" firstAttribute="trailing" secondItem="ICd-A2-0L9" secondAttribute="trailing" id="sRR-8v-RJ1"/>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="width" secondItem="mHn-Nb-szk" secondAttribute="width" id="wRD-C4-Tq6"/>
+                                        <constraint firstItem="ICd-A2-0L9" firstAttribute="trailing" secondItem="tUT-vR-CiZ" secondAttribute="trailing" id="x6j-aJ-L8g"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="designLabel" destination="mHn-Nb-szk" id="XJE-rw-tsc"/>
+                                    <outlet property="imageView" destination="tUT-vR-CiZ" id="GIt-ad-Ghm"/>
+                                    <outlet property="nameLabel" destination="ICd-A2-0L9" id="fbh-4n-Jcj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -2952,10 +3270,14 @@ Cg
                             <outlet property="delegate" destination="Pip-QA-PGs" id="Jy0-bv-nLF"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="dj5-1N-TYy"/>
+                    <connections>
+                        <outlet property="lifeachawardCVC" destination="xFf-9H-0L4" id="uhx-GZ-Vfq"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h19-BD-Gbf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7454" y="-888"/>
+            <point key="canvasLocation" x="7598" y="1307"/>
         </scene>
         <!--Annual Web View-->
         <scene sceneID="dvj-iI-2au">
@@ -3020,6 +3342,8 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="CXi-cV-79d"/>
+        <segue reference="jNI-Az-eEk"/>
+        <segue reference="eGj-5b-phK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="fogsi_2020" width="250" height="250"/>

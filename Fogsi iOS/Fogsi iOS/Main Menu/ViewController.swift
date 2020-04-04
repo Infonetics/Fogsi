@@ -13,6 +13,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBOutlet var collectionviewmain: UICollectionView!
     private let spacing:CGFloat = 18.0
     var selecteddictionary:[String:String]?
+    var whatsnewweb = "https://www.fogsi.org/category/whats-new/"
     var namearray = [["name":"About FOGSI","image":"about_fogsi"],["name":"Fogsi 2020","image":"fogsi_2020"],["name":"Office Bearers","image":"office_bearers"],["name":"Committees","image":"committees"],["name":"Member Societies","image":"member_societies"],["name":"Prizes and Awards","image":"prizes_and_awards"],["name":"Training Program","image":"training_program"],["name":"What's New","image":"whats_new"],["name":"GCPR","image":"gcpr"],["name":"Resources","image":"resources"],["name":"News","image":"news"],["name":"Videos","image":"videos"],["name":"Photo Gallery","image":"photo_gallery"],["name":"Archives","image":"archives"],["name":"Fogsi Focus","image":"fogsi_focus"],["name":"Newsletter","image":"newsletter"],["name":"Contact Us","image":"contact_us"]
     ]
     
@@ -96,10 +97,10 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         performSegue(withIdentifier: "prizandawa", sender: self)
         }
         if indexPath.row == 6 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "trainingbase", sender: self)
         }
         if indexPath.row == 7 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "whatsnew", sender: self)
         }
         if indexPath.row == 8 {
         performSegue(withIdentifier: "offbear", sender: self)
@@ -130,7 +131,15 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
     }
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+         if segue.identifier == "whatsnew"{
+            let link = segue.destination as! webviewTrainingVC
+            link.selectedwebsite = whatsnewweb
+              
+    }
     
+    }
     
     
 }

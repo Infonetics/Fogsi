@@ -1,44 +1,41 @@
 //
-//  awwardWebViewVC.swift
+//  webviewTrainingVC.swift
 //  Fogsi iOS
 //
-//  Created by Dayal ND on 03/04/20.
+//  Created by Dayal ND on 04/04/20.
 //  Copyright © 2020 Dayal ND. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class awwardWebViewVC: UIViewController,WKNavigationDelegate {
+class webviewTrainingVC: UIViewController,WKNavigationDelegate {
     
-
+    @IBOutlet var webVie: WKWebView!
+    @IBOutlet var activity: UIActivityIndicatorView!
+    var selectedwebsite:String?
     
-    @IBOutlet var webViewannual: WKWebView!
-    @IBOutlet var activityAnn: UIActivityIndicatorView!
-    var dict1:[String:String]?
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    let website = dict1?["desc"]
+    let website = selectedwebsite
     let myURL = URL(string: website! )
     let myRequest = URLRequest(url: myURL!)
-    webViewannual.load(myRequest)
-             
-    self.webViewannual.addSubview(self.activityAnn)
-    self.activityAnn.startAnimating()
-    self.webViewannual.navigationDelegate = self
-    self.activityAnn.hidesWhenStopped = true
+    webVie.load(myRequest)
+                    
+    self.webVie.addSubview(self.activity)
+    self.activity.startAnimating()
+    self.webVie.navigationDelegate = self
+    self.activity.hidesWhenStopped = true
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activityAnn.stopAnimating()
+        activity.stopAnimating()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activityAnn.stopAnimating()
+        activity.stopAnimating()
     }
+
     /*
     // MARK: - Navigation
 
