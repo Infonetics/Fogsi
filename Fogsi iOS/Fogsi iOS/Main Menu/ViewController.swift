@@ -93,7 +93,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         performSegue(withIdentifier: "memberso", sender: self)
         }
         if indexPath.row == 5 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "prizandawa", sender: self)
         }
         if indexPath.row == 6 {
         performSegue(withIdentifier: "offbear", sender: self)

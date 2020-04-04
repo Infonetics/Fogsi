@@ -39,6 +39,18 @@
 		3F9EB3AE2433A279005BC388 /* responsibilityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EB3AD2433A279005BC388 /* responsibilityVC.swift */; };
 		3FC511B02436FA6D00CBDE7C /* membersocietCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511AF2436FA6D00CBDE7C /* membersocietCVC.swift */; };
 		3FC511B22436FE3D00CBDE7C /* memberCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */; };
+		3FC511B42437060700CBDE7C /* fmsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B32437060700CBDE7C /* fmsTVC.swift */; };
+		3FC511B62437061F00CBDE7C /* fmsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B52437061F00CBDE7C /* fmsTVCell.swift */; };
+		3FC511B82437074D00CBDE7C /* presidentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B72437074D00CBDE7C /* presidentTVC.swift */; };
+		3FC511BA2437076600CBDE7C /* secretaryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B92437076600CBDE7C /* secretaryTVC.swift */; };
+		3FC511BD24370C8000CBDE7C /* prizesandawardsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511BC24370C8000CBDE7C /* prizesandawardsCVC.swift */; };
+		3FC511BF24370C9E00CBDE7C /* prizesandawardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511BE24370C9E00CBDE7C /* prizesandawardsCell.swift */; };
+		3FC511C12437128900CBDE7C /* awwardWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C02437128900CBDE7C /* awwardWebViewVC.swift */; };
+		3FC511C3243719C700CBDE7C /* eligisoawardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C2243719C700CBDE7C /* eligisoawardTVC.swift */; };
+		3FC511C5243719EA00CBDE7C /* elisocawardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C4243719EA00CBDE7C /* elisocawardTVCell.swift */; };
+		3FC511C7243764C100CBDE7C /* indiawardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C6243764C100CBDE7C /* indiawardTVC.swift */; };
+		3FC511C9243764E700CBDE7C /* indiawardVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C8243764E700CBDE7C /* indiawardVCell.swift */; };
+		3FC511CB243785BA00CBDE7C /* textview768VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511CA243785BA00CBDE7C /* textview768VC.swift */; };
 		3FF17954243065410047DAA1 /* codeOfConduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF17953243065410047DAA1 /* codeOfConduct.swift */; };
 		3FF179562430E5B10047DAA1 /* annualReportCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF179552430E5B10047DAA1 /* annualReportCollectionView.swift */; };
 		3FF179582430E5E80047DAA1 /* anualReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF179572430E5E80047DAA1 /* anualReportCollectionViewCell.swift */; };
@@ -82,6 +94,18 @@
 		3F9EB3AD2433A279005BC388 /* responsibilityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = responsibilityVC.swift; sourceTree = "<group>"; };
 		3FC511AF2436FA6D00CBDE7C /* membersocietCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = membersocietCVC.swift; sourceTree = "<group>"; };
 		3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memberCVCell.swift; sourceTree = "<group>"; };
+		3FC511B32437060700CBDE7C /* fmsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fmsTVC.swift; sourceTree = "<group>"; };
+		3FC511B52437061F00CBDE7C /* fmsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fmsTVCell.swift; sourceTree = "<group>"; };
+		3FC511B72437074D00CBDE7C /* presidentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presidentTVC.swift; sourceTree = "<group>"; };
+		3FC511B92437076600CBDE7C /* secretaryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretaryTVC.swift; sourceTree = "<group>"; };
+		3FC511BC24370C8000CBDE7C /* prizesandawardsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prizesandawardsCVC.swift; sourceTree = "<group>"; };
+		3FC511BE24370C9E00CBDE7C /* prizesandawardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prizesandawardsCell.swift; sourceTree = "<group>"; };
+		3FC511C02437128900CBDE7C /* awwardWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awwardWebViewVC.swift; sourceTree = "<group>"; };
+		3FC511C2243719C700CBDE7C /* eligisoawardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eligisoawardTVC.swift; sourceTree = "<group>"; };
+		3FC511C4243719EA00CBDE7C /* elisocawardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elisocawardTVCell.swift; sourceTree = "<group>"; };
+		3FC511C6243764C100CBDE7C /* indiawardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indiawardTVC.swift; sourceTree = "<group>"; };
+		3FC511C8243764E700CBDE7C /* indiawardVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indiawardVCell.swift; sourceTree = "<group>"; };
+		3FC511CA243785BA00CBDE7C /* textview768VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textview768VC.swift; sourceTree = "<group>"; };
 		3FF17953243065410047DAA1 /* codeOfConduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeOfConduct.swift; sourceTree = "<group>"; };
 		3FF179552430E5B10047DAA1 /* annualReportCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = annualReportCollectionView.swift; sourceTree = "<group>"; };
 		3FF179572430E5E80047DAA1 /* anualReportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anualReportCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -133,6 +157,7 @@
 				3F37510F2434DF2E000E7F99 /* Contact Us */,
 				3F54819D2436294500110904 /* Newsletter */,
 				3FC511AE2436F90B00CBDE7C /* Member Society */,
+				3FC511BB24370C5900CBDE7C /* Prizes and Awards */,
 				3F08A45F2422396200492AEA /* Main.storyboard */,
 				3F08A4672422397100492AEA /* LaunchScreen.storyboard */,
 				3F5408BE242FC9CA0039089B /* Default-568h@2x.png */,
@@ -225,8 +250,27 @@
 			children = (
 				3FC511AF2436FA6D00CBDE7C /* membersocietCVC.swift */,
 				3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */,
+				3FC511B32437060700CBDE7C /* fmsTVC.swift */,
+				3FC511B52437061F00CBDE7C /* fmsTVCell.swift */,
+				3FC511B72437074D00CBDE7C /* presidentTVC.swift */,
+				3FC511B92437076600CBDE7C /* secretaryTVC.swift */,
 			);
 			path = "Member Society";
+			sourceTree = "<group>";
+		};
+		3FC511BB24370C5900CBDE7C /* Prizes and Awards */ = {
+			isa = PBXGroup;
+			children = (
+				3FC511BC24370C8000CBDE7C /* prizesandawardsCVC.swift */,
+				3FC511BE24370C9E00CBDE7C /* prizesandawardsCell.swift */,
+				3FC511C02437128900CBDE7C /* awwardWebViewVC.swift */,
+				3FC511C2243719C700CBDE7C /* eligisoawardTVC.swift */,
+				3FC511C4243719EA00CBDE7C /* elisocawardTVCell.swift */,
+				3FC511C6243764C100CBDE7C /* indiawardTVC.swift */,
+				3FC511C8243764E700CBDE7C /* indiawardVCell.swift */,
+				3FC511CA243785BA00CBDE7C /* textview768VC.swift */,
+			);
+			path = "Prizes and Awards";
 			sourceTree = "<group>";
 		};
 		3FF1795D243112FB0047DAA1 /* Frameworks */ = {
@@ -317,29 +361,41 @@
 				3F9EB3AC24331DEA005BC388 /* bearersCVCell.swift in Sources */,
 				3F5481A3243646D100110904 /* fogsi2020TVC.swift in Sources */,
 				3F22E302242DD3D900AAE924 /* CollectionViewCell1.swift in Sources */,
+				3FC511BD24370C8000CBDE7C /* prizesandawardsCVC.swift in Sources */,
 				3F5481A52436470800110904 /* fogsi2020TVCell.swift in Sources */,
 				3F9EB39D2431E556005BC388 /* organoCollectionView.swift in Sources */,
 				3F37510B24346531000E7F99 /* committeeCVC.swift in Sources */,
 				3FF179582430E5E80047DAA1 /* anualReportCollectionViewCell.swift in Sources */,
 				3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */,
 				3F9EB3AE2433A279005BC388 /* responsibilityVC.swift in Sources */,
+				3FC511C9243764E700CBDE7C /* indiawardVCell.swift in Sources */,
 				3FF1795A243102070047DAA1 /* annualWebView.swift in Sources */,
+				3FC511C3243719C700CBDE7C /* eligisoawardTVC.swift in Sources */,
 				3FF1795C2431093B0047DAA1 /* administarieveVC.swift in Sources */,
 				3F08A45E2422396200492AEA /* ViewController.swift in Sources */,
 				3F9EB39F2431E580005BC388 /* organoCell.swift in Sources */,
 				3F3751112434DF83000E7F99 /* contactUsVC.swift in Sources */,
+				3FC511B82437074D00CBDE7C /* presidentTVC.swift in Sources */,
 				3F9EB3AA24331A06005BC388 /* bearersCVC.swift in Sources */,
 				3F37510E243466A6000E7F99 /* committeeCCell.swift in Sources */,
 				3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */,
 				3F9EB39B2431E1A9005BC388 /* constitutionWebView.swift in Sources */,
 				3F9EB3A7243310FB005BC388 /* officeBCollectionViewCell.swift in Sources */,
 				3F9EB3A5243310A9005BC388 /* officeBCollectionViewController.swift in Sources */,
+				3FC511C12437128900CBDE7C /* awwardWebViewVC.swift in Sources */,
+				3FC511C5243719EA00CBDE7C /* elisocawardTVCell.swift in Sources */,
 				3F37510924346157000E7F99 /* pastVC.swift in Sources */,
+				3FC511CB243785BA00CBDE7C /* textview768VC.swift in Sources */,
+				3FC511B62437061F00CBDE7C /* fmsTVCell.swift in Sources */,
 				3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */,
 				3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */,
 				3F5408BA242F97080039089B /* missionAndVision.swift in Sources */,
+				3FC511BA2437076600CBDE7C /* secretaryTVC.swift in Sources */,
+				3FC511B42437060700CBDE7C /* fmsTVC.swift in Sources */,
+				3FC511BF24370C9E00CBDE7C /* prizesandawardsCell.swift in Sources */,
 				3FF179562430E5B10047DAA1 /* annualReportCollectionView.swift in Sources */,
 				3FF17954243065410047DAA1 /* codeOfConduct.swift in Sources */,
+				3FC511C7243764C100CBDE7C /* indiawardTVC.swift in Sources */,
 				3F08A45C2422396200492AEA /* AppDelegate.swift in Sources */,
 				3F54819C2435BBF600110904 /* newsLetterVC.swift in Sources */,
 				3FC511B22436FE3D00CBDE7C /* memberCVCell.swift in Sources */,
