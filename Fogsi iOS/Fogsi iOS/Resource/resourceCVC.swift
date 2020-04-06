@@ -1,8 +1,8 @@
 //
-//  membersocietCVC.swift
+//  resourceCVC.swift
 //  Fogsi iOS
 //
-//  Created by Dayal ND on 03/04/20.
+//  Created by Dayal ND on 05/04/20.
 //  Copyright © 2020 Dayal ND. All rights reserved.
 //
 
@@ -10,18 +10,21 @@ import UIKit
 
 
 
-class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class resourceCVC: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
-@IBOutlet var memberCVC: UICollectionView!
-    
+    @IBOutlet var resourcCVC: UICollectionView!
     private let spacing:CGFloat = 18.0
-    var selectedweb:String?
-    var namearray = [["name":"FOGSI Member Societies","image":"fogsi_2020"],["name":"Presidents","image":"fogsi_2020"],["name":"Secretaries","image":"fogsi_2020"]
-     ]
+    var selecteddictionary:[String:String]?
+    var namearray = [["name":"Publications","image":"fogsi_2020","desc":"https://www.fogsi.org/category/fogsi-publication/"],["name":"Notifications","image":"fogsi_2020","desc":"https://www.fogsi.org/category/notification/"],["name":"Publication Archive","image":"fogsi_2020","desc":"https://www.fogsi.org/category/archives-resources/"]
+         ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    memberCVC.dataSource = self
-    memberCVC.delegate = self
+        
+    resourcCVC.dataSource = self
+    resourcCVC.delegate = self
+
 
     }
 
@@ -49,7 +52,7 @@ class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "memberCVCell", for: indexPath) as! memberCVCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "resourceCell", for: indexPath) as! resourceCell
     
         cell.layer.cornerRadius = 10
         let dict = namearray[indexPath.row]
@@ -59,6 +62,7 @@ class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
     
         return cell
     }
+    
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow:CGFloat = 2
@@ -66,7 +70,7 @@ class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
         
         let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
         
-        if let collection = self.memberCVC{
+        if let collection = self.resourcCVC{
             let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
         return CGSize(width: width - 20, height: width - 20)
         }else{
@@ -74,30 +78,24 @@ class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
         }
         
     }
-
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if indexPath.row == 0 {
-            performSegue(withIdentifier: "fogmembs", sender: self)
-        }
-        if indexPath.row == 1 {
-            selectedweb = "https://www.fogsi.org/wp-content/uploads/member/president-list-2020.pdf"
-            performSegue(withIdentifier: "presid", sender: self)
-        }
-        if indexPath.row == 2 {
-            selectedweb = "https://www.fogsi.org/wp-content/uploads/member/secretary-list-2020.pdf"
-            performSegue(withIdentifier: "presid", sender: self)
-        }
-    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       
-         if segue.identifier == "presid"{
-            let link = segue.destination as! webviewTrainingVC
-            link.selectedwebsite = selectedweb
-              
-          }
-    }
+       selecteddictionary = namearray[indexPath.row]
+       performSegue(withIdentifier: "reswebview", sender: self)
+
+    
+      }
+
+
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          
+          if segue.identifier == "reswebview" {
+              let link = segue.destination as! awwardWebViewVC
+              link.dict1 = selecteddictionary
+              }
+       
+      }
     // MARK: UICollectionViewDelegate
 
     /*

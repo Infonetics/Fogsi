@@ -16,6 +16,14 @@
 		3F22E300242DCD4700AAE924 /* CollectionViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */; };
 		3F22E302242DD3D900AAE924 /* CollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */; };
 		3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22E303242E3D4200AAE924 /* FogsiProfile.swift */; };
+		3F29078E2439A9C800E2EF1B /* resourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29078D2439A9C800E2EF1B /* resourceCell.swift */; };
+		3F2907902439A9E000E2EF1B /* resourceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29078F2439A9E000E2EF1B /* resourceCVC.swift */; };
+		3F2907962439BF3B00E2EF1B /* newsactualTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2907952439BF3B00E2EF1B /* newsactualTVC.swift */; };
+		3F29079C2439C1EB00E2EF1B /* newsactyyuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29079B2439C1EB00E2EF1B /* newsactyyuCell.swift */; };
+		3F29079F243A038600E2EF1B /* archievsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29079E243A038600E2EF1B /* archievsCell.swift */; };
+		3F2907A1243A03A400E2EF1B /* archievsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2907A0243A03A400E2EF1B /* archievsTVC.swift */; };
+		3F2907A3243A3DFF00E2EF1B /* statesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2907A2243A3DFF00E2EF1B /* statesListTVC.swift */; };
+		3F2907A5243A3E1D00E2EF1B /* statesListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2907A4243A3E1D00E2EF1B /* statesListTVCell.swift */; };
 		3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD9024227430001CFE16 /* CollectionViewCell.swift */; };
 		3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */; };
 		3F37510924346157000E7F99 /* pastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37510824346157000E7F99 /* pastVC.swift */; };
@@ -26,7 +34,6 @@
 		3F3751152434E49A000E7F99 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3751142434E49A000E7F99 /* MapKit.framework */; };
 		3F5408BA242F97080039089B /* missionAndVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5408B9242F97080039089B /* missionAndVision.swift */; };
 		3F5408BF242FC9CA0039089B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5408BE242FC9CA0039089B /* Default-568h@2x.png */; };
-		3F54819C2435BBF600110904 /* newsLetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54819B2435BBF600110904 /* newsLetterVC.swift */; };
 		3F5481A3243646D100110904 /* fogsi2020TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5481A2243646D100110904 /* fogsi2020TVC.swift */; };
 		3F5481A52436470800110904 /* fogsi2020TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5481A42436470800110904 /* fogsi2020TVCell.swift */; };
 		3F9EB39B2431E1A9005BC388 /* constitutionWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EB39A2431E1A8005BC388 /* constitutionWebView.swift */; };
@@ -50,8 +57,6 @@
 		3FC511B22436FE3D00CBDE7C /* memberCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */; };
 		3FC511B42437060700CBDE7C /* fmsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B32437060700CBDE7C /* fmsTVC.swift */; };
 		3FC511B62437061F00CBDE7C /* fmsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B52437061F00CBDE7C /* fmsTVCell.swift */; };
-		3FC511B82437074D00CBDE7C /* presidentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B72437074D00CBDE7C /* presidentTVC.swift */; };
-		3FC511BA2437076600CBDE7C /* secretaryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511B92437076600CBDE7C /* secretaryTVC.swift */; };
 		3FC511BD24370C8000CBDE7C /* prizesandawardsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511BC24370C8000CBDE7C /* prizesandawardsCVC.swift */; };
 		3FC511BF24370C9E00CBDE7C /* prizesandawardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511BE24370C9E00CBDE7C /* prizesandawardsCell.swift */; };
 		3FC511C12437128900CBDE7C /* awwardWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C02437128900CBDE7C /* awwardWebViewVC.swift */; };
@@ -60,6 +65,11 @@
 		3FC511C7243764C100CBDE7C /* indiawardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C6243764C100CBDE7C /* indiawardTVC.swift */; };
 		3FC511C9243764E700CBDE7C /* indiawardVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511C8243764E700CBDE7C /* indiawardVCell.swift */; };
 		3FC511CB243785BA00CBDE7C /* textview768VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC511CA243785BA00CBDE7C /* textview768VC.swift */; };
+		3FE99940243AFA2500171744 /* catvideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9993F243AFA2500171744 /* catvideoCell.swift */; };
+		3FE99942243AFA3F00171744 /* catvideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE99941243AFA3F00171744 /* catvideoTVC.swift */; };
+		3FE99944243AFA6000171744 /* videogalleryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE99943243AFA6000171744 /* videogalleryTVC.swift */; };
+		3FE99946243AFA7800171744 /* videoGalleryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE99945243AFA7800171744 /* videoGalleryTVCell.swift */; };
+		3FE99948243B031B00171744 /* webVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE99947243B031B00171744 /* webVideoVC.swift */; };
 		3FF17954243065410047DAA1 /* codeOfConduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF17953243065410047DAA1 /* codeOfConduct.swift */; };
 		3FF179562430E5B10047DAA1 /* annualReportCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF179552430E5B10047DAA1 /* annualReportCollectionView.swift */; };
 		3FF179582430E5E80047DAA1 /* anualReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF179572430E5E80047DAA1 /* anualReportCollectionViewCell.swift */; };
@@ -80,6 +90,14 @@
 		3F22E2FF242DCD4600AAE924 /* CollectionViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController1.swift; sourceTree = "<group>"; };
 		3F22E301242DD3D900AAE924 /* CollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell1.swift; sourceTree = "<group>"; };
 		3F22E303242E3D4200AAE924 /* FogsiProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogsiProfile.swift; sourceTree = "<group>"; };
+		3F29078D2439A9C800E2EF1B /* resourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceCell.swift; sourceTree = "<group>"; };
+		3F29078F2439A9E000E2EF1B /* resourceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceCVC.swift; sourceTree = "<group>"; };
+		3F2907952439BF3B00E2EF1B /* newsactualTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsactualTVC.swift; sourceTree = "<group>"; };
+		3F29079B2439C1EB00E2EF1B /* newsactyyuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsactyyuCell.swift; sourceTree = "<group>"; };
+		3F29079E243A038600E2EF1B /* archievsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = archievsCell.swift; sourceTree = "<group>"; };
+		3F2907A0243A03A400E2EF1B /* archievsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = archievsTVC.swift; sourceTree = "<group>"; };
+		3F2907A2243A3DFF00E2EF1B /* statesListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statesListTVC.swift; sourceTree = "<group>"; };
+		3F2907A4243A3E1D00E2EF1B /* statesListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statesListTVCell.swift; sourceTree = "<group>"; };
 		3F35BD9024227430001CFE16 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3F35BD92242279D4001CFE16 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		3F37510824346157000E7F99 /* pastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pastVC.swift; sourceTree = "<group>"; };
@@ -90,7 +108,6 @@
 		3F3751142434E49A000E7F99 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3F5408B9242F97080039089B /* missionAndVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionAndVision.swift; sourceTree = "<group>"; };
 		3F5408BE242FC9CA0039089B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3F54819B2435BBF600110904 /* newsLetterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsLetterVC.swift; sourceTree = "<group>"; };
 		3F5481A2243646D100110904 /* fogsi2020TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fogsi2020TVC.swift; sourceTree = "<group>"; };
 		3F5481A42436470800110904 /* fogsi2020TVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fogsi2020TVCell.swift; sourceTree = "<group>"; };
 		3F9EB39A2431E1A8005BC388 /* constitutionWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constitutionWebView.swift; sourceTree = "<group>"; };
@@ -114,8 +131,6 @@
 		3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memberCVCell.swift; sourceTree = "<group>"; };
 		3FC511B32437060700CBDE7C /* fmsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fmsTVC.swift; sourceTree = "<group>"; };
 		3FC511B52437061F00CBDE7C /* fmsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fmsTVCell.swift; sourceTree = "<group>"; };
-		3FC511B72437074D00CBDE7C /* presidentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presidentTVC.swift; sourceTree = "<group>"; };
-		3FC511B92437076600CBDE7C /* secretaryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretaryTVC.swift; sourceTree = "<group>"; };
 		3FC511BC24370C8000CBDE7C /* prizesandawardsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prizesandawardsCVC.swift; sourceTree = "<group>"; };
 		3FC511BE24370C9E00CBDE7C /* prizesandawardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prizesandawardsCell.swift; sourceTree = "<group>"; };
 		3FC511C02437128900CBDE7C /* awwardWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awwardWebViewVC.swift; sourceTree = "<group>"; };
@@ -124,6 +139,11 @@
 		3FC511C6243764C100CBDE7C /* indiawardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indiawardTVC.swift; sourceTree = "<group>"; };
 		3FC511C8243764E700CBDE7C /* indiawardVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indiawardVCell.swift; sourceTree = "<group>"; };
 		3FC511CA243785BA00CBDE7C /* textview768VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textview768VC.swift; sourceTree = "<group>"; };
+		3FE9993F243AFA2500171744 /* catvideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catvideoCell.swift; sourceTree = "<group>"; };
+		3FE99941243AFA3F00171744 /* catvideoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catvideoTVC.swift; sourceTree = "<group>"; };
+		3FE99943243AFA6000171744 /* videogalleryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videogalleryTVC.swift; sourceTree = "<group>"; };
+		3FE99945243AFA7800171744 /* videoGalleryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoGalleryTVCell.swift; sourceTree = "<group>"; };
+		3FE99947243B031B00171744 /* webVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVideoVC.swift; sourceTree = "<group>"; };
 		3FF17953243065410047DAA1 /* codeOfConduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeOfConduct.swift; sourceTree = "<group>"; };
 		3FF179552430E5B10047DAA1 /* annualReportCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = annualReportCollectionView.swift; sourceTree = "<group>"; };
 		3FF179572430E5E80047DAA1 /* anualReportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anualReportCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +197,9 @@
 				3FC511AE2436F90B00CBDE7C /* Member Society */,
 				3FC511BB24370C5900CBDE7C /* Prizes and Awards */,
 				3FA895BA2438925D00F9AB51 /* Training Program */,
+				3F29078C2439A9A000E2EF1B /* Resource */,
+				3F29079D243A036400E2EF1B /* Archives */,
+				3FE9993E243AF9CB00171744 /* Video Gallery */,
 				3F08A45F2422396200492AEA /* Main.storyboard */,
 				3F08A4672422397100492AEA /* LaunchScreen.storyboard */,
 				3F5408BE242FC9CA0039089B /* Default-568h@2x.png */,
@@ -186,6 +209,24 @@
 				3F08A46A2422397100492AEA /* Info.plist */,
 			);
 			path = "Fogsi iOS";
+			sourceTree = "<group>";
+		};
+		3F29078C2439A9A000E2EF1B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3F29078F2439A9E000E2EF1B /* resourceCVC.swift */,
+				3F29078D2439A9C800E2EF1B /* resourceCell.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3F29079D243A036400E2EF1B /* Archives */ = {
+			isa = PBXGroup;
+			children = (
+				3F2907A0243A03A400E2EF1B /* archievsTVC.swift */,
+				3F29079E243A038600E2EF1B /* archievsCell.swift */,
+			);
+			path = Archives;
 			sourceTree = "<group>";
 		};
 		3F37510C2434653B000E7F99 /* Committees */ = {
@@ -237,7 +278,8 @@
 		3F54819D2436294500110904 /* Newsletter */ = {
 			isa = PBXGroup;
 			children = (
-				3F54819B2435BBF600110904 /* newsLetterVC.swift */,
+				3F2907952439BF3B00E2EF1B /* newsactualTVC.swift */,
+				3F29079B2439C1EB00E2EF1B /* newsactyyuCell.swift */,
 			);
 			path = Newsletter;
 			sourceTree = "<group>";
@@ -285,8 +327,8 @@
 				3FC511B12436FE3D00CBDE7C /* memberCVCell.swift */,
 				3FC511B32437060700CBDE7C /* fmsTVC.swift */,
 				3FC511B52437061F00CBDE7C /* fmsTVCell.swift */,
-				3FC511B72437074D00CBDE7C /* presidentTVC.swift */,
-				3FC511B92437076600CBDE7C /* secretaryTVC.swift */,
+				3F2907A2243A3DFF00E2EF1B /* statesListTVC.swift */,
+				3F2907A4243A3E1D00E2EF1B /* statesListTVCell.swift */,
 			);
 			path = "Member Society";
 			sourceTree = "<group>";
@@ -306,6 +348,18 @@
 				3FA895B82438856600F9AB51 /* lifeachawardCell.swift */,
 			);
 			path = "Prizes and Awards";
+			sourceTree = "<group>";
+		};
+		3FE9993E243AF9CB00171744 /* Video Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				3FE99941243AFA3F00171744 /* catvideoTVC.swift */,
+				3FE9993F243AFA2500171744 /* catvideoCell.swift */,
+				3FE99943243AFA6000171744 /* videogalleryTVC.swift */,
+				3FE99945243AFA7800171744 /* videoGalleryTVCell.swift */,
+				3FE99947243B031B00171744 /* webVideoVC.swift */,
+			);
+			path = "Video Gallery";
 			sourceTree = "<group>";
 		};
 		3FF1795D243112FB0047DAA1 /* Frameworks */ = {
@@ -394,6 +448,7 @@
 				3FA895B92438856600F9AB51 /* lifeachawardCell.swift in Sources */,
 				3F22E300242DCD4700AAE924 /* CollectionViewController1.swift in Sources */,
 				3FC511B02436FA6D00CBDE7C /* membersocietCVC.swift in Sources */,
+				3FE99948243B031B00171744 /* webVideoVC.swift in Sources */,
 				3F9EB3AC24331DEA005BC388 /* bearersCVCell.swift in Sources */,
 				3FA895C2243892F200F9AB51 /* trainingSecondCell.swift in Sources */,
 				3F5481A3243646D100110904 /* fogsi2020TVC.swift in Sources */,
@@ -401,7 +456,10 @@
 				3FC511BD24370C8000CBDE7C /* prizesandawardsCVC.swift in Sources */,
 				3FA895BC2438929300F9AB51 /* trainingBaseCVC.swift in Sources */,
 				3F5481A52436470800110904 /* fogsi2020TVCell.swift in Sources */,
+				3F2907962439BF3B00E2EF1B /* newsactualTVC.swift in Sources */,
 				3F9EB39D2431E556005BC388 /* organoCollectionView.swift in Sources */,
+				3FE99944243AFA6000171744 /* videogalleryTVC.swift in Sources */,
+				3F2907A5243A3E1D00E2EF1B /* statesListTVCell.swift in Sources */,
 				3F37510B24346531000E7F99 /* committeeCVC.swift in Sources */,
 				3FF179582430E5E80047DAA1 /* anualReportCollectionViewCell.swift in Sources */,
 				3F08A4642422396200492AEA /* Fogsi_iOS.xcdatamodeld in Sources */,
@@ -415,33 +473,39 @@
 				3FA895C42438930E00F9AB51 /* webviewTrainingVC.swift in Sources */,
 				3F9EB39F2431E580005BC388 /* organoCell.swift in Sources */,
 				3F3751112434DF83000E7F99 /* contactUsVC.swift in Sources */,
-				3FC511B82437074D00CBDE7C /* presidentTVC.swift in Sources */,
 				3FA895C62438E1FE00F9AB51 /* syallabCVC.swift in Sources */,
 				3F9EB3AA24331A06005BC388 /* bearersCVC.swift in Sources */,
+				3FE99946243AFA7800171744 /* videoGalleryTVCell.swift in Sources */,
 				3F37510E243466A6000E7F99 /* committeeCCell.swift in Sources */,
 				3F35BD9124227430001CFE16 /* CollectionViewCell.swift in Sources */,
+				3F29079C2439C1EB00E2EF1B /* newsactyyuCell.swift in Sources */,
 				3F9EB39B2431E1A9005BC388 /* constitutionWebView.swift in Sources */,
 				3F9EB3A7243310FB005BC388 /* officeBCollectionViewCell.swift in Sources */,
 				3F9EB3A5243310A9005BC388 /* officeBCollectionViewController.swift in Sources */,
+				3FE99940243AFA2500171744 /* catvideoCell.swift in Sources */,
+				3F29079F243A038600E2EF1B /* archievsCell.swift in Sources */,
 				3FC511C12437128900CBDE7C /* awwardWebViewVC.swift in Sources */,
+				3F2907A3243A3DFF00E2EF1B /* statesListTVC.swift in Sources */,
 				3FA895B72438854700F9AB51 /* lifeachawardCVC.swift in Sources */,
+				3FE99942243AFA3F00171744 /* catvideoTVC.swift in Sources */,
 				3FC511C5243719EA00CBDE7C /* elisocawardTVCell.swift in Sources */,
 				3F37510924346157000E7F99 /* pastVC.swift in Sources */,
 				3FC511CB243785BA00CBDE7C /* textview768VC.swift in Sources */,
 				3FC511B62437061F00CBDE7C /* fmsTVCell.swift in Sources */,
+				3F2907902439A9E000E2EF1B /* resourceCVC.swift in Sources */,
 				3F35BD93242279D4001CFE16 /* CollectionReusableView.swift in Sources */,
 				3FA895BE243892AD00F9AB51 /* trainingbaseCell.swift in Sources */,
 				3F22E304242E3D4200AAE924 /* FogsiProfile.swift in Sources */,
 				3F5408BA242F97080039089B /* missionAndVision.swift in Sources */,
 				3FA895C0243892D000F9AB51 /* trainingSecondCVC.swift in Sources */,
-				3FC511BA2437076600CBDE7C /* secretaryTVC.swift in Sources */,
 				3FC511B42437060700CBDE7C /* fmsTVC.swift in Sources */,
 				3FC511BF24370C9E00CBDE7C /* prizesandawardsCell.swift in Sources */,
 				3FF179562430E5B10047DAA1 /* annualReportCollectionView.swift in Sources */,
 				3FF17954243065410047DAA1 /* codeOfConduct.swift in Sources */,
 				3FC511C7243764C100CBDE7C /* indiawardTVC.swift in Sources */,
 				3F08A45C2422396200492AEA /* AppDelegate.swift in Sources */,
-				3F54819C2435BBF600110904 /* newsLetterVC.swift in Sources */,
+				3F29078E2439A9C800E2EF1B /* resourceCell.swift in Sources */,
+				3F2907A1243A03A400E2EF1B /* archievsTVC.swift in Sources */,
 				3FC511B22436FE3D00CBDE7C /* memberCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

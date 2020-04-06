@@ -12,8 +12,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 
     @IBOutlet var collectionviewmain: UICollectionView!
     private let spacing:CGFloat = 18.0
-    var selecteddictionary:[String:String]?
-    var whatsnewweb = "https://www.fogsi.org/category/whats-new/"
+    var selectedweb:String?
+
     var namearray = [["name":"About FOGSI","image":"about_fogsi"],["name":"Fogsi 2020","image":"fogsi_2020"],["name":"Office Bearers","image":"office_bearers"],["name":"Committees","image":"committees"],["name":"Member Societies","image":"member_societies"],["name":"Prizes and Awards","image":"prizes_and_awards"],["name":"Training Program","image":"training_program"],["name":"What's New","image":"whats_new"],["name":"GCPR","image":"gcpr"],["name":"Resources","image":"resources"],["name":"News","image":"news"],["name":"Videos","image":"videos"],["name":"Photo Gallery","image":"photo_gallery"],["name":"Archives","image":"archives"],["name":"Fogsi Focus","image":"fogsi_focus"],["name":"Newsletter","image":"newsletter"],["name":"Contact Us","image":"contact_us"]
     ]
     
@@ -100,31 +100,35 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         performSegue(withIdentifier: "trainingbase", sender: self)
         }
         if indexPath.row == 7 {
+        selectedweb = "https://www.fogsi.org/category/whats-new/"
         performSegue(withIdentifier: "whatsnew", sender: self)
         }
         if indexPath.row == 8 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        selectedweb = "https://www.fogsi.org/fogsi-icog-good-clinical-practice-recommendations/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
         }
         if indexPath.row == 9 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "resourcet", sender: self)
         }
         if indexPath.row == 10 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        selectedweb = "https://www.fogsi.org/category/archives-news/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
         }
         if indexPath.row == 11 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "videog11", sender: self)
         }
         if indexPath.row == 12 {
         performSegue(withIdentifier: "offbear", sender: self)
         }
         if indexPath.row == 13 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "archtvc", sender: self)
         }
         if indexPath.row == 14 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        selectedweb = "https://www.fogsi.org/category/fogsi-focus/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
         }
         if indexPath.row == 15 {
-        performSegue(withIdentifier: "newsletter", sender: self)
+        performSegue(withIdentifier: "newsactual", sender: self)
         }
         if indexPath.row == 16 {
         performSegue(withIdentifier: "contactus", sender: self)
@@ -135,7 +139,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
       
          if segue.identifier == "whatsnew"{
             let link = segue.destination as! webviewTrainingVC
-            link.selectedwebsite = whatsnewweb
+            link.selectedwebsite = selectedweb
               
     }
     
