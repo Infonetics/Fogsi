@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
 
     @IBOutlet var collectionviewmain: UICollectionView!
@@ -22,6 +24,16 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         collectionviewmain.delegate = self        
         super.viewDidLoad()
         
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -118,7 +130,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         performSegue(withIdentifier: "videog11", sender: self)
         }
         if indexPath.row == 12 {
-        performSegue(withIdentifier: "offbear", sender: self)
+        performSegue(withIdentifier: "albumseg", sender: self)
         }
         if indexPath.row == 13 {
         performSegue(withIdentifier: "archtvc", sender: self)

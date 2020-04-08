@@ -75,6 +75,7 @@ class trainingBaseCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
 
         basecollection.dataSource = self
         basecollection.delegate = self
+        self.navigationItem.title = "Training Program"
     }
 
     /*

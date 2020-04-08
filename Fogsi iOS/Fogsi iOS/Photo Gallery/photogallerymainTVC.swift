@@ -1,5 +1,5 @@
 //
-//  catvideoTVC.swift
+//  photogallerymainTVC.swift
 //  Fogsi iOS
 //
 //  Created by Dayal ND on 06/04/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class catvideoTVC: UITableViewController {
+class photogallerymainTVC: UITableViewController {
     
-    @IBOutlet var catvideoTVC: UITableView!
+    @IBOutlet var photogalleryTVC: UITableView!
     
     var array1 = [[String:AnyObject]]()
     
@@ -28,14 +28,13 @@ class catvideoTVC: UITableViewController {
     
     var cidtopass:String?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         showActivityIndicatory()
         getMethod()
-        self.navigationItem.title = "Videos"
-        
+        self.navigationItem.title = "Photo Gallery"
+
     }
 
     // MARK: - Table view data source
@@ -62,9 +61,8 @@ class catvideoTVC: UITableViewController {
         activityView.stopAnimating()
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "catvideoCell", for: indexPath) as! catvideoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "photogalleryTVCell", for: indexPath) as! photogalleryTVCell
 
         let dict = array1[indexPath.row]
         cell.label.text = dict["name"] as? String
@@ -73,13 +71,13 @@ class catvideoTVC: UITableViewController {
         cell.label.layer.borderColor = UIColor.black.cgColor
         
         hideActivityIndicator()
-
+        
         return cell
     }
 
     func getMethod(){
 
-               let urlstring = "https://fogsi.bdbs.co.in/mobileapp/video_cat.php"
+               let urlstring = "https://fogsi.bdbs.co.in/mobileapp/photo_cat.php"
                let urlString = URL(string: urlstring )
                
                print ( "\(String(describing: urlString))" )
@@ -106,7 +104,7 @@ class catvideoTVC: UITableViewController {
                                         self.fullDetails = json
                                         print("FULL=\(self.fullDetails)")
                                        
-                                        self.array1 = (self.fullDetails["videoCatList"] as? [[String:AnyObject]])!
+                                        self.array1 = (self.fullDetails["photoCatList"] as? [[String:AnyObject]])!
                                         print("FULL=\(self.array1)")
                                         self.tableView.reloadData()
 
@@ -139,7 +137,7 @@ class catvideoTVC: UITableViewController {
     func getMethod2(){
 
                 
-                let urlstring = "https://fogsi.bdbs.co.in/mobileapp/video.php?cid=" + cidtopass!
+                let urlstring = "https://fogsi.bdbs.co.in/mobileapp/photo.php?cid=" + cidtopass!
                 let urlString = URL(string: urlstring )
                 
                 print ( "\(String(describing: urlString))" )
@@ -166,13 +164,13 @@ class catvideoTVC: UITableViewController {
                                          self.fullDetails2 = json
                                          print("FULL2=\(self.fullDetails2)")
                                         
-                                         self.array2 = (self.fullDetails2["videoList"] as? [[String:AnyObject]])!
+                                         self.array2 = (self.fullDetails2["photoList"] as? [[String:AnyObject]])!
                                          print("FULL2=\(self.array2)")
                                          self.tableView.reloadData()
 
-                                            if json["videoList"] != nil {
+                                            if json["photoList"] != nil {
 
-                                               self.performSegue(withIdentifier: "videog22", sender: self)
+                                               self.performSegue(withIdentifier: "photowebfftt", sender: self)
                                                
                                             }else{
                                                
@@ -219,10 +217,11 @@ class catvideoTVC: UITableViewController {
 
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-           let link = segue.destination as! videogalleryTVC
+           let link = segue.destination as! photoTVC
            link.statelist = array2
     
          }
+
 
     /*
     // Override to support conditional editing of the table view.

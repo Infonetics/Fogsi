@@ -23,6 +23,7 @@ class prizesandawardsCVC: UICollectionViewController,UICollectionViewDelegateFlo
 
     prizesandawardCVC.dataSource = self
     prizesandawardCVC.delegate = self
+    self.navigationItem.title = "Prizes and Awards"
         
     }
 

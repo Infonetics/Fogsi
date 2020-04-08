@@ -24,6 +24,7 @@ class resourceCVC: UICollectionViewController,UICollectionViewDelegateFlowLayout
         
     resourcCVC.dataSource = self
     resourcCVC.delegate = self
+    self.navigationItem.title = "Resources"
 
 
     }

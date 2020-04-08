@@ -22,7 +22,7 @@ class membersocietCVC: UICollectionViewController,UICollectionViewDelegateFlowLa
         super.viewDidLoad()
     memberCVC.dataSource = self
     memberCVC.delegate = self
-
+    self.navigationItem.title = "Member Societies"
     }
 
     /*

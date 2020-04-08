@@ -82,12 +82,12 @@ class annualReportCollectionView: UICollectionViewController, UICollectionViewDe
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
       selecteddictionary = namearray[indexPath.row]
-      performSegue(withIdentifier: "annualr", sender: self)
+      performSegue(withIdentifier: "annwebttr", sender: self)
     }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let link = segue.destination as! annualWebView
+        let link = segue.destination as! awwardWebViewVC
         link.dict1 = selecteddictionary
     }
 

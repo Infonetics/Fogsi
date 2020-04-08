@@ -23,7 +23,7 @@ class committeeCVC: UICollectionViewController,UICollectionViewDelegateFlowLayou
 
     committeeCVController.dataSource = self
     committeeCVController.delegate = self
-        
+    self.navigationItem.title = "Committees"
     }
 
     /*

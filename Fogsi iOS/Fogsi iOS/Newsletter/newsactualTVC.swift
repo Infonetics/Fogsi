@@ -28,6 +28,7 @@ class newsactualTVC: UITableViewController {
 
     showActivityIndicatory()
     getMethod()
+    self.navigationItem.title = "News Letter"
 
         
     }

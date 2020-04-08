@@ -14,6 +14,7 @@ class officeBCollectionViewController: UICollectionViewController,UICollectionVi
     
     @IBOutlet var collectionviewOfficeB: UICollectionView!
     private let spacing:CGFloat = 18.0
+    var selectedweb:String?
     var namearray = [["name":"Office Bearers 2020","image":"fogsi_2020"],["name":"Office Bearers Responsibilities","image":"fogsi_2020"],["name":"Past Office Bearers of FOGSI","image":"fogsi_2020"]
     ]
 
@@ -21,6 +22,7 @@ class officeBCollectionViewController: UICollectionViewController,UICollectionVi
         super.viewDidLoad()
     collectionviewOfficeB.dataSource = self
     collectionviewOfficeB.delegate = self
+    self.navigationItem.title = "Office Bearers"
 
 
     }
@@ -84,10 +86,20 @@ class officeBCollectionViewController: UICollectionViewController,UICollectionVi
             performSegue(withIdentifier: "respon", sender: self)
         }
         if indexPath.row == 2 {
-            performSegue(withIdentifier: "past", sender: self)
+            performSegue(withIdentifier: "bearerdd", sender: self)
         }
 
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+         if segue.identifier == "bearerdd"{
+            selectedweb = "https://www.fogsi.org/past-office-bearers-of-fogsi/"
+            let link = segue.destination as! webviewTrainingVC
+            link.selectedwebsite = selectedweb
+              
+          }
     }
     // MARK: UICollectionViewDelegate
 

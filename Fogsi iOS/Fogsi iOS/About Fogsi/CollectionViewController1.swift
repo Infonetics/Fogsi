@@ -13,6 +13,7 @@ import UIKit
 class CollectionViewController1: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     @IBOutlet var collectionview1: UICollectionView!
     private let spacing:CGFloat = 18.0
+    var selectedweb:String?
     var namearray = [["name":"FOGSI Profile","image":"fogsi_2020"],["name":"FOGSI Mission Vision","image":"fogsi_2020"],["name":"Code of Conduct Ethics","image":"fogsi_2020"],["name":"Annual Report","image":"fogsi_2020"],["name":"Administrative Guidelines","image":"fogsi_2020"],["name":"Constitution 2014","image":"fogsi_2020"],["name":"FOGSI Organogram","image":"fogsi_2020"]
     ]
     
@@ -21,18 +22,9 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
 
         collectionview1.dataSource = self
         collectionview1.delegate = self
+        self.navigationItem.title = "About Fogsi"
 
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -83,22 +75,33 @@ class CollectionViewController1: UICollectionViewController,UICollectionViewDele
             performSegue(withIdentifier: "first12", sender: self)
         }
         if indexPath.row == 2 {
-            performSegue(withIdentifier: "first13", sender: self)
+            selectedweb = "https://www.fogsi.org/wp-content/uploads/2015/05/pdf/code_conduct_Ethics.pdf"
+            performSegue(withIdentifier: "aboutfogsinew", sender: self)
         }
         if indexPath.row == 3 {
             performSegue(withIdentifier: "first14", sender: self)
         }
         if indexPath.row == 4 {
-            performSegue(withIdentifier: "admingud", sender: self)
+            selectedweb = "https://www.fogsi.org/administrative-guidelines-april-2012/"
+            performSegue(withIdentifier: "aboutfogsinew", sender: self)
         }
         if indexPath.row == 5 {
-            performSegue(withIdentifier: "const", sender: self)
+            selectedweb = "https://www.fogsi.org/wp-content/uploads/brochure/fogsi-constitution-2014.pdf"
+            performSegue(withIdentifier: "aboutfogsinew", sender: self)
         }
         if indexPath.row == 6 {
             performSegue(withIdentifier: "organo", sender: self)
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+         if segue.identifier == "aboutfogsinew"{
+            let link = segue.destination as! webviewTrainingVC
+            link.selectedwebsite = selectedweb
+        }
+    }
     // MARK: UICollectionViewDelegate
 
     /*

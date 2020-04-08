@@ -18,6 +18,7 @@ class contactUsVC: UIViewController, MFMailComposeViewControllerDelegate {
     @IBOutlet var contactnumberText: UITextField!
     @IBOutlet var yourEmailText: UITextField!
     @IBOutlet var yourMessageText: UITextField!
+    let annotation = MKPointAnnotation()
     
     
     override func viewDidLoad() {
@@ -25,7 +26,9 @@ class contactUsVC: UIViewController, MFMailComposeViewControllerDelegate {
     let initialLocation = CLLocation(latitude: 19.004921, longitude: 72.827217)
     centerMapOnLocation(location: initialLocation)
 
-
+    annotation.coordinate = CLLocationCoordinate2D(latitude: 19.004921, longitude: 72.827217)
+    mapKitView.addAnnotation(annotation)
+    self.navigationItem.title = "Contact Us"
         
     }
     
