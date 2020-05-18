@@ -16,7 +16,7 @@ class missionAndVision: UIViewController {
         super.viewDidLoad()
 
      self.scrollview.contentLayoutGuide.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
-     textView.isScrollEnabled = false
+     //textView.isScrollEnabled = false
     
         // Do any additional setup after loading the view.
     }

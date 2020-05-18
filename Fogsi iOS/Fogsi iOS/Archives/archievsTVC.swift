@@ -1,5 +1,5 @@
 //
-//  newsactualTVC.swift
+//  archievsTVC.swift
 //  Fogsi iOS
 //
 //  Created by Dayal ND on 05/04/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class newsactualTVC: UITableViewController {
+class archievsTVC: UITableViewController {
 
-    @IBOutlet var newsactuallTVC: UITableView!
+    @IBOutlet var archievsTVC: UITableView!
     
     var array1 = [[String:AnyObject]]()
     
@@ -22,15 +22,14 @@ class newsactualTVC: UITableViewController {
     
     var selectedweb:String?
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    showActivityIndicatory()
-    getMethod()
-    self.navigationItem.title = "News Letter"
+        showActivityIndicatory()
+        getMethod()
+        self.navigationItem.title = "Archives"
 
-        
     }
 
     // MARK: - Table view data source
@@ -56,9 +55,8 @@ class newsactualTVC: UITableViewController {
         activityView.stopAnimating()
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "newsactyyuCell", for: indexPath) as! newsactyyuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "archievsCell", for: indexPath) as! archievsCell
 
         let dict = array1[indexPath.row]
         cell.label.text = dict["name"] as? String
@@ -69,91 +67,89 @@ class newsactualTVC: UITableViewController {
         return cell
     }
 
-   // ------
+     func getMethod(){
 
-
-    func getMethod(){
-
-           let urlstring = "https://fogsi.bdbs.co.in/mobileapp/newsletter.php"
-           let urlString = URL(string: urlstring )
-           
-           print ( "\(String(describing: urlString))" )
-           
-           if let url = urlString {
+            let urlstring = "https://fogsi.bdbs.co.in/mobileapp/archive.php"
+            let urlString = URL(string: urlstring )
             
-               let task = URLSession.shared.dataTask(with: url)
-               { (data, response, error)
-                   in
-                   if error != nil {
-                       print(error!)
-                   } else {
-                       if let usableData = data {
-                           
-                           do{
-                               let json = try JSONSerialization.jsonObject(with: usableData, options:.allowFragments) as! [String : AnyObject]
-   
-                               OperationQueue.main.addOperation({
-                                   
-                                   print(json)
-
-                                   DispatchQueue.main.async {
+            print ( "\(String(describing: urlString))" )
+            
+            if let url = urlString {
              
-                                    self.fullDetails = json
-                                    print("FULL=\(self.fullDetails)")
-                                   
-                                    self.array1 = (self.fullDetails["newsletterList"] as? [[String:AnyObject]])!
-                                    print("FULL=\(self.array1)")
-                                    self.tableView.reloadData()
+                let task = URLSession.shared.dataTask(with: url)
+                { (data, response, error)
+                    in
+                    if error != nil {
+                        print(error!)
+                    } else {
+                        if let usableData = data {
+                            
+                            do{
+                                let json = try JSONSerialization.jsonObject(with: usableData, options:.allowFragments) as! [String : AnyObject]
+    
+                                OperationQueue.main.addOperation({
+                                    
+                                    print(json)
 
-                                       if json["sys"] != nil {
+                                    DispatchQueue.main.async {
+              
+                                     self.fullDetails = json
+                                     print("FULL=\(self.fullDetails)")
+                                    
+                                     self.array1 = (self.fullDetails["archivedList"] as? [[String:AnyObject]])!
+                                     print("FULL=\(self.array1)")
+                                     self.tableView.reloadData()
 
-                                       }else{
-                                           
-                                       }
+                                        if json["sys"] != nil {
 
-                                   }
-        })
-                               
-                           }catch let error as NSError{
-                               print(error)
-                           }
-                           
-                           
-                           print(usableData)
-                       }
-                   }
-               }
-               
-               
-               task.resume()
-               
-           }
-           
-       }
+                                        }else{
+                                            
+                                        }
 
-     
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
+                                    }
+         })
+                                
+                            }catch let error as NSError{
+                                print(error)
+                            }
+                            
+                            
+                            print(usableData)
+                        }
+                    }
+                }
+                
+                
+                task.resume()
+                
+            }
+            
+        }
+
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let dict2 = array1[indexPath.row]
         selectedweb = dict2["link"] as? String
-        performSegue(withIdentifier: "newsweblink", sender: self)
+        performSegue(withIdentifier: "archwebf", sender: self)
     }
 
 
       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
           
-          if segue.identifier == "newsweblink" {
+          if segue.identifier == "archwebf" {
               let link = segue.destination as! webviewTrainingVC
               link.selectedwebsite = selectedweb
               }
        
       }
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
 
     /*
     // Override to support editing the table view.

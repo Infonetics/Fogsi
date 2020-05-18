@@ -20,7 +20,7 @@ class fmsTVC: UITableViewController {
     
     var fullDetails2 = [String : AnyObject]()
     
-    let activityView = UIActivityIndicatorView(style: .whiteLarge)
+    let activityView = UIActivityIndicatorView(style: .large)
     
     var selecteddictionary = [String:AnyObject]()
     

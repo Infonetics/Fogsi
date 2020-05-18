@@ -29,6 +29,15 @@ class contactUsVC: UIViewController, MFMailComposeViewControllerDelegate {
     annotation.coordinate = CLLocationCoordinate2D(latitude: 19.004921, longitude: 72.827217)
     mapKitView.addAnnotation(annotation)
     self.navigationItem.title = "Contact Us"
+    nameText.attributedPlaceholder = NSAttributedString(string: "Your Name",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+    contactnumberText.attributedPlaceholder = NSAttributedString(string: "Contact Number",
+    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+    yourEmailText.attributedPlaceholder = NSAttributedString(string: "Your Email",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+    yourMessageText.attributedPlaceholder = NSAttributedString(string: "Your Message",
+    attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+    
         
     }
     
@@ -41,12 +50,12 @@ class contactUsVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func sendEmail(_ sender: Any) {
         
-    let toRecipient = ["info@infonetics.org"]
+    let toRecipient = ["fogsiclub@gmail.com"]
         let mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
         mc.setToRecipients(toRecipient)
         mc.setSubject(nameText.text!)
-        mc.setMessageBody("Name: \(nameText.text!) \n\nEmal: \(yourEmailText.text!) \n\nMobile Number: \(contactnumberText.text!) \n\nMessage: \(yourMessageText.text!)", isHTML: false)
+        mc.setMessageBody("Name: \(nameText.text!) \n\nEmail: \(yourEmailText.text!) \n\nMobile Number: \(contactnumberText.text!) \n\nMessage: \(yourMessageText.text!)", isHTML: false)
         self.present(mc, animated: true, completion: nil)
    
     }
