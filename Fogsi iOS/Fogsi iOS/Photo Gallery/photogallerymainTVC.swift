@@ -20,7 +20,7 @@ class photogallerymainTVC: UITableViewController {
     
     var fullDetails2 = [String : AnyObject]()
     
-    let activityView = UIActivityIndicatorView(style: .large)
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
     
     var selecteddictionary = [String:AnyObject]()
     

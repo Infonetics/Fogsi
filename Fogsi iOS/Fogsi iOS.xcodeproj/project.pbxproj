@@ -79,7 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F08A4582422396200492AEA /* Fogsi iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fogsi iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F08A4582422396200492AEA /* Fogsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fogsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F08A45B2422396200492AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F08A45D2422396200492AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F08A4602422396200492AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		3F08A4592422396200492AEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F08A4582422396200492AEA /* Fogsi iOS.app */,
+				3F08A4582422396200492AEA /* Fogsi.app */,
 			);
 			name = Products;
 			path = ..;
@@ -397,7 +397,7 @@
 			);
 			name = "Fogsi iOS";
 			productName = "Fogsi iOS";
-			productReference = 3F08A4582422396200492AEA /* Fogsi iOS.app */;
+			productReference = 3F08A4582422396200492AEA /* Fogsi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -663,13 +663,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 358MTF46WU;
 				INFOPLIST_FILE = "Fogsi iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "india.Fogsi-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fogsi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -682,13 +683,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 358MTF46WU;
 				INFOPLIST_FILE = "Fogsi iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "india.Fogsi-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fogsi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

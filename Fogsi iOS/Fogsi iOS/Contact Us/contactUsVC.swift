@@ -50,7 +50,7 @@ class contactUsVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBAction func sendEmail(_ sender: Any) {
         
-    let toRecipient = ["fogsiclub@gmail.com"]
+    let toRecipient = ["fogsi2007@gmail.com"]
         let mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
         mc.setToRecipients(toRecipient)

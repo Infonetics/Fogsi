@@ -12,7 +12,7 @@ class statesListTVC: UITableViewController {
 
     @IBOutlet var stateslistTVC: UITableView!
     
-    let activityView = UIActivityIndicatorView(style: .large)
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
     
     var statelist = [[String:AnyObject]]()
     

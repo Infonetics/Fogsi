@@ -16,7 +16,7 @@ class newsactualTVC: UITableViewController {
     
     var fullDetails = [String : AnyObject]()
     
-    let activityView = UIActivityIndicatorView(style: .large)
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
     
     var selecteddictionary:[String:String]?
     

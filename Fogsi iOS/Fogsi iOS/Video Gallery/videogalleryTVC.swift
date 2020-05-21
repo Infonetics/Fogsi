@@ -12,7 +12,7 @@ class videogalleryTVC: UITableViewController {
     
     @IBOutlet var videogalleryTVC: UITableView!
     
-    let activityView = UIActivityIndicatorView(style: .large)
+    let activityView = UIActivityIndicatorView(style: .whiteLarge)
     
     var statelist = [[String:AnyObject]]()
     

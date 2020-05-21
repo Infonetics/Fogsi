@@ -22,7 +22,13 @@ override open func viewDidLoad() {
                     standardAppearance.backgroundColor = UIColor(red: CGFloat(0) / 255.0, green: CGFloat(135) / 255.0, blue: CGFloat(255) / 255.0, alpha: CGFloat(1))
                 standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
                 navigationBar.standardAppearance = standardAppearance
-            }
+                }else{
+                    let standardAppearance = UINavigationBar.appearance()
+                        standardAppearance.barTintColor = UIColor(red: CGFloat(0) / 255.0, green: CGFloat(135) / 255.0, blue: CGFloat(255) / 255.0, alpha: CGFloat(1))
+                    standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+                    
+    }
  
     }
 }
