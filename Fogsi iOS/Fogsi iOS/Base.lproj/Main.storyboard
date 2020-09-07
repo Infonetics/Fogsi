@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JjN-eD-vYy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JjN-eD-vYy">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="mainView55" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView55" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,14 +27,14 @@
                                     <inset key="sectionInset" minX="26" minY="26" maxX="26" maxY="26"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="x6i-PK-ftO" customClass="CollectionViewCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="x6i-PK-ftO" customClass="CollectionViewCell" customModule="Fogsi" customModuleProvider="target">
                                         <rect key="frame" x="26" y="320" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Zb-ak6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7E-Zb-ak6">
                                                     <rect key="frame" x="10" y="77" width="90" height="18"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -65,7 +65,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionReusableView" id="Fqp-nt-48Q" customClass="CollectionReusableView" customModule="Fogsi_iOS" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionReusableView" id="Fqp-nt-48Q" customClass="CollectionReusableView" customModule="Fogsi" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="294"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -123,7 +123,7 @@
         <!--Web VideoVC-->
         <scene sceneID="YxE-eS-YNi">
             <objects>
-                <viewController id="kN3-ZC-7Je" customClass="webVideoVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kN3-ZC-7Je" customClass="webVideoVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LrU-pM-ZXj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
         <!--Contact UsVC-->
         <scene sceneID="rEa-iR-hVy">
             <objects>
-                <viewController id="II9-OB-gTz" customClass="contactUsVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="II9-OB-gTz" customClass="contactUsVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3SF-VD-V5q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,11 +225,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="165" id="VlB-s6-UHX"/>
                                         </constraints>
-                                        <mutableString key="text">The Federation of Obstetric &amp; Gynecological Societies of India                                                                                      
+                                        <string key="text">The Federation of Obstetric &amp; Gynecological Societies of India                                                                                      
 C-5,6,7,12,13, 1st Floor, Trade World,
 D-wing Entrance, S. B. Marg, Kamala City,
 Lower Parel (W), Mumbai-400013.
-Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                                                       Country Code : 91/City Code-22                                            Email : fogsi2007@gmail.com                          www.fogsi.org</mutableString>
+Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                                                       Country Code : 91/City Code-22                                            Email : fogsi2007@gmail.com                          www.fogsi.org</string>
                                         <color key="textColor" red="0.025355748475198229" green="0.023510285790500841" blue="0.028265915119363383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12.399999618530273"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -302,13 +302,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--PhotogallerymainTVC-->
         <scene sceneID="f0o-mM-5fe">
             <objects>
-                <tableViewController id="aLY-dX-e93" customClass="photogallerymainTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="aLY-dX-e93" customClass="photogallerymainTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uVC-zW-bTR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photogalleryTVCell" rowHeight="80" id="MwD-V0-TpK" customClass="photogalleryTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photogalleryTVCell" rowHeight="80" id="MwD-V0-TpK" customClass="photogalleryTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MwD-V0-TpK" id="7f7-hg-HvU">
@@ -357,13 +357,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--PhotoTVC-->
         <scene sceneID="uZy-CG-BLV">
             <objects>
-                <tableViewController id="wF3-63-IU7" customClass="photoTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wF3-63-IU7" customClass="photoTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9fw-fn-d6k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoTVCell" rowHeight="300" id="h0g-w1-6yq" customClass="photoTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoTVCell" rowHeight="300" id="h0g-w1-6yq" customClass="photoTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h0g-w1-6yq" id="4dO-7V-F1x">
@@ -415,13 +415,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--VideogalleryTVC-->
         <scene sceneID="SAb-ih-HIV">
             <objects>
-                <tableViewController id="uI1-kH-w5O" customClass="videogalleryTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uI1-kH-w5O" customClass="videogalleryTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mHb-aU-wSg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoGalleryTVCell" rowHeight="80" id="KcX-VV-IaR" customClass="videoGalleryTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoGalleryTVCell" rowHeight="80" id="KcX-VV-IaR" customClass="videoGalleryTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KcX-VV-IaR" id="YmT-F4-Zo6">
@@ -470,13 +470,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--ArchievsTVC-->
         <scene sceneID="SVV-zG-Xlf">
             <objects>
-                <tableViewController id="0eQ-XP-DJi" customClass="archievsTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0eQ-XP-DJi" customClass="archievsTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lcB-4T-mRG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="archievsCell" rowHeight="80" id="mTi-nt-Bdv" customClass="archievsCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="archievsCell" rowHeight="80" id="mTi-nt-Bdv" customClass="archievsCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mTi-nt-Bdv" id="tl0-oh-jcq">
@@ -525,7 +525,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--SyallabCVC-->
         <scene sceneID="Mwc-z9-nYd">
             <objects>
-                <collectionViewController id="Bhu-vx-Q9a" customClass="syallabCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Bhu-vx-Q9a" customClass="syallabCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jbR-Ga-3Ko">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,7 +537,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="syallabaCell" id="FJN-Do-Gd4" customClass="syallabaCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="syallabaCell" id="FJN-Do-Gd4" customClass="syallabaCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -598,7 +598,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--Training BaseCVC-->
         <scene sceneID="Ufr-0J-22U">
             <objects>
-                <collectionViewController id="7F3-bd-3h6" customClass="trainingBaseCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="7F3-bd-3h6" customClass="trainingBaseCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="eeq-Va-sqd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -610,7 +610,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingbaseCell" id="qw8-af-rf5" customClass="trainingbaseCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingbaseCell" id="qw8-af-rf5" customClass="trainingbaseCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -671,7 +671,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--Webview TrainingVC-->
         <scene sceneID="5te-lP-wWh">
             <objects>
-                <viewController id="bTj-vo-qfY" customClass="webviewTrainingVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bTj-vo-qfY" customClass="webviewTrainingVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0VI-IW-UhD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -713,7 +713,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--ResourceCVC-->
         <scene sceneID="UrL-Z8-klm">
             <objects>
-                <collectionViewController id="ghW-Zh-b4f" customClass="resourceCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="ghW-Zh-b4f" customClass="resourceCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="BDX-40-dFh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -725,7 +725,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resourceCell" id="nfq-bx-dA1" customClass="resourceCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resourceCell" id="nfq-bx-dA1" customClass="resourceCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -786,13 +786,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--CatvideoTVC-->
         <scene sceneID="SOe-s1-eoE">
             <objects>
-                <tableViewController id="JDa-UX-moi" customClass="catvideoTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JDa-UX-moi" customClass="catvideoTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AKJ-tJ-7gh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="catvideoCell" rowHeight="80" id="vVQ-ke-IWX" customClass="catvideoCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="catvideoCell" rowHeight="80" id="vVQ-ke-IWX" customClass="catvideoCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vVQ-ke-IWX" id="kCO-2Z-KDg">
@@ -841,13 +841,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--NewsactualTVC-->
         <scene sceneID="C8z-8d-mIf">
             <objects>
-                <tableViewController id="8e3-1R-LFj" customClass="newsactualTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8e3-1R-LFj" customClass="newsactualTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Q5u-tR-Ra3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsactyyuCell" rowHeight="80" id="3aw-hm-fMg" customClass="newsactyyuCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsactyyuCell" rowHeight="80" id="3aw-hm-fMg" customClass="newsactyyuCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3aw-hm-fMg" id="EJn-1c-rHM">
@@ -896,7 +896,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--Training SecondCVC-->
         <scene sceneID="TOc-PV-CUg">
             <objects>
-                <collectionViewController id="L96-yp-hxq" customClass="trainingSecondCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="L96-yp-hxq" customClass="trainingSecondCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="A1r-ue-38s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,7 +908,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingSecondCell" id="KWq-Nr-WSp" customClass="trainingSecondCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trainingSecondCell" id="KWq-Nr-WSp" customClass="trainingSecondCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -970,7 +970,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--MembersocietCVC-->
         <scene sceneID="eon-BR-3kZ">
             <objects>
-                <collectionViewController id="oja-5M-Pal" customClass="membersocietCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="oja-5M-Pal" customClass="membersocietCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="L16-Ty-EIv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -982,7 +982,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memberCVCell" id="JF7-fh-NL3" customClass="memberCVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memberCVCell" id="JF7-fh-NL3" customClass="memberCVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1044,7 +1044,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--PrizesandawardsCVC-->
         <scene sceneID="2Zk-BW-aNA">
             <objects>
-                <collectionViewController id="clH-Wo-O3A" customClass="prizesandawardsCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="clH-Wo-O3A" customClass="prizesandawardsCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Szm-rd-27O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1056,7 +1056,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="prizesandawardsCell" id="XZ3-nO-zud" customClass="prizesandawardsCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="prizesandawardsCell" id="XZ3-nO-zud" customClass="prizesandawardsCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1120,13 +1120,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--EligisoawardTVC-->
         <scene sceneID="6hL-9S-MTq">
             <objects>
-                <tableViewController id="FqI-vn-2tB" customClass="eligisoawardTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FqI-vn-2tB" customClass="eligisoawardTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kJ5-Kj-fdV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="elisocawardTVCell" rowHeight="73" id="RjA-9l-DuJ" customClass="elisocawardTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="elisocawardTVCell" rowHeight="73" id="RjA-9l-DuJ" customClass="elisocawardTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RjA-9l-DuJ" id="z1i-vg-F5a">
@@ -1175,13 +1175,13 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--IndiawardTVC-->
         <scene sceneID="84Z-m6-bBs">
             <objects>
-                <tableViewController id="jbt-DC-cIA" customClass="indiawardTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jbt-DC-cIA" customClass="indiawardTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LzL-oX-vdu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99185746910000006" green="0.68930280209999995" blue="0.85089498760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="indiawardVCell" id="bFz-B6-TMS" customClass="indiawardVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="indiawardVCell" id="bFz-B6-TMS" customClass="indiawardVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bFz-B6-TMS" id="j90-H3-1vh">
@@ -1237,7 +1237,7 @@ Tel : 24951654 / 24951648 / 24948032 / 24948048/24918048                        
         <!--Textview768VC-->
         <scene sceneID="VwZ-3Y-rWL">
             <objects>
-                <viewController id="sdg-us-A3S" customClass="textview768VC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sdg-us-A3S" customClass="textview768VC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaY-gJ-3Jv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1365,7 +1365,7 @@ Cg
         <!--Awward Web ViewVC-->
         <scene sceneID="m5f-km-EnC">
             <objects>
-                <viewController id="2W6-f2-2Bf" customClass="awwardWebViewVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2W6-f2-2Bf" customClass="awwardWebViewVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29z-jm-ZZd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1407,14 +1407,14 @@ Cg
         <!--Fogsi2020TVC-->
         <scene sceneID="ehl-9d-flB">
             <objects>
-                <tableViewController id="waB-GA-bCD" customClass="fogsi2020TVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="waB-GA-bCD" customClass="fogsi2020TVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Occ-Kp-ssh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fogsi2020TVCell" rowHeight="169" id="bMG-rN-4gA" customClass="fogsi2020TVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fogsi2020TVCell" rowHeight="169" id="bMG-rN-4gA" customClass="fogsi2020TVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="169"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bMG-rN-4gA" id="Gho-ds-FFK">
@@ -1468,7 +1468,7 @@ Cg
         <!--OfficeB Collection View Controller-->
         <scene sceneID="gfQ-Qe-aJN">
             <objects>
-                <collectionViewController id="h5C-uM-tFw" customClass="officeBCollectionViewController" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="h5C-uM-tFw" customClass="officeBCollectionViewController" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2zy-6E-zet">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1480,7 +1480,7 @@ Cg
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="officeBCollectionViewCell" id="SjF-Po-6y6" customClass="officeBCollectionViewCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="officeBCollectionViewCell" id="SjF-Po-6y6" customClass="officeBCollectionViewCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1543,7 +1543,7 @@ Cg
         <!--BearersCVC-->
         <scene sceneID="1EM-GR-XQu">
             <objects>
-                <collectionViewController id="FmQ-HO-7J3" customClass="bearersCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="FmQ-HO-7J3" customClass="bearersCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="a7p-Tr-tiL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1555,7 +1555,7 @@ Cg
                             <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bearersCVCell" id="GFl-nl-DOC" customClass="bearersCVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bearersCVCell" id="GFl-nl-DOC" customClass="bearersCVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="12.5" y="12.5" width="168.5" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6tZ-SS-ZZH">
@@ -1636,7 +1636,7 @@ Cg
         <!--CommitteeCVC-->
         <scene sceneID="OJl-o6-zli">
             <objects>
-                <collectionViewController id="Gd7-wL-GRJ" customClass="committeeCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Gd7-wL-GRJ" customClass="committeeCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5ay-Wp-v9t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1648,7 +1648,7 @@ Cg
                             <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="committeeCCell" id="Wfk-Zc-8eD" customClass="committeeCCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="committeeCCell" id="Wfk-Zc-8eD" customClass="committeeCCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="12.5" y="12.5" width="168.5" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mMZ-Xo-ida">
@@ -1680,10 +1680,10 @@ Cg
                                             <viewLayoutGuide key="frameLayoutGuide" id="e3n-kh-vmi"/>
                                             <attributedString key="attributedText">
                                                 <fragment>
-                                                    <mutableString key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12.6" name=".SFNS-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="12.6"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1736,7 +1736,7 @@ Cg
         <!--ResponsibilityVC-->
         <scene sceneID="QR4-5Y-FZe">
             <objects>
-                <viewController id="cN9-BF-QBl" customClass="responsibilityVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cN9-BF-QBl" customClass="responsibilityVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32T-kR-TZj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2493,7 +2493,7 @@ Cg
         <!--Collection View Controller1-->
         <scene sceneID="OCm-F5-sJm">
             <objects>
-                <collectionViewController storyboardIdentifier="storyddds" id="Wnr-80-moK" customClass="CollectionViewController1" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="storyddds" id="Wnr-80-moK" customClass="CollectionViewController1" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Usb-wQ-0OA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2505,7 +2505,7 @@ Cg
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell1" id="cWk-gb-nd8" customClass="CollectionViewCell1" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell1" id="cWk-gb-nd8" customClass="CollectionViewCell1" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -2569,7 +2569,7 @@ Cg
         <!--Fogsi Profile-->
         <scene sceneID="5OM-BC-UHW">
             <objects>
-                <viewController id="RZ2-HT-nSJ" customClass="FogsiProfile" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RZ2-HT-nSJ" customClass="FogsiProfile" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uik-cy-8OU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1570"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2758,7 +2758,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--Mission And Vision-->
         <scene sceneID="6A5-N9-v0Z">
             <objects>
-                <viewController id="Qrt-7e-rVb" customClass="missionAndVision" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qrt-7e-rVb" customClass="missionAndVision" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rqV-du-U21">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2815,7 +2815,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
  </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2831,7 +2831,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
  </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2847,7 +2847,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
  </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2863,7 +2863,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
  </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2879,7 +2879,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
 </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <font key="NSFont" metaFont="menu" size="14"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="15" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2982,7 +2982,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--Annual Report Collection View-->
         <scene sceneID="Kob-tC-6lc">
             <objects>
-                <collectionViewController id="xfx-Hl-4y7" customClass="annualReportCollectionView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="xfx-Hl-4y7" customClass="annualReportCollectionView" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vgv-y8-dzl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2994,7 +2994,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                             <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="anualReportCollectionViewCell" id="xkO-BH-Wo0" customClass="anualReportCollectionViewCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="anualReportCollectionViewCell" id="xkO-BH-Wo0" customClass="anualReportCollectionViewCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="25" y="25" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PNU-mY-Ti0">
@@ -3053,7 +3053,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--Organo Collection View-->
         <scene sceneID="iUh-b1-RkT">
             <objects>
-                <collectionViewController id="vhO-KS-Xub" customClass="organoCollectionView" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="vhO-KS-Xub" customClass="organoCollectionView" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="r0l-Fv-ZrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3065,7 +3065,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                             <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="organoCell" id="Wif-gS-5Uf" customClass="organoCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="organoCell" id="Wif-gS-5Uf" customClass="organoCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="12.5" y="12.5" width="168.5" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hx5-o7-2lA">
@@ -3144,13 +3144,13 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--States ListTVC-->
         <scene sceneID="Ws2-gi-5yB">
             <objects>
-                <tableViewController id="ZfB-Fw-Y5A" customClass="statesListTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ZfB-Fw-Y5A" customClass="statesListTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wJo-aB-07h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statesListTVCell" rowHeight="80" id="d60-5q-T1W" customClass="statesListTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="statesListTVCell" rowHeight="80" id="d60-5q-T1W" customClass="statesListTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d60-5q-T1W" id="WL2-4r-jvq">
@@ -3199,13 +3199,13 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--FmsTVC-->
         <scene sceneID="K1Z-qc-LMP">
             <objects>
-                <tableViewController id="WnC-AI-coZ" customClass="fmsTVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="WnC-AI-coZ" customClass="fmsTVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5f3-ab-gVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fmsTVCell" rowHeight="80" id="79n-nD-qFt" customClass="fmsTVCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fmsTVCell" rowHeight="80" id="79n-nD-qFt" customClass="fmsTVCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="79n-nD-qFt" id="stK-Q1-W5h">
@@ -3254,7 +3254,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
         <!--LifeachawardCVC-->
         <scene sceneID="krP-KN-jRN">
             <objects>
-                <collectionViewController id="Pip-QA-PGs" customClass="lifeachawardCVC" customModule="Fogsi_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Pip-QA-PGs" customClass="lifeachawardCVC" customModule="Fogsi" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xFf-9H-0L4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3266,7 +3266,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
                             <inset key="sectionInset" minX="12.5" minY="12.5" maxX="12.5" maxY="12.5"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lifeachawardCell" id="554-u8-s7f" customClass="lifeachawardCell" customModule="Fogsi_iOS" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="lifeachawardCell" id="554-u8-s7f" customClass="lifeachawardCell" customModule="Fogsi" customModuleProvider="target">
                                 <rect key="frame" x="12.5" y="12.5" width="168.5" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AYG-Jg-B0P">
@@ -3365,7 +3365,7 @@ Each year FOGSI  under the guidance the President selects a theme to highlig
     <inferredMetricsTieBreakers>
         <segue reference="CXi-cV-79d"/>
         <segue reference="jNI-Az-eEk"/>
-        <segue reference="pfe-CH-3Dj"/>
+        <segue reference="eGj-5b-phK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="fogsi_2020" width="250" height="250"/>

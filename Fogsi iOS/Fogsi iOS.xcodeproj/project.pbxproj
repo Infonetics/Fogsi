@@ -668,7 +668,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "india.Fogsi-iOS";
 				PRODUCT_NAME = Fogsi;
 				SWIFT_VERSION = 5.0;
@@ -688,7 +688,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "india.Fogsi-iOS";
 				PRODUCT_NAME = Fogsi;
 				SWIFT_VERSION = 5.0;

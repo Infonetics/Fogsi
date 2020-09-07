@@ -16,7 +16,18 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     private let spacing:CGFloat = 18.0
     var selectedweb:String?
 
-    var namearray = [["name":"About FOGSI","image":"about_fogsi"],["name":"Fogsi 2020","image":"fogsi_2020"],["name":"Office Bearers","image":"office_bearers"],["name":"Committees","image":"committees"],["name":"Member Societies","image":"member_societies"],["name":"Prizes and Awards","image":"prizes_and_awards"],["name":"Training Program","image":"training_program"],["name":"What's New","image":"whats_new"],["name":"GCPR","image":"gcpr"],["name":"Resources","image":"resources"],["name":"News","image":"news"],["name":"Videos","image":"videos"],["name":"Photo Gallery","image":"photo_gallery"],["name":"Archives","image":"archives"],["name":"Fogsi Focus","image":"fogsi_focus"],["name":"Newsletter","image":"newsletter"],["name":"Contact Us","image":"contact_us"]
+    var namearray = [["name":"About FOGSI","image":"about_fogsi"],["name":"Fogsi 2020","image":"fogsi_2020"],["name":"Office Bearers","image":"office_bearers"],["name":"Committees","image":"committees"],["name":"Member Societies","image":"member_societies"],["name":"Prizes and Awards","image":"prizes_and_awards"],["name":"Training Program","image":"training_program"],["name":"What's New","image":"whats_new"],["name":"GCPR","image":"gcpr"],["name":"Resources","image":"resources"],["name":"News","image":"news"],["name":"Videos","image":"videos"],["name":"Photo Gallery","image":"photo_gallery"],["name":"Archives","image":"archives"],["name":"Fogsi Focus","image":"fogsi_focus"],["name":"Newsletter","image":"newsletter"],
+                     ["name":"ICOG","image":"websites"],
+                     ["name":"JOGI","image":"websites"],
+                     ["name":"MANYATA","image":"websites"],
+                     ["name":"FOGSI PAYMENT GATEWAY","image":"websites"],
+                     ["name":"AICOG 2021","image":"websites"],
+                     ["name":"CONFERENCES","image":"websites"],
+                     ["name":"PRESIDENT ACTIVITIES 2020","image":"websites"],
+                     ["name":"COMMITTEE ACTIVITIES 2020","image":"websites"],
+        
+                     
+        ["name":"Contact Us","image":"contact_us"]
     ]
     
     override func viewDidLoad() {
@@ -65,7 +76,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         if let collection = self.collectionviewmain{
             let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
             
-            if indexPath.row == 16 {
+            if indexPath.row == 24 {
             return CGSize(width: (2 * (width - 20) + 25), height: width - 20 )
             }
             else{
@@ -143,6 +154,38 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         performSegue(withIdentifier: "newsactual", sender: self)
         }
         if indexPath.row == 16 {
+        selectedweb = "http://www.icogonline.org/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 17 {
+        selectedweb = "https://jogi.co.in/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 18 {
+        selectedweb = "https://www.fogsi.org/manyata/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 19 {
+        selectedweb = "http://member.fogsi.org/Payment_Login.aspx"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 20 {
+        selectedweb = "https://aicog2021indore.org/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 21 {
+        selectedweb = "https://www.fogsi.org/events/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 22 {
+        selectedweb = "https://www.fogsi.org/fogsi-2020-activities/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 23 {
+        selectedweb = "https://www.fogsi.org/committee-activities-2020/"
+        performSegue(withIdentifier: "whatsnew", sender: self)
+        }
+        if indexPath.row == 24 {
         performSegue(withIdentifier: "contactus", sender: self)
         }
     }
